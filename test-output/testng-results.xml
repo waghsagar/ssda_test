@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="195678" started-at="2020-12-26T17:21:50Z" finished-at="2020-12-26T17:25:06Z">
+    <groups>
+    </groups>
+    <test name="Validating Login Test" duration-ms="78767" started-at="2020-12-26T17:21:50Z" finished-at="2020-12-26T17:23:09Z">
+      <class name="ssda_test.LoginPageTest">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:ssda_test.LoginPageTest@1de76cc7]" name="initialize" is-config="true" duration-ms="3778" started-at="2020-12-26T22:51:50Z" finished-at="2020-12-26T22:51:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="basePageNavigation()[pri:0, instance:ssda_test.LoginPageTest@1de76cc7]" name="basePageNavigation" duration-ms="74918" started-at="2020-12-26T22:51:54Z" finished-at="2020-12-26T22:53:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageNavigation -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:ssda_test.LoginPageTest@1de76cc7]" name="teardown" is-config="true" duration-ms="54" started-at="2020-12-26T22:53:09Z" finished-at="2020-12-26T22:53:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- ssda_test.LoginPageTest -->
+    </test> <!-- Validating Login Test -->
+    <test name="Validating Home page Test" duration-ms="116839" started-at="2020-12-26T17:23:09Z" finished-at="2020-12-26T17:25:06Z">
+      <class name="ssda_test.ValidateHomePage">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:ssda_test.ValidateHomePage@201a4587]" name="initialize" is-config="true" duration-ms="2822" started-at="2020-12-26T22:53:09Z" finished-at="2020-12-26T22:53:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="basePageNavigation()[pri:0, instance:ssda_test.ValidateHomePage@201a4587]" name="basePageNavigation" duration-ms="113941" started-at="2020-12-26T22:53:12Z" finished-at="2020-12-26T22:55:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageNavigation -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:ssda_test.ValidateHomePage@201a4587]" name="teardown" is-config="true" duration-ms="70" started-at="2020-12-26T22:55:06Z" finished-at="2020-12-26T22:55:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- ssda_test.ValidateHomePage -->
+    </test> <!-- Validating Home page Test -->
+  </suite> <!-- Suite -->
+</testng-results>

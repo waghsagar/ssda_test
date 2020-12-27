@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Suite]" parallel="none">
+  <test name="Validating Login Test(failed)" parallel="none">
+    <classes>
+      <class name="ssda_test.LoginPageTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="initialize"/>
+          <include name="basePageNavigation"/>
+        </methods>
+      </class> <!-- ssda_test.LoginPageTest -->
+      <class name="ssda_test.ValidateHomePage">
+        <methods>
+          <include name="teardown"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- ssda_test.ValidateHomePage -->
+    </classes>
+  </test> <!-- Validating Login Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
