@@ -1,0 +1,6 @@
+21:19:05.030 [main] INFO  resources.base - Product is in stock. Add to Cart button is displayed
+21:19:05.044 [main] INFO  resources.base - Validate Add to Cart feature
+21:19:05.172 [main] INFO  resources.base - Select quantity of items
+21:19:05.354 [main] INFO  resources.base - Click on Add to cart button for first product
+21:19:05.615 [main] INFO  resources.base - Product Added to cart and Checkout button is Enabled
+21:19:05.620 [main] INFO  resources.base - Validate details of product added in Cart

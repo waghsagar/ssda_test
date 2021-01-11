@@ -1,37 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="132590" started-at="2020-12-27T10:25:23Z" finished-at="2020-12-27T10:27:36Z">
+  <suite name="Suite" duration-ms="125648" started-at="2021-01-04T06:28:09Z" finished-at="2021-01-04T06:30:15Z">
     <groups>
     </groups>
-    <test name="Validating Login Test" duration-ms="61685" started-at="2020-12-27T10:25:23Z" finished-at="2020-12-27T10:26:25Z">
+    <test name="Validating Login Test" duration-ms="59219" started-at="2021-01-04T06:28:09Z" finished-at="2021-01-04T06:29:08Z">
       <class name="ssda_test.LoginPageTest">
-        <test-method status="PASS" signature="initialize()[pri:0, instance:ssda_test.LoginPageTest@22e357dc]" name="initialize" is-config="true" duration-ms="4379" started-at="2020-12-27T15:55:23Z" finished-at="2020-12-27T15:55:27Z">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:ssda_test.LoginPageTest@5032714f]" name="initialize" is-config="true" duration-ms="32997" started-at="2021-01-04T11:58:09Z" finished-at="2021-01-04T11:58:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="basePageNavigation()[pri:0, instance:ssda_test.LoginPageTest@22e357dc]" name="basePageNavigation" duration-ms="57167" started-at="2020-12-27T15:55:27Z" finished-at="2020-12-27T15:56:25Z">
+        <test-method status="PASS" signature="testCustomerLoginWithInvalidCredentials()[pri:0, instance:ssda_test.LoginPageTest@5032714f]" name="testCustomerLoginWithInvalidCredentials" duration-ms="16918" started-at="2021-01-04T11:58:42Z" finished-at="2021-01-04T11:58:59Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- basePageNavigation -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:ssda_test.LoginPageTest@22e357dc]" name="teardown" is-config="true" duration-ms="127" started-at="2020-12-27T15:56:25Z" finished-at="2020-12-27T15:56:25Z">
+        </test-method> <!-- testCustomerLoginWithInvalidCredentials -->
+        <test-method status="PASS" signature="testCustomerLoginWithValidCredentials()[pri:0, instance:ssda_test.LoginPageTest@5032714f]" name="testCustomerLoginWithValidCredentials" duration-ms="8293" started-at="2021-01-04T11:59:00Z" finished-at="2021-01-04T11:59:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCustomerLoginWithValidCredentials -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:ssda_test.LoginPageTest@5032714f]" name="teardown" is-config="true" duration-ms="555" started-at="2021-01-04T11:59:08Z" finished-at="2021-01-04T11:59:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- ssda_test.LoginPageTest -->
     </test> <!-- Validating Login Test -->
-    <test name="Validating Home page Test" duration-ms="70887" started-at="2020-12-27T10:26:25Z" finished-at="2020-12-27T10:27:36Z">
-      <class name="ssda_test.ValidateHomePage">
-        <test-method status="PASS" signature="initialize()[pri:0, instance:ssda_test.ValidateHomePage@4bb33f74]" name="initialize" is-config="true" duration-ms="3465" started-at="2020-12-27T15:56:25Z" finished-at="2020-12-27T15:56:28Z">
+    <test name="Validating Customer Home page Test" duration-ms="39099" started-at="2021-01-04T06:29:10Z" finished-at="2021-01-04T06:29:49Z">
+      <class name="ssda_test.CustHomePageTest">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:ssda_test.CustHomePageTest@4082ba93]" name="initialize" is-config="true" duration-ms="14439" started-at="2021-01-04T11:59:10Z" finished-at="2021-01-04T11:59:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="basePageNavigation()[pri:0, instance:ssda_test.ValidateHomePage@4bb33f74]" name="basePageNavigation" duration-ms="66872" started-at="2020-12-27T15:56:28Z" finished-at="2020-12-27T15:57:35Z">
+        <test-method status="PASS" signature="testCheckoutButtonWithEmptyCart()[pri:0, instance:ssda_test.CustHomePageTest@4082ba93]" name="testCheckoutButtonWithEmptyCart" duration-ms="8348" started-at="2021-01-04T11:59:24Z" finished-at="2021-01-04T11:59:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheckoutButtonWithEmptyCart -->
+        <test-method status="PASS" signature="testAddToCart()[pri:0, instance:ssda_test.CustHomePageTest@4082ba93]" name="testAddToCart" duration-ms="15929" started-at="2021-01-04T11:59:32Z" finished-at="2021-01-04T11:59:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddToCart -->
+        <test-method status="PASS" signature="testCartItems()[pri:0, instance:ssda_test.CustHomePageTest@4082ba93]" name="testCartItems" duration-ms="176" started-at="2021-01-04T11:59:48Z" finished-at="2021-01-04T11:59:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCartItems -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:ssda_test.CustHomePageTest@4082ba93]" name="teardown" is-config="true" duration-ms="203" started-at="2021-01-04T11:59:49Z" finished-at="2021-01-04T11:59:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- ssda_test.CustHomePageTest -->
+    </test> <!-- Validating Customer Home page Test -->
+    <test name="Validating Home page Test" duration-ms="25953" started-at="2021-01-04T06:29:49Z" finished-at="2021-01-04T06:30:15Z">
+      <class name="ssda_test.ValidateHomePage">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:ssda_test.ValidateHomePage@792b749c]" name="initialize" is-config="true" duration-ms="4958" started-at="2021-01-04T11:59:49Z" finished-at="2021-01-04T11:59:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="basePageNavigation()[pri:0, instance:ssda_test.ValidateHomePage@792b749c]" name="basePageNavigation" duration-ms="20911" started-at="2021-01-04T11:59:54Z" finished-at="2021-01-04T12:00:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- basePageNavigation -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:ssda_test.ValidateHomePage@4bb33f74]" name="teardown" is-config="true" duration-ms="549" started-at="2020-12-27T15:57:35Z" finished-at="2020-12-27T15:57:36Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:ssda_test.ValidateHomePage@792b749c]" name="teardown" is-config="true" duration-ms="83" started-at="2021-01-04T12:00:15Z" finished-at="2021-01-04T12:00:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

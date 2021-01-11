@@ -4,13 +4,13 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class HomePage {
+public class AdminHomePage {
 
-public WebDriver driver;
+	public WebDriver driver;
 	
-	By dashboard = By.xpath("//div[contains(text(),'DASHBOARD')]");
+	private By dashboard = By.xpath("//div[contains(text(),'DASHBOARD')]");
 	
-	public HomePage(WebDriver driver) {
+	public AdminHomePage(WebDriver driver) {
 		this.driver=driver;
 	}
 	

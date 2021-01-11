@@ -4,14 +4,14 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-
 public class LoginPage {
 
 	public WebDriver driver;
 	
-	By loginMobile = By.xpath("//input[@id='mobileNumber']");
-	By password = By.xpath("//input[@id='password']");
-	By loginButton = By.xpath("//button[@type='submit']");
+	private By loginMobile = By.xpath("//input[@id='mobileNumber']");
+	private By password = By.xpath("//input[@id='password']");
+	private By loginButton = By.xpath("//button[@type='submit']");
+	private By invalidUserAlert = By.xpath("//div[@aria-label='Invalid (username or password) or User is no longer active!']");
 	
 	
 	public LoginPage(WebDriver driver) {
@@ -32,5 +32,10 @@ public class LoginPage {
 	public WebElement getLogin()
 	{
 		return driver.findElement(loginButton);
+	}
+	
+	public WebElement getInvalidUserAlert()
+	{
+		return driver.findElement(invalidUserAlert);
 	}
 }

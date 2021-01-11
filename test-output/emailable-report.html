@@ -31,22 +31,119 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Validating Login Test</td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">78.8 seconds</td><td class="numi"></td><td class="numi"></td></tr>
-<tr class="stripe"><td style="text-align:left;padding-right:2em">Validating Home page Test</td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">116.8 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Validating Login Test</td><td class="numi">5</td><td class="numi">5</td><td class="numi">0</td><td class="numi">0</td><td class="numi">27.1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em">Validating Add to cart Test</td><td class="numi">2</td><td class="numi">2</td><td class="numi">0</td><td class="numi_attn">4</td><td class="numi">52.9 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Validating select timeslot place order Test</td><td class="numi">4</td><td class="numi">4</td><td class="numi">0</td><td class="numi">0</td><td class="numi">56.1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em">Validating Customer order details Test</td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">57.9 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Validating admin Home page Test</td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">25.6 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 <tr class="total"><td>Total</td>
-<td class="numi">2</td><td class="numi">2</td><td class="numi">0</td><td class="numi">0</td><td class="numi">195.7 seconds</td><td colspan="2">&nbsp;</td></tr>
+<td class="numi">13</td><td class="numi">13</td><td class="numi">0</td><td class="numi_attn">4</td><td class="numi">220.4 seconds</td><td colspan="2">&nbsp;</td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
 <tr><th colspan="4">Validating Login Test &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="1">ssda_test.LoginPageTest</td><td><a href="#m1"><b>basePageNavigation</b>  </a></td><td class="numi">1</td><td>1609003314704</td><td class="numi">74918</td></tr>
-<tr><th colspan="4">Validating Home page Test &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="1">ssda_test.ValidateHomePage</td><td><a href="#m2"><b>basePageNavigation</b>  </a></td><td class="numi">1</td><td>1609003392579</td><td class="numi">113941</td></tr>
+<tr class="passedodd"><td rowspan="5">ssda_test.customer.TC01_CustLoginTest</td><td><a href="#m1"><b>testCustomerLoginWithInvalidCredentials</b>  </a></td><td class="numi">1</td><td>1610361023712</td><td class="numi">1902</td></tr><tr class="passedodd"><td><a href="#m2"><b>testCustomerLoginWithValidCredentials</b>  </a></td><td class="numi">1</td><td>1610361025616</td><td class="numi">2293</td></tr><tr class="passedodd"><td><a href="#m3"><b>testWithMobileNumberContainsAlphabets</b>  </a></td><td class="numi">1</td><td>1610361022107</td><td class="numi">1603</td></tr><tr class="passedodd"><td><a href="#m4"><b>testWithMobileNumberLessThanTenDigits</b>  </a></td><td class="numi">1</td><td>1610361006521</td><td class="numi">14213</td></tr><tr class="passedodd"><td><a href="#m5"><b>testWithMobileNumberMoreThanTenDigits</b>  </a></td><td class="numi">1</td><td>1610361020745</td><td class="numi">1360</td></tr>
+<tr><th colspan="4">Validating Add to cart Test &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="4">ssda_test.customer.TC02_CustAddtoCartTest</td><td><a href="#m6"><b>testAddToCartFeature</b>  </a></td><td class="numi">1</td><td>1610361058270</td><td class="numi">20976</td></tr><tr class="failedodd"><td><a href="#m7"><b>testDeleteItemFromCart</b>  </a></td><td class="numi">1</td><td>1610361080958</td><td class="numi">43</td></tr><tr class="failedodd"><td><a href="#m8"><b>testProductDetailsInCart</b>  </a></td><td class="numi">1</td><td>1610361079843</td><td class="numi">160</td></tr><tr class="failedodd"><td><a href="#m9"><b>testTotalAmountPayable</b>  </a></td><td class="numi">1</td><td>1610361080478</td><td class="numi">50</td></tr>
+<tr><th colspan="4">Validating Add to cart Test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="2">ssda_test.customer.TC02_CustAddtoCartTest</td><td><a href="#m10"><b>testAddToCartButtonVisibility</b>  </a></td><td class="numi">1</td><td>1610361048957</td><td class="numi">9311</td></tr><tr class="passedodd"><td><a href="#m11"><b>testCheckoutButtonWithEmptyCart</b>  </a></td><td class="numi">1</td><td>1610361044649</td><td class="numi">4305</td></tr>
+<tr><th colspan="4">Validating select timeslot place order Test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="4">ssda_test.customer.TC03_CustSelectTimeslotPlaceOrderTest</td><td><a href="#m12"><b>testAddToCartClickCheckoutButton</b>  </a></td><td class="numi">1</td><td>1610361103221</td><td class="numi">19521</td></tr><tr class="passedodd"><td><a href="#m13"><b>testDontSelectTimeslotClickSubmit</b>  </a></td><td class="numi">1</td><td>1610361122745</td><td class="numi">1477</td></tr><tr class="passedodd"><td><a href="#m14"><b>testSelectTimeslotForDeliveryClickCancel</b>  </a></td><td class="numi">1</td><td>1610361124223</td><td class="numi">5765</td></tr><tr class="passedodd"><td><a href="#m15"><b>testSelectTimeslotForDeliveryClickSubmit</b>  </a></td><td class="numi">1</td><td>1610361129990</td><td class="numi">7592</td></tr>
+<tr><th colspan="4">Validating Customer order details Test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="1">ssda_test.customer.TC04_CustOrderDetailsTest</td><td><a href="#m16"><b>testPlaceCustomerOrder</b>  </a></td><td class="numi">1</td><td>1610361154253</td><td class="numi">41210</td></tr>
+<tr><th colspan="4">Validating admin Home page Test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="1">ssda_test.admin.ValidateHomePage</td><td><a href="#m17"><b>basePageNavigation</b>  </a></td><td class="numi">1</td><td>1610361200178</td><td class="numi">21059</td></tr>
 </table>
 <h1>Validating Login Test</h1>
-<h2 id="m1">ssda_test.LoginPageTest:basePageNavigation</h2>
+<h2 id="m1">ssda_test.customer.TC01_CustLoginTest:testWithMobileNumberLessThanTenDigits</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h1>Validating Home page Test</h1>
-<h2 id="m2">ssda_test.ValidateHomePage:basePageNavigation</h2>
+<h2 id="m2">ssda_test.customer.TC01_CustLoginTest:testWithMobileNumberContainsAlphabets</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">ssda_test.customer.TC01_CustLoginTest:testWithMobileNumberMoreThanTenDigits</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">ssda_test.customer.TC01_CustLoginTest:testCustomerLoginWithInvalidCredentials</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">ssda_test.customer.TC01_CustLoginTest:testCustomerLoginWithValidCredentials</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Validating Add to cart Test</h1>
+<h2 id="m6">ssda_test.customer.TC02_CustAddtoCartTest:testDeleteItemFromCart</h2>
+<div style="padding-left:3em">
+<p>For input string: &quot;3,333.00&quot;</p>
+sun.misc.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2043)
+<br/>at sun.misc.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+<br/>at java.lang.Double.parseDouble(Double.java:538)
+<br/>at ssda_test.customer.TC02_CustAddtoCartTest.testDeleteItemFromCart(TC02_CustAddtoCartTest.java:112)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m7">ssda_test.customer.TC02_CustAddtoCartTest:testTotalAmountPayable</h2>
+<div style="padding-left:3em">
+<p>expected [true] but found [false]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertTrue(Assert.java:42)
+<br/>at org.testng.Assert.assertTrue(Assert.java:52)
+<br/>at ssda_test.customer.TC02_CustAddtoCartTest.testTotalAmountPayable(TC02_CustAddtoCartTest.java:103)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m8">ssda_test.customer.TC02_CustAddtoCartTest:testAddToCartFeature</h2>
+<div style="padding-left:3em">
+<p>no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@aria-label=&apos;The product is added in the cart&apos;]&quot;}
+  (Session info: chrome=87.0.4280.88)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;SAGARW-VAIO&apos;, ip: &apos;192.168.0.106&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\sagarw\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51022}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 0c9b4f7d7a1bd15a83184a871e63d811
+*** Element info: {Using=xpath, value=//div[@aria-label=&apos;The product is added in the cart&apos;]}</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+<br/>at pageObjects.CustomerHomePage.getProductAddedAlert(CustomerHomePage.java:127)
+<br/>at ssda_test.customer.TC02_CustAddtoCartTest.testAddToCartFeature(TC02_CustAddtoCartTest.java:78)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m9">ssda_test.customer.TC02_CustAddtoCartTest:testProductDetailsInCart</h2>
+<div style="padding-left:3em">
+<p>For input string: &quot;3,333.00&quot;</p>
+sun.misc.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2043)
+<br/>at sun.misc.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+<br/>at java.lang.Double.parseDouble(Double.java:538)
+<br/>at ssda_test.customer.TC02_CustAddtoCartTest.testProductDetailsInCart(TC02_CustAddtoCartTest.java:94)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m10">ssda_test.customer.TC02_CustAddtoCartTest:testCheckoutButtonWithEmptyCart</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m11">ssda_test.customer.TC02_CustAddtoCartTest:testAddToCartButtonVisibility</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Validating select timeslot place order Test</h1>
+<h2 id="m12">ssda_test.customer.TC03_CustSelectTimeslotPlaceOrderTest:testSelectTimeslotForDeliveryClickCancel</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m13">ssda_test.customer.TC03_CustSelectTimeslotPlaceOrderTest:testDontSelectTimeslotClickSubmit</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m14">ssda_test.customer.TC03_CustSelectTimeslotPlaceOrderTest:testAddToCartClickCheckoutButton</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m15">ssda_test.customer.TC03_CustSelectTimeslotPlaceOrderTest:testSelectTimeslotForDeliveryClickSubmit</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Validating Customer order details Test</h1>
+<h2 id="m16">ssda_test.customer.TC04_CustOrderDetailsTest:testPlaceCustomerOrder</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Validating admin Home page Test</h1>
+<h2 id="m17">ssda_test.admin.ValidateHomePage:basePageNavigation</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>

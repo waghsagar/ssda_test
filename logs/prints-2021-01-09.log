@@ -1,0 +1,5 @@
+23:53:17.715 [main] INFO  resources.TestBase - Customer selects the delivery timeslot for product and click on Cancel
+23:53:17.965 [main] INFO  resources.TestBase - After clicking on Cancel button delivery timeslot window closes
+23:53:17.970 [main] INFO  resources.TestBase - Validate after selecting delivery timeslot Customer clicks on Submit button
+23:53:19.168 [main] INFO  resources.TestBase - Select timeslot for Product delivery window displayed
+23:53:19.380 [main] INFO  resources.TestBase - Customer selects the delivery timeslot for product and click on Submit

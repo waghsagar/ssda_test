@@ -1,0 +1,6 @@
+20:47:38.708 [main] INFO  resources.base - Navigated to Login page
+20:47:42.524 [main] INFO  resources.base - Successfully validated text message at dashboard
+20:52:05.766 [main] INFO  resources.base - Driver is initialized
+20:52:16.693 [main] INFO  resources.base - Navigated to Login page
+20:52:17.072 [main] INFO  resources.base - Enter Invalid customer credentials and click on Login button
+20:52:18.696 [main] INFO  resources.base - User entered invalid (username or password) or User is no longer active

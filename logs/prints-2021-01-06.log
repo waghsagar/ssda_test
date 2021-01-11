@@ -1,0 +1,6 @@
+17:56:06.231 [main] INFO  resources.base - Name of the product in cart matches with selected product
+17:56:06.236 [main] INFO  resources.base - Quantity of the product in cart matches with selected quantity
+17:56:06.310 [main] INFO  resources.base - Product Amount in Cart matches as per selected quantity
+17:56:06.314 [main] INFO  resources.base - Validate details of total amount payable
+17:56:06.361 [main] INFO  resources.base - Total payable amount matches as per selected quantity
+17:56:06.365 [main] INFO  resources.base - Validate Delete Product from cart feature

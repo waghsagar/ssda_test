@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="135.552" tests="2" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="130.222" tests="6" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_221\jre\bin"/>
@@ -28,7 +28,7 @@
     <property name="os.name" value="Windows 7"/>
     <property name="classworlds.conf" value="C:\Program Files\Maven\apache-maven-3.6.1\bin\..\bin\m2.conf"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_221\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;C:\Program Files (x86)\Common Files\Roxio Shared\10.0\DLLShared\;C:\Program Files (x86)\Common Files\Roxio Shared\DLLShared\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Java\jdk1.8.0_221\bin;C:\Program Files\Maven\apache-maven-3.6.1\bin;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_221\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;C:\Program Files (x86)\Common Files\Roxio Shared\10.0\DLLShared\;C:\Program Files (x86)\Common Files\Roxio Shared\DLLShared\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Java\jdk1.8.0_221\bin;C:\Program Files\Maven\apache-maven-3.6.1\bin;C:\Program Files\Git\cmd;."/>
     <property name="maven.conf" value="C:\Program Files\Maven\apache-maven-3.6.1\bin\../conf"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
@@ -64,6 +64,10 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="basePageNavigation" classname="ssda_test.LoginPageTest" time="57.167"/>
-  <testcase name="basePageNavigation" classname="ssda_test.ValidateHomePage" time="66.871"/>
+  <testcase name="testCustomerLoginWithInvalidCredentials" classname="ssda_test.LoginPageTest" time="16.918"/>
+  <testcase name="testCustomerLoginWithValidCredentials" classname="ssda_test.LoginPageTest" time="8.291"/>
+  <testcase name="testCheckoutButtonWithEmptyCart" classname="ssda_test.CustHomePageTest" time="8.35"/>
+  <testcase name="testAddToCart" classname="ssda_test.CustHomePageTest" time="15.935"/>
+  <testcase name="testCartItems" classname="ssda_test.CustHomePageTest" time="0.205"/>
+  <testcase name="basePageNavigation" classname="ssda_test.ValidateHomePage" time="20.875"/>
 </testsuite>

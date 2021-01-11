@@ -53,7 +53,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Suite">
-                    <span class="test-stats">2 tests</span>
+                    <span class="test-stats">3 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">6 methods,   6 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,12 +101,32 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="ssda_test.LoginPageTest" hash-for-method="basePageNavigation">basePageNavigation</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="ssda_test.ValidateHomePage" hash-for-method="basePageNavigation">basePageNavigation</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="ssda_test.ValidateHomePage" hash-for-method="basePageNavigation">basePageNavigation</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="ssda_test.CustHomePageTest" hash-for-method="testAddToCart">testAddToCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="ssda_test.CustHomePageTest" hash-for-method="testCartItems">testCartItems</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="ssda_test.CustHomePageTest" hash-for-method="testCheckoutButtonWithEmptyCart">testCheckoutButtonWithEmptyCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="ssda_test.LoginPageTest" hash-for-method="testCustomerLoginWithInvalidCredentials">testCustomerLoginWithInvalidCredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="ssda_test.LoginPageTest" hash-for-method="testCustomerLoginWithValidCredentials">testCustomerLoginWithValidCredentials</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -124,7 +144,7 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">ssda_test.LoginPageTest</span>
+              <span class="class-name">ssda_test.ValidateHomePage</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -139,14 +159,50 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">ssda_test.ValidateHomePage</span>
+              <span class="class-name">ssda_test.LoginPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="basePageNavigation">
-                  </a> <!-- basePageNavigation -->
-                  <span class="method-name">basePageNavigation</span>
+                  <a name="testCustomerLoginWithInvalidCredentials">
+                  </a> <!-- testCustomerLoginWithInvalidCredentials -->
+                  <span class="method-name">testCustomerLoginWithInvalidCredentials</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCustomerLoginWithValidCredentials">
+                  </a> <!-- testCustomerLoginWithValidCredentials -->
+                  <span class="method-name">testCustomerLoginWithValidCredentials</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">ssda_test.CustHomePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddToCart">
+                  </a> <!-- testAddToCart -->
+                  <span class="method-name">testAddToCart</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCartItems">
+                  </a> <!-- testCartItems -->
+                  <span class="method-name">testCartItems</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCheckoutButtonWithEmptyCart">
+                  </a> <!-- testCheckoutButtonWithEmptyCart -->
+                  <span class="method-name">testCheckoutButtonWithEmptyCart</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -161,11 +217,19 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite verbose=&quot;0&quot; name=&quot;Suite&quot; parallel=&quot;none&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;ssda_test.Listeners&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test name=&quot;Validating Login Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;ssda_test.LoginPageTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Validating Login Test --&gt;
+  &lt;test name=&quot;Validating Customer Home page Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;ssda_test.CustHomePageTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Validating Customer Home page Test --&gt;
   &lt;test name=&quot;Validating Home page Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;ssda_test.ValidateHomePage&quot;/&gt;
@@ -183,6 +247,9 @@
             <ul>
               <li>
                 <span class="test-name">Validating Login Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Validating Customer Home page Test (1 class)</span>
               </li>
               <li>
                 <span class="test-name">Validating Home page Test (1 class)</span>
@@ -211,20 +278,36 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(6);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'basePageNavigation')
 data.setCell(0, 2, 'ssda_test.ValidateHomePage')
-data.setCell(0, 3, 66872);
+data.setCell(0, 3, 20911);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'basePageNavigation')
+data.setCell(1, 1, 'testCustomerLoginWithInvalidCredentials')
 data.setCell(1, 2, 'ssda_test.LoginPageTest')
-data.setCell(1, 3, 57167);
+data.setCell(1, 3, 16918);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testAddToCart')
+data.setCell(2, 2, 'ssda_test.CustHomePageTest')
+data.setCell(2, 3, 15929);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testCheckoutButtonWithEmptyCart')
+data.setCell(3, 2, 'ssda_test.CustHomePageTest')
+data.setCell(3, 3, 8348);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testCustomerLoginWithValidCredentials')
+data.setCell(4, 2, 'ssda_test.LoginPageTest')
+data.setCell(4, 3, 8293);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testCartItems')
+data.setCell(5, 2, 'ssda_test.CustHomePageTest')
+data.setCell(5, 3, 176);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -256,27 +339,54 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <span class="method-name">basePageNavigation</span>
-                <span class="method-start">4386 ms</span>
+                <span class="method-name">testCustomerLoginWithInvalidCredentials</span>
+                <span class="method-start">33010 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testCustomerLoginWithValidCredentials</span>
+                <span class="method-start">50364 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">61556 ms</span>
+                <span class="method-start">58662 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">ssda_test.CustHomePageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initialize</span>
+                <span class="method-start">60493 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">testCheckoutButtonWithEmptyCart</span>
+                <span class="method-start">74933 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testAddToCart</span>
+                <span class="method-start">83281 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testCartItems</span>
+                <span class="method-start">99213 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">99389 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">ssda_test.ValidateHomePage</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">initialize</span>
-                <span class="method-start">61701 ms</span>
+                <span class="method-start">99693 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">basePageNavigation</span>
-                <span class="method-start">65167 ms</span>
+                <span class="method-start">104652 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">132039 ms</span>
+                <span class="method-start">125563 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

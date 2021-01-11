@@ -1,14 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite">
+<suite name="Suite" >
+<listeners>
+<listener class-name="ssda_test.Listeners"/>
+</listeners>
 	<test name="Validating Login Test">
 		<classes>
-			<class name="ssda_test.LoginPageTest" />
+			<class name="ssda_test.customer.TC01_CustLoginTest"/>
 		</classes>
 	</test>
-	<test name="Validating Home page Test">
+	<test name="Validating Add to cart Test">
 		<classes>
-			<class name="ssda_test.ValidateHomePage" />
+			<class name="ssda_test.customer.TC02_CustAddtoCartTest"/>
+		</classes>
+	</test>
+	<test name="Validating select timeslot place order Test">
+		<classes>
+			<class name="ssda_test.customer.TC03_CustSelectTimeslotPlaceOrderTest"/>
+		</classes>
+	</test>
+	<test name="Validating Customer order details Test">
+		<classes>
+			<class name="ssda_test.customer.TC04_CustOrderDetailsTest"/>
+		</classes>
+	</test>
+	<test name="Validating admin Home page Test">
+		<classes>
+			<class name="ssda_test.admin.ValidateHomePage"/>
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

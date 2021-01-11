@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]" parallel="none">
   <test name="Default test(failed)" parallel="none">
     <classes>
-      <class name="ssda_test.HomePage">
+      <class name="ssda_test.customer.TC_CustOrderDetailsTest">
         <methods>
-          <include name="basePageNavigation"/>
+          <include name="initialize"/>
+          <include name="testPlaceCustomerOrder"/>
         </methods>
-      </class> <!-- ssda_test.HomePage -->
+      </class> <!-- ssda_test.customer.TC_CustOrderDetailsTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

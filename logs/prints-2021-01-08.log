@@ -1,0 +1,6 @@
+23:00:51.307 [main] INFO  resources.base - Product Added to cart and Checkout button is Enabled
+23:00:51.316 [main] INFO  resources.base - Validate details of product added in Cart
+23:00:51.484 [main] INFO  resources.base - Name of the product in cart matches with selected product
+23:00:51.484 [main] INFO  resources.base - Quantity of the product in cart matches with selected quantity
+23:00:51.528 [main] INFO  resources.base - Product Amount in Cart matches as per selected quantity
+23:00:51.532 [main] INFO  resources.base - Validate details of total amount payable

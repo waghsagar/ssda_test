@@ -1,3 +1,5 @@
-15:56:28.674 [main] INFO  resources.base - Driver is initialized
-15:57:30.904 [main] INFO  resources.base - Navigated to Login page
-15:57:35.556 [main] INFO  resources.base - Successfully validated text message at dashboard
+16:03:15.409 [main] INFO  resources.TestBase - User double clicks on OrderNo header to sort by most recent orders
+16:03:15.462 [main] INFO  resources.TestBase - New order by Customer displayed on order list page
+16:03:20.177 [main] INFO  resources.TestBase - Driver is initialized
+16:03:33.249 [main] INFO  resources.TestBase - Navigated to Login page
+16:03:41.236 [main] INFO  resources.TestBase - Successfully validated text message at dashboard

@@ -1,0 +1,6 @@
+18:37:05.774 [main] INFO  resources.TestBase - Validate Customer order displayed on Order List page
+18:37:37.537 [main] INFO  resources.TestBase - Customer clicks on UserMenu and then Orders link
+18:37:38.010 [main] INFO  resources.TestBase - Order list page opens
+18:37:47.381 [main] INFO  resources.TestBase - Customer orders displayed on Order list page
+18:37:47.634 [main] INFO  resources.TestBase - User double clicks on OrderNo header to sort by most recent orders
+18:37:47.691 [main] INFO  resources.TestBase - New order by Customer displayed on order list page
