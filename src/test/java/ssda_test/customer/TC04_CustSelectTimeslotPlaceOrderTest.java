@@ -15,14 +15,16 @@ import org.testng.annotations.Test;
 import pageObjects.CustomerHomePage;
 import pageObjects.LoginPage;
 import resources.TestBase;
+import resources.Utilities;
 
-public class TC03_CustSelectTimeslotPlaceOrderTest extends TestBase{
+public class TC04_CustSelectTimeslotPlaceOrderTest extends TestBase{
 
 	public WebDriver driver;
 	LoginPage lp;
 	CustomerHomePage chp;
+	Utilities util;
 	public static Logger log = LogManager.getLogger(TestBase.class.getName());
-	public int quantity = 1;
+	public int quantity = 2;
 	
 	
 	@BeforeTest
@@ -31,22 +33,23 @@ public class TC03_CustSelectTimeslotPlaceOrderTest extends TestBase{
 		log.info("Driver is initialized");
 		
 		driver.get(prop.getProperty("url"));
+		util = new Utilities();
+		lp = new LoginPage(driver);
+		chp = new CustomerHomePage(driver);
+		wait = new WebDriverWait(driver, 20);
 	}
 
 	@Test(priority=1)
 	public void testAddToCartClickCheckoutButton() {
 		log.info("Validate Add to Cart and click Checkout Button");
-		lp = new LoginPage(driver);
 		lp.getMobile().sendKeys(prop.getProperty("cust_mobile"));
 		lp.getPassword().sendKeys(prop.getProperty("cust_password"));
 		lp.getLogin().click();
-		chp = new CustomerHomePage(driver);
+		wait.until(ExpectedConditions.invisibilityOf(chp.getNoRecordsFound()));
 		Assert.assertFalse(chp.getCheckoutButton().isEnabled());
-		wait = new WebDriverWait(driver, 15);
-		wait.until(ExpectedConditions.visibilityOf(chp.getSearchResults()));
 		Assert.assertTrue(chp.getAddToCart().isDisplayed());
-		log.info("Select quantity and Click on Add to cart button for first product");
-		chp.getSelectedQuantity(quantity);
+		log.info("Select quantity and Click on Add to cart button for product");
+		util.selectValueFromDropDownByIndex(chp.getProductQuantity(), quantity);
 		chp.getAddToCart().click();
 		wait.until(ExpectedConditions.invisibilityOf(chp.getAlert()));
 		log.info("Product Added to cart. Click on Checkout button");
@@ -88,12 +91,10 @@ public class TC03_CustSelectTimeslotPlaceOrderTest extends TestBase{
 		chp.getSelectDeliveryTimeSlot().click();
 		log.info("Customer selects the delivery timeslot for product and click on Submit");
 		chp.getSubmitDeliveryTimeSlot().click();
+		wait.until(ExpectedConditions.visibilityOf(chp.getAlert()));
 		Assert.assertTrue(chp.getAlert().isDisplayed());
-		String orderPlacedAlertMessage = chp.getAlert().getText();
-		//System.out.println("orderPlacedAlertMessage : "+ orderPlacedAlertMessage);
-		Assert.assertTrue(orderPlacedAlertMessage.contains(" is placed"));
+		Assert.assertTrue(chp.getAlert().getText().contains(" is placed"));
 		log.info("Order successfully placed alert message displayed");
-		System.out.println("orderPlacedAlertMessage : "+ orderPlacedAlertMessage);
 	}
 	
 	

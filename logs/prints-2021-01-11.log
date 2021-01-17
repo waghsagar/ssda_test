@@ -1,6 +1,6 @@
-16:02:17.571 [main] INFO  resources.TestBase - Order successfully placed alert message displayed
-16:02:22.306 [main] INFO  resources.TestBase - Driver is initialized
-16:02:34.255 [main] INFO  resources.TestBase - Validate Customer order displayed on Order List page
-16:03:03.567 [main] INFO  resources.TestBase - Customer clicks on UserMenu and then Orders link
-16:03:03.997 [main] INFO  resources.TestBase - Order list page opens
-16:03:15.035 [main] INFO  resources.TestBase - Customer orders displayed on Order list page
+23:13:07.545 [main] INFO  resources.TestBase - On Customer home page Checkout button is in disabled state
+23:13:07.563 [main] INFO  resources.TestBase - Navigated to Customer Home page
+23:13:08.214 [main] INFO  resources.TestBase - Customer searches product in inventory
+23:13:08.215 [main] INFO  resources.TestBase - Customer entered product found in inventory
+23:15:19.701 [main] INFO  resources.TestBase - Driver is initialized
+23:16:05.017 [main] INFO  resources.TestBase - Validate Checkout Button state with Empty Cart

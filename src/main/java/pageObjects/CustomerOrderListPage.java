@@ -15,7 +15,7 @@ public class CustomerOrderListPage {
 	
 	private By statusFilter = By.xpath("//span[contains(.,'Status')]/label/span");
 	
-	private By orderListTable = By.xpath("//table[@role='grid']/tbody/tr");
+	private By orderListTable = By.xpath("//table[@role='grid']/tbody/tr/td");
 	
 	private By orderNoHeader = By.xpath("//table[@role='grid']//button[contains(., 'ORDER NO')]");
 	
@@ -37,6 +37,8 @@ public class CustomerOrderListPage {
 	
 	private By statusDetails = By.xpath("//table[@role='grid']/tbody/tr[1]/td[5]");
 	
+	private By showOrderDetails = By.xpath("//table[@role='grid']/tbody/tr[1]/td[6]/button");
+	
 	private By clearFilterButton = By.xpath("//button[contains(.,'Clear Filters')]");
 	
 	private By refreshButton = By.xpath("//button[contains(.,'Refresh')]");
@@ -44,6 +46,26 @@ public class CustomerOrderListPage {
 	private By backToHomeButton = By.xpath("//button[contains(.,'Back to Home')]");
 	
 	private By alert = By.xpath("//div[@role='alertdialog']");
+	
+	private By orderDetailsWindow = By.xpath("//*[@role='dialog']//table[@role='grid']/tbody/tr");
+	
+	private By productNameOrderDetailsWindow = By.xpath("//*[@role='dialog']//table[@role='grid']/tbody/tr/td[2]");
+	
+	private By productQuantityOrderDetailsWindow = By.xpath("//*[@role='dialog']//table[@role='grid']/tbody/tr/td[3]");
+	
+	private By productPriceOrderDetailsWindow = By.xpath("//*[@role='dialog']//table[@role='grid']/tbody/tr/td[4]");
+	
+	private By totalPriceOrderDetailsWindow = By.xpath("//*[@role='dialog']//table[@role='grid']/tbody/tr/td[5]");
+	
+	private By closeButtonOrderDetailsWindow = By.xpath("//button[contains(.,'Close')]");
+	
+	private By statusOrderDetailsWindow = By.xpath("//*[@role='dialog'] //b[contains(.,'Status')]/parent::h5");
+	
+	private By deliveryDateOrderDetailsWindow = By.xpath("//*[@role='dialog'] //b[contains(.,'Delivery')]/parent::h5");
+	
+	private By timeSlotOrderDetailsWindow = By.xpath("//*[@role='dialog'] //b[contains(.,'Time')]/parent::h5");
+	
+	private By orderNumberOrderDetailsWindow = By.xpath("//*[@role='dialog']//div[@class='row']/div[1]/b");
 	
 			
 	public CustomerOrderListPage(WebDriver driver) {
@@ -106,6 +128,10 @@ public class CustomerOrderListPage {
 		return driver.findElement(statusDetails);
 	}
 	
+	public WebElement getShowOrderDetails() {
+		return driver.findElement(showOrderDetails);
+	}
+	
 	public WebElement getClearFiltersButton() {
 		return driver.findElement(clearFilterButton);
 	}
@@ -122,4 +148,43 @@ public class CustomerOrderListPage {
 		return driver.findElement(alert);
 	}
 	
+	public WebElement getOrderDetailsWindow() {
+		return driver.findElement(orderDetailsWindow);
+	}
+	
+	public WebElement getProductNameOrderDetailsWindow() {
+		return driver.findElement(productNameOrderDetailsWindow);
+	}
+	
+	public WebElement getProductQuantityOrderDetailsWindow() {
+		return driver.findElement(productQuantityOrderDetailsWindow);
+	}
+	
+	public WebElement getProductPriceOrderDetailsWindow() {
+		return driver.findElement(productPriceOrderDetailsWindow);
+	}
+	
+	public WebElement getTotalPriceOrderDetailsWindow() {
+		return driver.findElement(totalPriceOrderDetailsWindow);
+	}
+	
+	public WebElement getCloseButtonOrderDetailsWindow() {
+		return driver.findElement(closeButtonOrderDetailsWindow);
+	}
+	
+	public WebElement getStatusOrderDetailsWindow() {
+		return driver.findElement(statusOrderDetailsWindow);
+	}
+	
+	public WebElement getDeliveryDateOrderDetailsWindow() {
+		return driver.findElement(deliveryDateOrderDetailsWindow);
+	}
+	
+	public WebElement getTimeSlotOrderDetailsWindow() {
+		return driver.findElement(timeSlotOrderDetailsWindow);
+	}
+	
+	public WebElement getOrderNumberOrderDetailsWindow() {
+		return driver.findElement(orderNumberOrderDetailsWindow);
+	}
 }

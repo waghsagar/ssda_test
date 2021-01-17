@@ -4,27 +4,32 @@
 <listeners>
 <listener class-name="ssda_test.Listeners"/>
 </listeners>
-	<test name="Validating Login Test">
+	<test name="Validating Login page test">
 		<classes>
 			<class name="ssda_test.customer.TC01_CustLoginTest"/>
 		</classes>
 	</test>
-	<test name="Validating Add to cart Test">
+	<test name="Validating Product inventory list page test">
 		<classes>
-			<class name="ssda_test.customer.TC02_CustAddtoCartTest"/>
+			<class name="ssda_test.customer.TC02_CustProductListPageValidationTest"/>
 		</classes>
 	</test>
-	<test name="Validating select timeslot place order Test">
+	<test name="Validating Add Product to cart test">
 		<classes>
-			<class name="ssda_test.customer.TC03_CustSelectTimeslotPlaceOrderTest"/>
+			<class name="ssda_test.customer.TC03_CustAddtoCartTest"/>
 		</classes>
 	</test>
-	<test name="Validating Customer order details Test">
+	<test name="Validating select timeslot place order test">
 		<classes>
-			<class name="ssda_test.customer.TC04_CustOrderDetailsTest"/>
+			<class name="ssda_test.customer.TC04_CustSelectTimeslotPlaceOrderTest"/>
 		</classes>
 	</test>
-	<test name="Validating admin Home page Test">
+	<test name="Validating Customer order details test">
+		<classes>
+			<class name="ssda_test.customer.TC05_CustOrderDetailsTest"/>
+		</classes>
+	</test>
+	<test name="Validating admin Home page test">
 		<classes>
 			<class name="ssda_test.admin.ValidateHomePage"/>
 		</classes>

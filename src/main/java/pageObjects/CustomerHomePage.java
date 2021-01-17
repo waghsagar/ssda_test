@@ -1,9 +1,10 @@
 package pageObjects;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.Select;
 
 public class CustomerHomePage {
 
@@ -11,35 +12,37 @@ public class CustomerHomePage {
 	
 	private By checkout = By.xpath("//button[text()='CHECKOUT']");
 	
-	private By clearFilter = By.xpath("//*[text()='Clear Filters']");
+	private By clearFilter = By.xpath("//*[text()='Clear All Filters']");
 	
 	private By category = By.xpath("//*[@class='btn btn-link btn-block text-left text-dark']");
-	
-	private By addToCart = By.xpath("//tbody/tr[1] //button[text()='Add to Cart']");
-	
-	private By productPrice = By.xpath("//tbody/tr[1] //div[@class='fontweight17 fontbold']");
 	
 	private By productName = By.xpath("//tbody/tr[1] //div[@class='fontsize15 fontweight pt-1']");
 	
 	private By productStock = By.xpath("//tbody/tr[1] //div[@class='pt-1']");
 	
+	private By productPrice = By.xpath("//tbody/tr[1] //div[@class='fontweight17 fontbold']");
+	
 	private By productQuantity = By.xpath("//select[@id='mat-input-3']");
 	
-	private By searchProductBox = By.xpath("//div[@class='mat-form-field-infix ng-tns-c47-0']");
+	private By addToCart = By.xpath("//tbody/tr[1] //button[text()='Add to Cart']");
 	
-	private By searchIcon = By.cssSelector("mat-icon[role='img']");
+	private By allProductsName = By.xpath("//td[@role='gridcell']//div[@class='fontsize15 fontweight pt-1']");
 	
-	private By searchResults = By.xpath("//table[@role='grid']/tbody/tr");
+	private By allproductStock = By.xpath("//tbody/tr //div[@class='pt-1']");
+	
+	private By allAddToCart = By.xpath("//tbody/tr //button[text()='Add to Cart']");
+	
+	private By searchProductBox = By.xpath("//span[contains(.,'Search Product')]//parent::div[1]/input");
+	
+	private By searchIcon = By.xpath("//span[contains(.,'Search Product')]//parent::div[1]/div/mat-icon");
+	
+	private By totalsearchResults = By.xpath("//table[@role='grid']/tbody/tr/td");
 	
 	private By productInCart = By.xpath("//div[@class='card-body cartbgcolor cardHeight'] //div[@class='ng-star-inserted']");
 	
 	private By deleteItemButton = By.xpath("//button[.='DELETE ITEM']");
 	
 	private By totalAmountPayable = By.xpath("//div[normalize-space()='Total Amount Payable']//following-sibling::div");
-	
-	private By productAddedAlert = By.xpath("//div[@aria-label='The product is added in the cart']");
-	
-	private By productRemoveAlert = By.xpath("//div[@aria-label='The item is removed from Cart!']");
 	
 	private By deliveryDate = By.xpath("//div[@class='cdk-global-overlay-wrapper']//div[2]//mat-card[1]//mat-card-title[1]/child::h4");
 	
@@ -48,8 +51,6 @@ public class CustomerHomePage {
 	private By submitDeliveryTimeSlot = By.xpath("//div[@class='cdk-overlay-pane']//button[contains(.,'Submit')]");
 	
 	private By cancelDeliveryTimeSlot = By.xpath("//div[@class='cdk-overlay-pane']//button[contains(.,'Cancel')]");
-
-	//private By selectTimeSlotAlert = By.xpath("//div[@aria-label='Please select timeslot']");
 	
 	private By UserMenu = By.xpath("//a[@id='dropdown']");
 	
@@ -61,7 +62,13 @@ public class CustomerHomePage {
 
 	private By alert = By.xpath("//div[@role='alertdialog']");
 	
+	private By noRecordsFound = By.xpath("//div[@class='text-center']//parent::div[contains(.,'No Records Found!')]");
+	
+	private By itemsPerPage = By.xpath("//mat-select[@aria-label='Items per page:']");
+	
+	private By dropdownOptions = By.xpath("//div[@id='mat-select-1-panel']/mat-option");
 			
+	
 	public CustomerHomePage(WebDriver driver) {
 		this.driver=driver;
 	}
@@ -95,8 +102,8 @@ public class CustomerHomePage {
 		return driver.findElement(searchIcon);
 	}
 	
-	public WebElement getSearchResults() {
-		return driver.findElement(searchResults);
+	public List<WebElement> getTotalSearchResults() {
+		return driver.findElements(totalsearchResults);
 	}
 	
 	public WebElement getProductInCart() {
@@ -121,14 +128,6 @@ public class CustomerHomePage {
 	
 	public WebElement getTotalAmountPayable() {
 		return driver.findElement(totalAmountPayable);
-	}
-	
-	public WebElement getProductAddedAlert() {
-		return driver.findElement(productAddedAlert);
-	}
-	
-	public WebElement getProductRemoveAlert() {
-		return driver.findElement(productRemoveAlert);
 	}
 	
 	public WebElement getSelectDeliveryDate() {
@@ -167,8 +166,27 @@ public class CustomerHomePage {
 		return driver.findElement(logoutLink);
 	}
 	
-	public void getSelectedQuantity(int index) {
-		Select select = new Select(getProductQuantity());
-		select.selectByIndex(index - 1);
+	public WebElement getNoRecordsFound() {
+		return driver.findElement(noRecordsFound);
+	}
+	
+	public WebElement getItemsPerPage() {
+		return driver.findElement(itemsPerPage);
+	}
+	
+	public List<WebElement> getDropdownOptions() {
+		return driver.findElements(dropdownOptions);
+	}
+	
+	public List<WebElement> getAllProductsName() {
+		return driver.findElements(allProductsName);
+	}
+	
+	public List<WebElement> getAllProductStock() {
+		return driver.findElements(allproductStock);
+	}
+	
+	public List<WebElement> getAllAddToCart() {
+		return driver.findElements(allAddToCart);
 	}
 }

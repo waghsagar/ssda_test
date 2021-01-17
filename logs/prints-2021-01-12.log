@@ -1,0 +1,6 @@
+21:27:01.229 [main] INFO  resources.TestBase - Customer searches product in inventory
+21:27:01.819 [main] INFO  resources.TestBase - Customer entered product found in inventory
+21:28:04.382 [main] INFO  resources.TestBase - Driver is initialized
+21:28:13.834 [main] INFO  resources.TestBase - Validate Checkout Button state with Empty Cart
+21:28:14.202 [main] INFO  resources.TestBase - Enter valid customer credentials and click on Login button
+21:28:18.141 [main] INFO  resources.TestBase - On Customer home page Checkout button is in disabled state
