@@ -3,16 +3,13 @@
 <suite name="Failed suite [Default suite]" parallel="none">
   <test name="Default test(failed)" parallel="none">
     <classes>
-      <class name="ssda_test.customer.TC04_CustSelectTimeslotPlaceOrderTest">
+      <class name="ssda_test.customer.TC03_CustProductListFiltersValidationTest">
         <methods>
           <include name="initialize"/>
-          <include name="testSelectTimeslotForDeliveryClickSubmit"/>
+          <include name="testCategoryFilters"/>
           <include name="teardown"/>
-          <include name="testAddToCartClickCheckoutButton"/>
-          <include name="testSelectTimeslotForDeliveryClickCancel"/>
-          <include name="testDontSelectTimeslotClickSubmit"/>
         </methods>
-      </class> <!-- ssda_test.customer.TC04_CustSelectTimeslotPlaceOrderTest -->
+      </class> <!-- ssda_test.customer.TC03_CustProductListFiltersValidationTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

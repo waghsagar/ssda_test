@@ -1,5 +1,0 @@
-17:24:00.611 [main] INFO  resources.TestBase - New order by Customer displayed on order list page
-17:24:00.619 [main] INFO  resources.TestBase - Validate order details on Order List page
-17:24:00.713 [main] INFO  resources.TestBase - Customer order details displayed on order list page are as expected
-17:24:00.716 [main] INFO  resources.TestBase - Validate if order details displayed in order window are correct
-17:24:03.526 [main] INFO  resources.TestBase - Customer orders details window displayed on Order list page

@@ -1,8 +1,0 @@
-15:47:08.186 [main] INFO  resources.base - Driver is initialized
-15:48:18.085 [main] INFO  resources.base - Navigated to Login page
-15:48:22.218 [main] INFO  resources.base - Driver is initialized
-15:49:22.286 [main] INFO  resources.base - Navigated to Login page
-15:49:26.941 [main] INFO  resources.base - Successfully validated text message at dashboard
-15:55:27.893 [main] INFO  resources.base - Driver is initialized
-15:56:24.592 [main] INFO  resources.base - Navigated to Login page
-15:56:25.071 [main] INFO  resources.base - Successfully validated page url

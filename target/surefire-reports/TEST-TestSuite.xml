@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="130.222" tests="6" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="501.688" tests="32" errors="0" skipped="0" failures="3">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_221\jre\bin"/>
     <property name="java.vm.version" value="25.221-b11"/>
+    <property name="browser" value="chrome"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="maven.multiModuleProjectDirectory" value="C:\My Documents\Sagar Study\MyWorkspace\ssda_test"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
@@ -45,7 +46,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_221\jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test -Dbrowser=chrome"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -64,10 +65,66 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="testCustomerLoginWithInvalidCredentials" classname="ssda_test.LoginPageTest" time="16.918"/>
-  <testcase name="testCustomerLoginWithValidCredentials" classname="ssda_test.LoginPageTest" time="8.291"/>
-  <testcase name="testCheckoutButtonWithEmptyCart" classname="ssda_test.CustHomePageTest" time="8.35"/>
-  <testcase name="testAddToCart" classname="ssda_test.CustHomePageTest" time="15.935"/>
-  <testcase name="testCartItems" classname="ssda_test.CustHomePageTest" time="0.205"/>
-  <testcase name="basePageNavigation" classname="ssda_test.ValidateHomePage" time="20.875"/>
+  <testcase name="testWithMobileNumberLessThanTenDigits" classname="ssda_test.customer.TC01_CustLoginTest" time="23.541"/>
+  <testcase name="testWithMobileNumberMoreThanTenDigits" classname="ssda_test.customer.TC01_CustLoginTest" time="19.276"/>
+  <testcase name="testWithMobileNumberContainsAlphabets" classname="ssda_test.customer.TC01_CustLoginTest" time="3.292"/>
+  <testcase name="testCustomerLoginWithInvalidCredentials" classname="ssda_test.customer.TC01_CustLoginTest" time="10.02"/>
+  <testcase name="testCustomerLoginWithValidCredentials" classname="ssda_test.customer.TC01_CustLoginTest" time="18.385"/>
+  <testcase name="testCheckoutButtonWithEmptyCart" classname="ssda_test.customer.TC02_CustProductListTableValidationTest" time="14.65"/>
+  <testcase name="testDefaultSelectedQuantityofProduct" classname="ssda_test.customer.TC02_CustProductListTableValidationTest" time="0.433"/>
+  <testcase name="testItemsDisplayedPerPage" classname="ssda_test.customer.TC02_CustProductListTableValidationTest" time="5.965"/>
+  <testcase name="testAddtoCartButtonDisplayedAsPerInventory" classname="ssda_test.customer.TC02_CustProductListTableValidationTest" time="2.737"/>
+  <testcase name="testQuantityDropdownForOnlyOnePerOrderProduct" classname="ssda_test.customer.TC02_CustProductListTableValidationTest" time="0.926"/>
+  <testcase name="testSearchProductFunctionality" classname="ssda_test.customer.TC02_CustProductListTableValidationTest" time="5.535"/>
+  <testcase name="testTotalItemsFoundMatcheswithItemsInPaginationFilter" classname="ssda_test.customer.TC03_CustProductListFiltersValidationTest" time="12.114"/>
+  <testcase name="testCategoryFilters" classname="ssda_test.customer.TC03_CustProductListFiltersValidationTest" time="10.064"/>
+  <testcase name="testGroupFilters" classname="ssda_test.customer.TC03_CustProductListFiltersValidationTest" time="1.795"/>
+  <testcase name="testClearAllFilters" classname="ssda_test.customer.TC03_CustProductListFiltersValidationTest" time="2.437"/>
+  <testcase name="testAddToCartFeature" classname="ssda_test.customer.TC04_CustAddtoCartTest" time="11.716">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at ssda_test.customer.TC04_CustAddtoCartTest.testAddToCartFeature(TC04_CustAddtoCartTest.java:59)
+</failure>
+    <system-out><![CDATA[chrome
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 87.0.4280.88 (89e2380a3e36c3464b5dd1302349b1382549290d-refs/branch-heads/4280@{#1761}) on port 7006
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jan 21, 2021 12:07:45 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="testProductDetailsAddedInCart" classname="ssda_test.customer.TC04_CustAddtoCartTest" time="0.17"/>
+  <testcase name="testTotalAmountPayable" classname="ssda_test.customer.TC04_CustAddtoCartTest" time="0.038"/>
+  <testcase name="testAddProductWithSameQuantity" classname="ssda_test.customer.TC04_CustAddtoCartTest" time="6.005"/>
+  <testcase name="testDeleteItemFromCart" classname="ssda_test.customer.TC04_CustAddtoCartTest" time="5.652"/>
+  <testcase name="testAddToCartClickCheckoutButton" classname="ssda_test.customer.TC05_CustSelectTimeslotTest" time="13.29"/>
+  <testcase name="testDontSelectTimeslotClickSubmit" classname="ssda_test.customer.TC05_CustSelectTimeslotTest" time="11.207"/>
+  <testcase name="testSelectTimeslotForDeliveryClickCancel" classname="ssda_test.customer.TC05_CustSelectTimeslotTest" time="5.958"/>
+  <testcase name="testSelectTimeslotForDeliveryClickSubmit" classname="ssda_test.customer.TC06_CustPlaceOrderVerifyOrderDetailsTest" time="17.905">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at ssda_test.customer.TC06_CustPlaceOrderVerifyOrderDetailsTest.testSelectTimeslotForDeliveryClickSubmit(TC06_CustPlaceOrderVerifyOrderDetailsTest.java:80)
+</failure>
+    <system-out><![CDATA[chrome
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 87.0.4280.88 (89e2380a3e36c3464b5dd1302349b1382549290d-refs/branch-heads/4280@{#1761}) on port 30317
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jan 21, 2021 12:09:22 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="testCustomerOrderDisplayedonOrderListPage" classname="ssda_test.customer.TC06_CustPlaceOrderVerifyOrderDetailsTest" time="9.824">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at ssda_test.customer.TC06_CustPlaceOrderVerifyOrderDetailsTest.testCustomerOrderDisplayedonOrderListPage(TC06_CustPlaceOrderVerifyOrderDetailsTest.java:98)
+</failure>
+  </testcase>
+  <testcase name="testOrderDetailsonOrderListPage" classname="ssda_test.customer.TC06_CustPlaceOrderVerifyOrderDetailsTest" time="0.07"/>
+  <testcase name="testOrderDetailsinOrderDetailsWindow" classname="ssda_test.customer.TC06_CustPlaceOrderVerifyOrderDetailsTest" time="1.745"/>
+  <testcase name="testCustomerOrdersDisplayedonOrderListPage" classname="ssda_test.customer.TC07_CustOrderListFiltersValidationTest" time="27.13"/>
+  <testcase name="testOrdersDisplayedPerPageFilter" classname="ssda_test.customer.TC07_CustOrderListFiltersValidationTest" time="0.741"/>
+  <testcase name="testSearchByOrderStatusFilter" classname="ssda_test.customer.TC07_CustOrderListFiltersValidationTest" time="8.449"/>
+  <testcase name="testSearchByOrderNumberFilter" classname="ssda_test.customer.TC07_CustOrderListFiltersValidationTest" time="0.67"/>
+  <testcase name="basePageNavigation" classname="ssda_test.admin.ValidateHomePage" time="17.937"/>
 </testsuite>

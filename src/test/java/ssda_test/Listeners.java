@@ -37,12 +37,12 @@ public class Listeners extends TestBase implements ITestListener{
 		
 		try {
 			driver = (WebDriver)result.getTestClass().getRealClass().getDeclaredField("driver").get(result.getInstance());
-		} catch(Exception e)
+		} catch (Exception e)
 		{
 			
 		}
 		try {
-			extentTest.get().addScreenCaptureFromPath(getScreenShotPath(testMethodName,driver), result.getMethod().getMethodName());
+			extentTest.get().addScreenCaptureFromPath(getScreenShotPath(testMethodName, driver), result.getMethod().getMethodName());
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

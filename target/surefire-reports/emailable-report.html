@@ -31,34 +31,137 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Validating Login Test</td><td class="numi">2</td><td class="numi">2</td><td class="numi">0</td><td class="numi">0</td><td class="numi">59.2 seconds</td><td class="numi"></td><td class="numi"></td></tr>
-<tr class="stripe"><td style="text-align:left;padding-right:2em">Validating Customer Home page Test</td><td class="numi">3</td><td class="numi">3</td><td class="numi">0</td><td class="numi">0</td><td class="numi">39.1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
-<tr><td style="text-align:left;padding-right:2em">Validating Home page Test</td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">26.0 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Validating Login page test</td><td class="numi">5</td><td class="numi">5</td><td class="numi">0</td><td class="numi">0</td><td class="numi">130.0 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em">Validating Product inventory list in table test</td><td class="numi">6</td><td class="numi">6</td><td class="numi">0</td><td class="numi">0</td><td class="numi">64.6 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Validating Product inventory list filters test</td><td class="numi">4</td><td class="numi">4</td><td class="numi">0</td><td class="numi">0</td><td class="numi">52.1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em">Validating Add Product to cart test</td><td class="numi">4</td><td class="numi">4</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">43.6 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Validating select timeslot test</td><td class="numi">3</td><td class="numi">3</td><td class="numi">0</td><td class="numi">0</td><td class="numi">53.8 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em">Validating place order and verify order details test</td><td class="numi">2</td><td class="numi">2</td><td class="numi">0</td><td class="numi_attn">2</td><td class="numi">61.8 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Validating Customer order list search filters test</td><td class="numi">4</td><td class="numi">4</td><td class="numi">0</td><td class="numi">0</td><td class="numi">56.4 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em">Validating admin Home page test</td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">23.3 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 <tr class="total"><td>Total</td>
-<td class="numi">6</td><td class="numi">6</td><td class="numi">0</td><td class="numi">0</td><td class="numi">125.6 seconds</td><td colspan="2">&nbsp;</td></tr>
+<td class="numi">29</td><td class="numi">29</td><td class="numi">0</td><td class="numi_attn">3</td><td class="numi">493.4 seconds</td><td colspan="2">&nbsp;</td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
-<tr><th colspan="4">Validating Login Test &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="2">ssda_test.LoginPageTest</td><td><a href="#m1"><b>testCustomerLoginWithInvalidCredentials</b>  </a></td><td class="numi">1</td><td>1609741722652</td><td class="numi">16918</td></tr><tr class="passedodd"><td><a href="#m2"><b>testCustomerLoginWithValidCredentials</b>  </a></td><td class="numi">1</td><td>1609741740006</td><td class="numi">8293</td></tr>
-<tr><th colspan="4">Validating Customer Home page Test &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="3">ssda_test.CustHomePageTest</td><td><a href="#m3"><b>testCheckoutButtonWithEmptyCart</b>  </a></td><td class="numi">1</td><td>1609741764575</td><td class="numi">8348</td></tr><tr class="passedodd"><td><a href="#m4"><b>testAddToCart</b>  </a></td><td class="numi">1</td><td>1609741772923</td><td class="numi">15929</td></tr><tr class="passedodd"><td><a href="#m5"><b>testCartItems</b>  </a></td><td class="numi">1</td><td>1609741788855</td><td class="numi">176</td></tr>
-<tr><th colspan="4">Validating Home page Test &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="1">ssda_test.ValidateHomePage</td><td><a href="#m6"><b>basePageNavigation</b>  </a></td><td class="numi">1</td><td>1609741794294</td><td class="numi">20911</td></tr>
+<tr><th colspan="4">Validating Login page test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="5">ssda_test.customer.TC01_CustLoginTest</td><td><a href="#m1"><b>testWithMobileNumberLessThanTenDigits</b>  </a></td><td class="numi">1</td><td>1611210845022</td><td class="numi">23543</td></tr><tr class="passedodd"><td><a href="#m2"><b>testWithMobileNumberMoreThanTenDigits</b>  </a></td><td class="numi">1</td><td>1611210876600</td><td class="numi">19284</td></tr><tr class="passedodd"><td><a href="#m3"><b>testWithMobileNumberContainsAlphabets</b>  </a></td><td class="numi">1</td><td>1611210895885</td><td class="numi">3292</td></tr><tr class="passedodd"><td><a href="#m4"><b>testCustomerLoginWithInvalidCredentials</b>  </a></td><td class="numi">1</td><td>1611210899177</td><td class="numi">10020</td></tr><tr class="passedodd"><td><a href="#m5"><b>testCustomerLoginWithValidCredentials</b>  </a></td><td class="numi">1</td><td>1611210909197</td><td class="numi">18385</td></tr>
+<tr><th colspan="4">Validating Product inventory list in table test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="6">ssda_test.customer.TC02_CustProductListTableValidationTest</td><td><a href="#m6"><b>testCheckoutButtonWithEmptyCart</b>  </a></td><td class="numi">1</td><td>1611210978733</td><td class="numi">14645</td></tr><tr class="passedodd"><td><a href="#m7"><b>testDefaultSelectedQuantityofProduct</b>  </a></td><td class="numi">1</td><td>1611210993378</td><td class="numi">438</td></tr><tr class="passedodd"><td><a href="#m8"><b>testItemsDisplayedPerPage</b>  </a></td><td class="numi">1</td><td>1611210993816</td><td class="numi">5958</td></tr><tr class="passedodd"><td><a href="#m9"><b>testAddtoCartButtonDisplayedAsPerInventory</b>  </a></td><td class="numi">1</td><td>1611210999775</td><td class="numi">2743</td></tr><tr class="passedodd"><td><a href="#m10"><b>testQuantityDropdownForOnlyOnePerOrderProduct</b>  </a></td><td class="numi">1</td><td>1611211002519</td><td class="numi">925</td></tr><tr class="passedodd"><td><a href="#m11"><b>testSearchProductFunctionality</b>  </a></td><td class="numi">1</td><td>1611211003445</td><td class="numi">5535</td></tr>
+<tr><th colspan="4">Validating Product inventory list filters test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="4">ssda_test.customer.TC03_CustProductListFiltersValidationTest</td><td><a href="#m12"><b>testTotalItemsFoundMatcheswithItemsInPaginationFilter</b>  </a></td><td class="numi">1</td><td>1611211032712</td><td class="numi">12115</td></tr><tr class="passedodd"><td><a href="#m13"><b>testCategoryFilters</b>  </a></td><td class="numi">1</td><td>1611211044827</td><td class="numi">10065</td></tr><tr class="passedodd"><td><a href="#m14"><b>testGroupFilters</b>  </a></td><td class="numi">1</td><td>1611211054893</td><td class="numi">1794</td></tr><tr class="passedodd"><td><a href="#m15"><b>testClearAllFilters</b>  </a></td><td class="numi">1</td><td>1611211056688</td><td class="numi">2433</td></tr>
+<tr><th colspan="4">Validating Add Product to cart test &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">ssda_test.customer.TC04_CustAddtoCartTest</td><td><a href="#m16"><b>testAddToCartFeature</b>  </a></td><td class="numi">1</td><td>1611211080334</td><td class="numi">11698</td></tr>
+<tr><th colspan="4">Validating Add Product to cart test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="4">ssda_test.customer.TC04_CustAddtoCartTest</td><td><a href="#m17"><b>testProductDetailsAddedInCart</b>  </a></td><td class="numi">1</td><td>1611211093015</td><td class="numi">171</td></tr><tr class="passedodd"><td><a href="#m18"><b>testTotalAmountPayable</b>  </a></td><td class="numi">1</td><td>1611211093186</td><td class="numi">38</td></tr><tr class="passedodd"><td><a href="#m19"><b>testAddProductWithSameQuantity</b>  </a></td><td class="numi">1</td><td>1611211093225</td><td class="numi">6005</td></tr><tr class="passedodd"><td><a href="#m20"><b>testDeleteItemFromCart</b>  </a></td><td class="numi">1</td><td>1611211099231</td><td class="numi">5652</td></tr>
+<tr><th colspan="4">Validating select timeslot test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="3">ssda_test.customer.TC05_CustSelectTimeslotTest</td><td><a href="#m21"><b>testAddToCartClickCheckoutButton</b>  </a></td><td class="numi">1</td><td>1611211127996</td><td class="numi">13289</td></tr><tr class="passedodd"><td><a href="#m22"><b>testDontSelectTimeslotClickSubmit</b>  </a></td><td class="numi">1</td><td>1611211141286</td><td class="numi">11200</td></tr><tr class="passedodd"><td><a href="#m23"><b>testSelectTimeslotForDeliveryClickCancel</b>  </a></td><td class="numi">1</td><td>1611211152487</td><td class="numi">5964</td></tr>
+<tr><th colspan="4">Validating place order and verify order details test &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="2">ssda_test.customer.TC06_CustPlaceOrderVerifyOrderDetailsTest</td><td><a href="#m24"><b>testSelectTimeslotForDeliveryClickSubmit</b>  </a></td><td class="numi">1</td><td>1611211189661</td><td class="numi">17911</td></tr><tr class="failedodd"><td><a href="#m25"><b>testCustomerOrderDisplayedonOrderListPage</b>  </a></td><td class="numi">1</td><td>1611211208521</td><td class="numi">9825</td></tr>
+<tr><th colspan="4">Validating place order and verify order details test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="2">ssda_test.customer.TC06_CustPlaceOrderVerifyOrderDetailsTest</td><td><a href="#m26"><b>testOrderDetailsonOrderListPage</b>  </a></td><td class="numi">1</td><td>1611211218842</td><td class="numi">69</td></tr><tr class="passedodd"><td><a href="#m27"><b>testOrderDetailsinOrderDetailsWindow</b>  </a></td><td class="numi">1</td><td>1611211218912</td><td class="numi">1745</td></tr>
+<tr><th colspan="4">Validating Customer order list search filters test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="4">ssda_test.customer.TC07_CustOrderListFiltersValidationTest</td><td><a href="#m28"><b>testCustomerOrdersDisplayedonOrderListPage</b>  </a></td><td class="numi">1</td><td>1611211239890</td><td class="numi">27130</td></tr><tr class="passedodd"><td><a href="#m29"><b>testOrdersDisplayedPerPageFilter</b>  </a></td><td class="numi">1</td><td>1611211267021</td><td class="numi">740</td></tr><tr class="passedodd"><td><a href="#m30"><b>testSearchByOrderStatusFilter</b>  </a></td><td class="numi">1</td><td>1611211267762</td><td class="numi">8450</td></tr><tr class="passedodd"><td><a href="#m31"><b>testSearchByOrderNumberFilter</b>  </a></td><td class="numi">1</td><td>1611211276212</td><td class="numi">671</td></tr>
+<tr><th colspan="4">Validating admin Home page test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="1">ssda_test.admin.ValidateHomePage</td><td><a href="#m32"><b>basePageNavigation</b>  </a></td><td class="numi">1</td><td>1611211282485</td><td class="numi">17940</td></tr>
 </table>
-<h1>Validating Login Test</h1>
-<h2 id="m1">ssda_test.LoginPageTest:testCustomerLoginWithValidCredentials</h2>
+<h1>Validating Login page test</h1>
+<h2 id="m1">ssda_test.customer.TC01_CustLoginTest:testWithMobileNumberMoreThanTenDigits</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m2">ssda_test.LoginPageTest:testCustomerLoginWithInvalidCredentials</h2>
+<h2 id="m2">ssda_test.customer.TC01_CustLoginTest:testCustomerLoginWithValidCredentials</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h1>Validating Customer Home page Test</h1>
-<h2 id="m3">ssda_test.CustHomePageTest:testCheckoutButtonWithEmptyCart</h2>
+<h2 id="m3">ssda_test.customer.TC01_CustLoginTest:testWithMobileNumberLessThanTenDigits</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m4">ssda_test.CustHomePageTest:testAddToCart</h2>
+<h2 id="m4">ssda_test.customer.TC01_CustLoginTest:testWithMobileNumberContainsAlphabets</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m5">ssda_test.CustHomePageTest:testCartItems</h2>
+<h2 id="m5">ssda_test.customer.TC01_CustLoginTest:testCustomerLoginWithInvalidCredentials</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h1>Validating Home page Test</h1>
-<h2 id="m6">ssda_test.ValidateHomePage:basePageNavigation</h2>
+<h1>Validating Product inventory list in table test</h1>
+<h2 id="m6">ssda_test.customer.TC02_CustProductListTableValidationTest:testSearchProductFunctionality</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m7">ssda_test.customer.TC02_CustProductListTableValidationTest:testCheckoutButtonWithEmptyCart</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m8">ssda_test.customer.TC02_CustProductListTableValidationTest:testAddtoCartButtonDisplayedAsPerInventory</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m9">ssda_test.customer.TC02_CustProductListTableValidationTest:testItemsDisplayedPerPage</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m10">ssda_test.customer.TC02_CustProductListTableValidationTest:testQuantityDropdownForOnlyOnePerOrderProduct</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m11">ssda_test.customer.TC02_CustProductListTableValidationTest:testDefaultSelectedQuantityofProduct</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Validating Product inventory list filters test</h1>
+<h2 id="m12">ssda_test.customer.TC03_CustProductListFiltersValidationTest:testClearAllFilters</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m13">ssda_test.customer.TC03_CustProductListFiltersValidationTest:testCategoryFilters</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m14">ssda_test.customer.TC03_CustProductListFiltersValidationTest:testTotalItemsFoundMatcheswithItemsInPaginationFilter</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m15">ssda_test.customer.TC03_CustProductListFiltersValidationTest:testGroupFilters</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Validating Add Product to cart test</h1>
+<h2 id="m16">ssda_test.customer.TC04_CustAddtoCartTest:testAddToCartFeature</h2>
+<div style="padding-left:3em">
+<p>expected [true] but found [false]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertTrue(Assert.java:42)
+<br/>at org.testng.Assert.assertTrue(Assert.java:52)
+<br/>at ssda_test.customer.TC04_CustAddtoCartTest.testAddToCartFeature(TC04_CustAddtoCartTest.java:59)
+<br/>28 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m17">ssda_test.customer.TC04_CustAddtoCartTest:testProductDetailsAddedInCart</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m18">ssda_test.customer.TC04_CustAddtoCartTest:testAddProductWithSameQuantity</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m19">ssda_test.customer.TC04_CustAddtoCartTest:testDeleteItemFromCart</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m20">ssda_test.customer.TC04_CustAddtoCartTest:testTotalAmountPayable</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Validating select timeslot test</h1>
+<h2 id="m21">ssda_test.customer.TC05_CustSelectTimeslotTest:testSelectTimeslotForDeliveryClickCancel</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m22">ssda_test.customer.TC05_CustSelectTimeslotTest:testDontSelectTimeslotClickSubmit</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m23">ssda_test.customer.TC05_CustSelectTimeslotTest:testAddToCartClickCheckoutButton</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Validating place order and verify order details test</h1>
+<h2 id="m24">ssda_test.customer.TC06_CustPlaceOrderVerifyOrderDetailsTest:testCustomerOrderDisplayedonOrderListPage</h2>
+<div style="padding-left:3em">
+<p>expected [true] but found [false]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertTrue(Assert.java:42)
+<br/>at org.testng.Assert.assertTrue(Assert.java:52)
+<br/>at ssda_test.customer.TC06_CustPlaceOrderVerifyOrderDetailsTest.testCustomerOrderDisplayedonOrderListPage(TC06_CustPlaceOrderVerifyOrderDetailsTest.java:98)
+<br/>28 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m25">ssda_test.customer.TC06_CustPlaceOrderVerifyOrderDetailsTest:testSelectTimeslotForDeliveryClickSubmit</h2>
+<div style="padding-left:3em">
+<p>expected [true] but found [false]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertTrue(Assert.java:42)
+<br/>at org.testng.Assert.assertTrue(Assert.java:52)
+<br/>at ssda_test.customer.TC06_CustPlaceOrderVerifyOrderDetailsTest.testSelectTimeslotForDeliveryClickSubmit(TC06_CustPlaceOrderVerifyOrderDetailsTest.java:80)
+<br/>28 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m26">ssda_test.customer.TC06_CustPlaceOrderVerifyOrderDetailsTest:testOrderDetailsonOrderListPage</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m27">ssda_test.customer.TC06_CustPlaceOrderVerifyOrderDetailsTest:testOrderDetailsinOrderDetailsWindow</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Validating Customer order list search filters test</h1>
+<h2 id="m28">ssda_test.customer.TC07_CustOrderListFiltersValidationTest:testSearchByOrderStatusFilter</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m29">ssda_test.customer.TC07_CustOrderListFiltersValidationTest:testSearchByOrderNumberFilter</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m30">ssda_test.customer.TC07_CustOrderListFiltersValidationTest:testCustomerOrdersDisplayedonOrderListPage</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m31">ssda_test.customer.TC07_CustOrderListFiltersValidationTest:testOrdersDisplayedPerPageFilter</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Validating admin Home page test</h1>
+<h2 id="m32">ssda_test.admin.ValidateHomePage:basePageNavigation</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>

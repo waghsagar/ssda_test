@@ -1,0 +1,6 @@
+20:24:21.545 [main] INFO  resources.TestBase - Order list page opens
+20:24:32.692 [main] INFO  resources.TestBase - Customer orders displayed on Order list page
+20:24:32.696 [main] INFO  resources.TestBase - Validate if Orders per page displayed as per dropdown selection
+20:38:56.667 [main] INFO  resources.TestBase - Driver is initialized
+20:39:10.440 [main] INFO  resources.TestBase - Validate Customer order displayed on Order List page
+20:39:24.762 [main] INFO  resources.TestBase - Customer clicks on UserMenu and then clicks on Orders link

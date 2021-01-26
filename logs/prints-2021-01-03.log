@@ -1,6 +1,0 @@
-20:15:46.820 [main] INFO  resources.base - On Customer home page Checkout button is in disabled state
-20:15:46.832 [main] INFO  resources.base - Testing Add to Cart feature
-20:15:58.854 [main] INFO  resources.base - Click on Add to cart button for first product
-20:15:59.093 [main] INFO  resources.base - Product Added to cart and Checkout button is Enabled
-20:15:59.099 [main] INFO  resources.base - Validate product added in cart
-20:15:59.236 [main] INFO  resources.base - Product added in to cart

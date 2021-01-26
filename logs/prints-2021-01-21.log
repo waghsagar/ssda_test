@@ -1,0 +1,5 @@
+12:11:14.345 [main] INFO  resources.TestBase - On Order list page all statuses displayed as per LAPSED option selected from dropdown
+12:11:14.808 [main] INFO  resources.TestBase - Select Cancelled from dropdown
+12:11:16.212 [main] INFO  resources.TestBase - On Order list page all statuses displayed as per CANCELLED option selected from dropdown
+12:11:16.213 [main] INFO  resources.TestBase - Validate search by order number feature on Order list page
+12:11:16.429 [main] INFO  resources.TestBase - Customer enters Order number to search from all orders

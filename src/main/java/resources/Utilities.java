@@ -1,11 +1,18 @@
 package resources;
 
+import java.util.List;
+
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Utilities {
 
 	public Select select;
+	public Actions actions;
 
 	//To Select a value from Drop Down by using SelectByVisibleText Method.
 	public void selectValueFromDropDownByText(WebElement element, String value) 
@@ -28,38 +35,59 @@ public class Utilities {
 		select.selectByValue(value);
 	}
 
-	//To Select a value from Drop Down by using SelectByValue Method.
+	//To get Selected value from Drop Down by using FirstSelectedOption Method.
 	public String getSelectedOption(WebElement element) 
 	{
 		select = new Select(element);
 		return select.getFirstSelectedOption().getText();
 	}
 
-
-	/*
-
-	public boolean checkVisibilityofElement(WebElement element) {
-		try {
-		element.isDisplayed()
-		return true
-		} catch (Exception e) {
-		return false
-		}
-		}
-
-
-
-	public boolean isElementPresent(WebElement element) {
-		try {
-			driver.findElement(element);
-			return true;
-		} catch (org.openqa.selenium.NoSuchElementException e) {
-			return false;
-		}
+	//To get number of options in Drop Down by using getOptions Method.
+	public int getDropdownSize(WebElement element) 
+	{
+		select = new Select(element);
+		return select.getOptions().size();
 	}
 
-	public boolean isElementVisible(String cssLocator){
-		return driver.findElement(By.cssSelector(cssLocator)).isDisplayed();
+	//To perform Double Click action using Actions Class.
+	public void doubleClick(WebDriver driver, WebElement element) 
+	{
+		actions = new Actions(driver);
+		actions.doubleClick(element).build().perform();
 	}
-	 */
+
+	//To Click on Element using Actions Class.
+	public void clickOnElementUsingActions(WebDriver driver, WebElement element) 
+	{
+		actions = new Actions(driver);
+		actions.moveToElement(element).click().perform();
+	}
+
+	//To Mouse Hover and Click or Select an Element using Actions Class.
+	public void moveToElement(WebDriver driver, WebElement element) 
+	{
+		actions = new Actions(driver);
+		actions.moveToElement(element).build().perform();
+	}
+	
+	//Explicit Wait for All Elements To Be Invisible.
+	public void waitForAllElementsToBeInvisible(WebDriver driver, List<WebElement> elementsList, int timeout)
+	{
+		new WebDriverWait(driver, timeout).
+		until(ExpectedConditions.invisibilityOfAllElements(elementsList));
+	}
+	
+	//Explicit Wait for Element To Be Invisible.
+	public void waitForElementToBeInvisible(WebDriver driver, WebElement element, int timeout)
+	{
+		new WebDriverWait(driver, timeout).
+		until(ExpectedConditions.invisibilityOf(element));
+	}
+	
+	//Explicit Wait for Element To Be Visible.
+	public void waitForElementToBeVisible(WebDriver driver, WebElement element, int timeout)
+	{
+		new WebDriverWait(driver, timeout).
+		until(ExpectedConditions.visibilityOf(element));
+	}
 }

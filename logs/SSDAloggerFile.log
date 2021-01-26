@@ -1,0 +1,153 @@
+19:21:42.700 [main] INFO  resources.TestBase - Driver is initialized
+19:28:27.233 [main] INFO  resources.TestBase - Driver is initialized
+19:29:43.909 [main] INFO  resources.TestBase - Validate if Login button is disabled when mobile number is less than 10 digits
+19:29:44.528 [main] INFO  resources.TestBase - Enter Mobile number less than 10 digits and verify Login button
+19:29:44.592 [main] INFO  resources.TestBase - Login Button is disabled as User entered less than 10 digits in Mobile Number
+19:29:46.676 [main] INFO  resources.TestBase - Validate if Login button is disabled when mobile number is more than 10 digits
+19:29:47.081 [main] INFO  resources.TestBase - Enter Mobile number more than 10 digits and verify Login button
+19:29:47.115 [main] INFO  resources.TestBase - Login Button is disabled as User entered more than 10 digits in Mobile Number
+19:29:48.984 [main] INFO  resources.TestBase - Validate if Login button is disabled when mobile number contains alphabets
+19:29:49.387 [main] INFO  resources.TestBase - Enter Mobile number with alphabets and verify Login button
+19:29:49.417 [main] INFO  resources.TestBase - Login Button is disabled as User entered Mobile number with alphabets as input
+19:29:51.077 [main] INFO  resources.TestBase - Validate login feature with invalid credentials
+19:29:51.505 [main] INFO  resources.TestBase - Enter Invalid customer credentials and click on Login button
+19:29:55.256 [main] INFO  resources.TestBase - User entered invalid (username or password) or User is no longer active
+19:29:59.149 [main] INFO  resources.TestBase - Validate login feature with valid credentials
+19:29:59.471 [main] INFO  resources.TestBase - Enter valid customer credentials and click on Login button
+19:30:09.166 [main] INFO  resources.TestBase - Customer home page displayed. Successfully validated customer login with valid credentials
+19:30:15.861 [main] INFO  resources.TestBase - Driver is initialized
+19:31:12.429 [main] INFO  resources.TestBase - Validate Checkout Button state with Empty Cart
+19:31:12.750 [main] INFO  resources.TestBase - Enter valid customer credentials and click on Login button
+19:31:33.535 [main] INFO  resources.TestBase - On Customer home page Checkout button is in disabled state
+19:31:33.541 [main] INFO  resources.TestBase - Validate if default quantity of product is set as '1' in dropdown
+19:31:33.866 [main] INFO  resources.TestBase - Default selected quantity is : 1
+19:31:33.882 [main] INFO  resources.TestBase - Validate if items per page displayed as per dropdown selection
+19:31:52.812 [main] INFO  resources.TestBase - On Customer product list page items per page are displayed as per dropdown selection
+19:31:52.818 [main] INFO  resources.TestBase - Validate whether 'Add to Cart' button is Enabled only if product is in stock
+19:31:52.934 [main] INFO  resources.TestBase - Product is present in stock. Add to Cart button is Enabled
+19:31:52.993 [main] INFO  resources.TestBase - Product is present in stock. Add to Cart button is Enabled
+19:31:53.059 [main] INFO  resources.TestBase - Product is present in stock. Add to Cart button is Enabled
+19:31:53.125 [main] INFO  resources.TestBase - Product is present in stock. Add to Cart button is Enabled
+19:31:53.200 [main] INFO  resources.TestBase - Product is present in stock. Add to Cart button is Enabled
+19:31:53.293 [main] INFO  resources.TestBase - Product is present in stock. Add to Cart button is Enabled
+19:31:53.368 [main] INFO  resources.TestBase - Product is present in stock. Add to Cart button is Enabled
+19:31:53.442 [main] INFO  resources.TestBase - Product is present in stock. Add to Cart button is Enabled
+19:31:53.510 [main] INFO  resources.TestBase - Product is Out of stock. 'Add to Cart' button is Disabled
+19:31:53.881 [main] INFO  resources.TestBase - Product is present in stock. Add to Cart button is Enabled
+19:31:53.985 [main] INFO  resources.TestBase - Product is Out of stock. 'Add to Cart' button is Disabled
+19:31:54.048 [main] INFO  resources.TestBase - Product is present in stock. Add to Cart button is Enabled
+19:31:54.144 [main] INFO  resources.TestBase - Product is present in stock. Add to Cart button is Enabled
+19:31:54.290 [main] INFO  resources.TestBase - Product is present in stock. Add to Cart button is Enabled
+19:31:54.379 [main] INFO  resources.TestBase - Product is present in stock. Add to Cart button is Enabled
+19:31:54.508 [main] INFO  resources.TestBase - Product is present in stock. Add to Cart button is Enabled
+19:31:54.570 [main] INFO  resources.TestBase - Product is present in stock. Add to Cart button is Enabled
+19:31:54.643 [main] INFO  resources.TestBase - Product is present in stock. Add to Cart button is Enabled
+19:31:54.722 [main] INFO  resources.TestBase - Product is present in stock. Add to Cart button is Enabled
+19:31:54.843 [main] INFO  resources.TestBase - Product is present in stock. Add to Cart button is Enabled
+19:31:54.923 [main] INFO  resources.TestBase - Product is present in stock. Add to Cart button is Enabled
+19:31:54.979 [main] INFO  resources.TestBase - Product is present in stock. Add to Cart button is Enabled
+19:31:55.040 [main] INFO  resources.TestBase - Product is present in stock. Add to Cart button is Enabled
+19:31:55.118 [main] INFO  resources.TestBase - Product is present in stock. Add to Cart button is Enabled
+19:31:55.181 [main] INFO  resources.TestBase - Product is present in stock. Add to Cart button is Enabled
+19:31:55.257 [main] INFO  resources.TestBase - Product is present in stock. Add to Cart button is Enabled
+19:31:55.320 [main] INFO  resources.TestBase - Product is present in stock. Add to Cart button is Enabled
+19:31:55.400 [main] INFO  resources.TestBase - Product is present in stock. Add to Cart button is Enabled
+19:31:55.472 [main] INFO  resources.TestBase - Product is present in stock. Add to Cart button is Enabled
+19:31:55.660 [main] INFO  resources.TestBase - Product is present in stock. Add to Cart button is Enabled
+19:31:55.664 [main] INFO  resources.TestBase - Validate for Only one per Order products Quantity dropdown displays only single option
+19:31:55.867 [main] INFO  resources.TestBase - For only one per Order products Quantity dropdown displays single option
+19:31:56.172 [main] INFO  resources.TestBase - For only one per Order products Quantity dropdown displays single option
+19:31:56.258 [main] INFO  resources.TestBase - For only one per Order products Quantity dropdown displays single option
+19:31:56.360 [main] INFO  resources.TestBase - For only one per Order products Quantity dropdown displays single option
+19:31:56.798 [main] INFO  resources.TestBase - Validate search product functionality on product list page
+19:31:56.893 [main] INFO  resources.TestBase - Customer enters product name to search in inventory
+19:32:08.490 [main] INFO  resources.TestBase - Total products found after search : 13
+19:32:08.864 [main] INFO  resources.TestBase - All products found contains text searched by customer
+19:32:15.555 [main] INFO  resources.TestBase - Driver is initialized
+19:33:12.586 [main] INFO  resources.TestBase - Validate if total number of items found matches with items number displayed in Pagination filter
+19:33:26.757 [main] INFO  resources.TestBase - Total number of items found matches with items number displayed in Pagination filter
+19:33:26.761 [main] INFO  resources.TestBase - Validate number of items displayed after selecting checkbox for any category filter
+19:33:27.091 [main] INFO  resources.TestBase - Click on checkbox infront of selected category
+19:33:28.997 [main] INFO  resources.TestBase - Checkbox infront of selected category is displayed as selected
+19:33:29.124 [main] INFO  resources.TestBase - Total number of items found after selecting category filter checkbox matches with number of items displayed in Pagination filter
+19:33:31.659 [main] INFO  resources.TestBase - Validate number of items displayed after selecting checkbox for any Group filter
+19:33:31.857 [main] INFO  resources.TestBase - Click on checkbox infront of selected group
+19:33:37.470 [main] INFO  resources.TestBase - Checkbox infront of selected group is displayed as selected
+19:33:37.531 [main] INFO  resources.TestBase - Total number of items found after selecting group filter checkbox matches with number of items displayed in Pagination filter
+19:33:37.535 [main] INFO  resources.TestBase - Validate after clearing all filters total items present in inventory are displayed on product list page
+19:33:37.700 [main] INFO  resources.TestBase - Click on 'Clear All Filters' button
+19:33:41.116 [main] INFO  resources.TestBase - Total items displayed in pagination filter matches with number of items present in inventory
+19:33:41.309 [main] INFO  resources.TestBase - Checkbox infront of all category filters is displayed as unchecked
+19:33:41.402 [main] INFO  resources.TestBase - Checkbox infront of all Group filters is displayed as unchecked
+19:33:53.330 [main] INFO  resources.TestBase - Driver is initialized
+19:35:04.597 [main] INFO  resources.TestBase - Validate Add to Cart feature on Product list page
+19:35:09.901 [main] INFO  resources.TestBase - Select quantity of product as : 2
+19:35:10.084 [main] INFO  resources.TestBase - Click on Add to cart button for product
+19:35:15.744 [main] INFO  resources.TestBase - Product Added to cart and Checkout button is Enabled
+19:35:15.749 [main] INFO  resources.TestBase - Validate if correct details displayed for product added in Cart
+19:35:15.841 [main] INFO  resources.TestBase - Name of the product in cart matches with selected product
+19:35:15.842 [main] INFO  resources.TestBase - Quantity of the product in cart matches with selected quantity
+19:35:15.880 [main] INFO  resources.TestBase - Product Amount in Cart matches as per selected quantity
+19:35:15.883 [main] INFO  resources.TestBase - Validate details of total amount payable are as per product quantity
+19:35:15.927 [main] INFO  resources.TestBase - Total payable amount matches as per selected quantity
+19:35:15.930 [main] INFO  resources.TestBase - Validate when Customer Selects same quantity of product again
+19:35:16.052 [main] INFO  resources.TestBase - Click on Add to cart button for product
+19:35:16.807 [main] INFO  resources.TestBase - Alert message displayed as Product added in the cart already with same quantity
+19:35:21.763 [main] INFO  resources.TestBase - Validate Delete Product from cart feature
+19:35:21.819 [main] INFO  resources.TestBase - Product present in cart
+19:35:21.921 [main] INFO  resources.TestBase - Click on Delete Item button
+19:35:27.446 [main] INFO  resources.TestBase - Product removed from cart. Updated value of Total amount payable displayed
+19:35:30.959 [main] INFO  resources.TestBase - Driver is initialized
+19:36:17.637 [main] INFO  resources.TestBase - Validate Add to Cart and click Checkout Button
+19:36:30.569 [main] INFO  resources.TestBase - Select quantity and Click on Add to cart button for product
+19:36:36.326 [main] INFO  resources.TestBase - Product Added to cart. Click on Checkout button
+19:36:36.568 [main] INFO  resources.TestBase - Select timeslot for Product delivery window displayed
+19:36:36.572 [main] INFO  resources.TestBase - Validate without selecting delivery timeslot Customer clicks on Submit button
+19:36:40.564 [main] INFO  resources.TestBase - Please select timeslot alert message displayed
+19:36:40.571 [main] INFO  resources.TestBase - Validate after selecting delivery timeslot Customer clicks on Cancel button
+19:36:46.087 [main] INFO  resources.TestBase - Customer selects the delivery timeslot for product and click on Cancel
+19:36:46.346 [main] INFO  resources.TestBase - After clicking on Cancel button delivery timeslot window closes
+19:36:49.567 [main] INFO  resources.TestBase - Driver is initialized
+19:37:55.649 [main] INFO  resources.TestBase - Validate after selecting delivery timeslot Customer clicks on Submit button
+19:38:23.833 [main] INFO  resources.TestBase - Select timeslot for Product delivery window displayed
+19:38:24.035 [main] INFO  resources.TestBase - Customer selects the delivery timeslot for product and click on Submit
+19:38:36.822 [main] INFO  resources.TestBase - Order successfully placed alert message displayed
+19:38:36.828 [main] INFO  resources.TestBase - Validate Customer order displayed on Order List page
+19:38:42.232 [main] INFO  resources.TestBase - Customer clicks on UserMenu and then Orders link
+19:38:42.679 [main] INFO  resources.TestBase - Order list page opens
+19:38:55.954 [main] INFO  resources.TestBase - Customer orders displayed on Order list page
+19:38:56.194 [main] INFO  resources.TestBase - User double clicks on OrderNo header to sort with recent orders placed
+19:38:56.255 [main] INFO  resources.TestBase - New order by Customer displayed on order list page
+19:38:56.257 [main] INFO  resources.TestBase - Validate order details displayed on Order List page
+19:38:56.320 [main] INFO  resources.TestBase - Customer order details displayed on order list page are as expected
+19:38:56.322 [main] INFO  resources.TestBase - Validate order details displayed on Order Details window
+19:38:59.708 [main] INFO  resources.TestBase - Customer orders details window displayed on Order list page
+19:39:00.751 [main] INFO  resources.TestBase - Customer order details displayed in Order Details window are correct
+19:39:05.707 [main] INFO  resources.TestBase - Driver is initialized
+19:40:31.038 [main] INFO  resources.TestBase - Validate Customer order displayed on Order List page
+19:40:35.282 [main] INFO  resources.TestBase - Customer clicks on UserMenu and then clicks on Orders link
+19:40:35.625 [main] INFO  resources.TestBase - Order list page opens
+19:41:03.179 [main] INFO  resources.TestBase - Customer orders displayed on Order list page
+19:41:03.524 [main] INFO  resources.TestBase - User double clicks on OrderNo header to sort with recent orders placed
+19:41:03.577 [main] INFO  resources.TestBase - Orders by Customer displayed on order list page
+19:41:03.581 [main] INFO  resources.TestBase - Validate if Orders are displayed per page as per option selected from dropdown
+19:41:04.184 [main] INFO  resources.TestBase - On Order list page user clicked option is displayed as selected
+19:41:04.244 [main] INFO  resources.TestBase - On Order list page Orders displayed per page as per dropdown option selected
+19:41:04.247 [main] INFO  resources.TestBase - Validate if Orders are displayed as per Status selected from dropdown
+19:41:04.526 [main] INFO  resources.TestBase - Select Ready from dropdown
+19:41:05.602 [main] INFO  resources.TestBase - On Order list page all statuses displayed as per READY option selected from dropdown
+19:41:05.875 [main] INFO  resources.TestBase - Select Pending from dropdown
+19:41:06.836 [main] INFO  resources.TestBase - On Order list page all statuses displayed as per PENDING option selected from dropdown
+19:41:07.127 [main] INFO  resources.TestBase - Select Completed from dropdown
+19:41:08.467 [main] INFO  resources.TestBase - On Order list page all statuses displayed as per COMPLETED option selected from dropdown
+19:41:08.791 [main] INFO  resources.TestBase - Select Lapsed from dropdown
+19:41:10.056 [main] INFO  resources.TestBase - On Order list page all statuses displayed as per LAPSED option selected from dropdown
+19:41:10.414 [main] INFO  resources.TestBase - Select Cancelled from dropdown
+19:41:11.735 [main] INFO  resources.TestBase - On Order list page all statuses displayed as per CANCELLED option selected from dropdown
+19:41:11.739 [main] INFO  resources.TestBase - Validate search by order number feature on Order list page
+19:41:11.920 [main] INFO  resources.TestBase - Customer enters Order number to search from all orders
+19:41:12.207 [main] INFO  resources.TestBase - Total Orders found after search : 1
+19:41:12.238 [main] INFO  resources.TestBase - Orders found matches with order number searched by customer
+19:41:16.026 [main] INFO  resources.TestBase - Driver is initialized
+19:42:19.048 [main] INFO  resources.TestBase - Navigated to Login page
+19:42:23.058 [main] INFO  resources.TestBase - Successfully validated text message at dashboard

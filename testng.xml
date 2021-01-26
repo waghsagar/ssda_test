@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite" >
+<suite name="SSDA Test Automation Smoke Suite" >
 <listeners>
 <listener class-name="ssda_test.Listeners"/>
 </listeners>
@@ -9,24 +9,34 @@
 			<class name="ssda_test.customer.TC01_CustLoginTest"/>
 		</classes>
 	</test>
-	<test name="Validating Product inventory list page test">
+	<test name="Validating Product inventory list in table test">
 		<classes>
-			<class name="ssda_test.customer.TC02_CustProductListPageValidationTest"/>
+			<class name="ssda_test.customer.TC02_CustProductListTableValidationTest"/>
+		</classes>
+	</test>
+	<test name="Validating Product inventory list filters test">
+		<classes>
+			<class name="ssda_test.customer.TC03_CustProductListFiltersValidationTest"/>
 		</classes>
 	</test>
 	<test name="Validating Add Product to cart test">
 		<classes>
-			<class name="ssda_test.customer.TC03_CustAddtoCartTest"/>
+			<class name="ssda_test.customer.TC04_CustAddtoCartTest"/>
 		</classes>
 	</test>
-	<test name="Validating select timeslot place order test">
+	<test name="Validating select timeslot test">
 		<classes>
-			<class name="ssda_test.customer.TC04_CustSelectTimeslotPlaceOrderTest"/>
+			<class name="ssda_test.customer.TC05_CustSelectTimeslotTest"/>
 		</classes>
 	</test>
-	<test name="Validating Customer order details test">
+	<test name="Validating place order and verify order details test">
 		<classes>
-			<class name="ssda_test.customer.TC05_CustOrderDetailsTest"/>
+			<class name="ssda_test.customer.TC06_CustPlaceOrderVerifyOrderDetailsTest"/>
+		</classes>
+	</test>
+	<test name="Validating Customer order list search filters test">
+		<classes>
+			<class name="ssda_test.customer.TC07_CustOrderListFiltersValidationTest"/>
 		</classes>
 	</test>
 	<test name="Validating admin Home page test">

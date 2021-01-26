@@ -1,6 +1,0 @@
-23:13:07.545 [main] INFO  resources.TestBase - On Customer home page Checkout button is in disabled state
-23:13:07.563 [main] INFO  resources.TestBase - Navigated to Customer Home page
-23:13:08.214 [main] INFO  resources.TestBase - Customer searches product in inventory
-23:13:08.215 [main] INFO  resources.TestBase - Customer entered product found in inventory
-23:15:19.701 [main] INFO  resources.TestBase - Driver is initialized
-23:16:05.017 [main] INFO  resources.TestBase - Validate Checkout Button state with Empty Cart

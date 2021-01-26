@@ -1,24 +1,114 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite verbose="0" name="Failed suite [Suite]" parallel="tests">
+<suite verbose="0" name="Failed suite [Suite]" parallel="none">
   <listeners>
     <listener class-name="ssda_test.Listeners"/>
   </listeners>
-  <test name="Validating Login Test(failed)" parallel="tests">
+  <test name="Validating Add Product to cart test(failed)" parallel="none">
     <classes>
-      <class name="ssda_test.ValidateHomePage">
+      <class name="ssda_test.customer.TC07_CustOrderListFiltersValidationTest">
         <methods>
           <include name="teardown"/>
           <include name="initialize"/>
         </methods>
-      </class> <!-- ssda_test.ValidateHomePage -->
-      <class name="ssda_test.LoginPageTest">
+      </class> <!-- ssda_test.customer.TC07_CustOrderListFiltersValidationTest -->
+      <class name="ssda_test.customer.TC02_CustProductListTableValidationTest">
         <methods>
           <include name="teardown"/>
           <include name="initialize"/>
-          <include name="basePageNavigation"/>
         </methods>
-      </class> <!-- ssda_test.LoginPageTest -->
+      </class> <!-- ssda_test.customer.TC02_CustProductListTableValidationTest -->
+      <class name="ssda_test.customer.TC01_CustLoginTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- ssda_test.customer.TC01_CustLoginTest -->
+      <class name="ssda_test.customer.TC04_CustAddtoCartTest">
+        <methods>
+          <include name="testAddToCartFeature"/>
+          <include name="teardown"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- ssda_test.customer.TC04_CustAddtoCartTest -->
+      <class name="ssda_test.customer.TC03_CustProductListFiltersValidationTest">
+        <methods>
+          <include name="initialize"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- ssda_test.customer.TC03_CustProductListFiltersValidationTest -->
+      <class name="ssda_test.customer.TC06_CustPlaceOrderVerifyOrderDetailsTest">
+        <methods>
+          <include name="initialize"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- ssda_test.customer.TC06_CustPlaceOrderVerifyOrderDetailsTest -->
+      <class name="ssda_test.admin.ValidateHomePage">
+        <methods>
+          <include name="teardown"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- ssda_test.admin.ValidateHomePage -->
+      <class name="ssda_test.customer.TC05_CustSelectTimeslotTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- ssda_test.customer.TC05_CustSelectTimeslotTest -->
     </classes>
-  </test> <!-- Validating Login Test(failed) -->
+  </test> <!-- Validating Add Product to cart test(failed) -->
+  <test name="Validating place order and verify order details test(failed)" parallel="none">
+    <classes>
+      <class name="ssda_test.customer.TC07_CustOrderListFiltersValidationTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- ssda_test.customer.TC07_CustOrderListFiltersValidationTest -->
+      <class name="ssda_test.customer.TC02_CustProductListTableValidationTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- ssda_test.customer.TC02_CustProductListTableValidationTest -->
+      <class name="ssda_test.customer.TC01_CustLoginTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- ssda_test.customer.TC01_CustLoginTest -->
+      <class name="ssda_test.customer.TC04_CustAddtoCartTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- ssda_test.customer.TC04_CustAddtoCartTest -->
+      <class name="ssda_test.customer.TC03_CustProductListFiltersValidationTest">
+        <methods>
+          <include name="initialize"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- ssda_test.customer.TC03_CustProductListFiltersValidationTest -->
+      <class name="ssda_test.customer.TC06_CustPlaceOrderVerifyOrderDetailsTest">
+        <methods>
+          <include name="initialize"/>
+          <include name="teardown"/>
+          <include name="testCustomerOrderDisplayedonOrderListPage"/>
+          <include name="testSelectTimeslotForDeliveryClickSubmit"/>
+        </methods>
+      </class> <!-- ssda_test.customer.TC06_CustPlaceOrderVerifyOrderDetailsTest -->
+      <class name="ssda_test.admin.ValidateHomePage">
+        <methods>
+          <include name="teardown"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- ssda_test.admin.ValidateHomePage -->
+      <class name="ssda_test.customer.TC05_CustSelectTimeslotTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- ssda_test.customer.TC05_CustSelectTimeslotTest -->
+    </classes>
+  </test> <!-- Validating place order and verify order details test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

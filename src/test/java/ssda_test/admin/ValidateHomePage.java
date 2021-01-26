@@ -43,7 +43,6 @@ public class ValidateHomePage extends TestBase{
 
 	@AfterTest
 	public void teardown(){
-		driver.close();
 		driver.quit();
 	}
 }

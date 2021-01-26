@@ -1,5 +1,7 @@
 package pageObjects;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -9,11 +11,17 @@ public class CustomerOrderListPage {
 
 	public WebDriver driver;
 	
-	private By orderNoFilter = By.xpath("//*[contains(.,'Order No.')]/label/span");
+	private By orderNoFilter = By.xpath("//input[@placeholder='Order No.']");
 	
-	private By deliveryDateFilter = By.xpath("//span[contains(.,'Delivery Date')]");
+	private By deliveryDateFilter = By.xpath("//span[contains(.,'Delivery Date')]//parent::div/input");
 	
 	private By statusFilter = By.xpath("//span[contains(.,'Status')]/label/span");
+	
+	private By itemsPerPageFilter = By.xpath("//mat-select[@aria-label='Items per page:']");
+	
+	private By dropdownOptions = By.xpath("//div[@class='cdk-overlay-pane']//mat-option");
+	
+	private By totalsearchResults = By.xpath("//table[@role='grid']/tbody/tr");
 	
 	private By orderListTable = By.xpath("//table[@role='grid']/tbody/tr/td");
 	
@@ -29,13 +37,19 @@ public class CustomerOrderListPage {
 	
 	private By orderNoDetails = By.xpath("//table[@role='grid']/tbody/tr[1]/td[1]");
 	
+	private By allOrderNoDetails = By.xpath("//table[@role='grid']/tbody/tr/td[1]");
+	
 	private By deliveryDateDetails = By.xpath("//table[@role='grid']/tbody/tr[1]/td[2]");
+	
+	private By allDeliveryDateDetails = By.xpath("//table[@role='grid']/tbody/tr/td[2]");
 	
 	private By slotDetails = By.xpath("//table[@role='grid']/tbody/tr[1]/td[3]");
 	
 	private By amountDetails = By.xpath("//table[@role='grid']/tbody/tr[1]/td[4]");
 	
 	private By statusDetails = By.xpath("//table[@role='grid']/tbody/tr[1]/td[5]");
+	
+	private By allOrderStatusDetails = By.xpath("//table[@role='grid']/tbody/tr/td[5]");
 	
 	private By showOrderDetails = By.xpath("//table[@role='grid']/tbody/tr[1]/td[6]/button");
 	
@@ -82,6 +96,10 @@ public class CustomerOrderListPage {
 	
 	public WebElement getStatusFilter() {
 		return driver.findElement(statusFilter);
+	}
+	
+	public WebElement getItemsPerPageFilter() {
+		return driver.findElement(itemsPerPageFilter);
 	}
 	
 	public WebElement getOrderListTable() {
@@ -186,5 +204,25 @@ public class CustomerOrderListPage {
 	
 	public WebElement getOrderNumberOrderDetailsWindow() {
 		return driver.findElement(orderNumberOrderDetailsWindow);
+	}
+	
+	public List<WebElement> getDropdownOptions() {
+		return driver.findElements(dropdownOptions);
+	}
+	
+	public List<WebElement> getTotalSearchResults() {
+		return driver.findElements(totalsearchResults);
+	}
+	
+	public List<WebElement> getAllOrderStatusDetails() {
+		return driver.findElements(allOrderStatusDetails);
+	}
+	
+	public List<WebElement> getAllOrderNoDetails() {
+		return driver.findElements(allOrderNoDetails);
+	}
+	
+	public List<WebElement> getAllDeliveryDateDetails() {
+		return driver.findElements(allDeliveryDateDetails);
 	}
 }

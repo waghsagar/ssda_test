@@ -24,6 +24,8 @@ public class CustomerHomePage {
 	
 	private By productQuantity = By.xpath("//select[@id='mat-input-3']");
 	
+	private By allProductQuantityDropdowns = By.xpath("//table[@role='grid']/tbody/tr//select");
+	
 	private By addToCart = By.xpath("//tbody/tr[1] //button[text()='Add to Cart']");
 	
 	private By allProductsName = By.xpath("//td[@role='gridcell']//div[@class='fontsize15 fontweight pt-1']");
@@ -66,7 +68,19 @@ public class CustomerHomePage {
 	
 	private By itemsPerPage = By.xpath("//mat-select[@aria-label='Items per page:']");
 	
-	private By dropdownOptions = By.xpath("//div[@id='mat-select-1-panel']/mat-option");
+	private By dropdownOptions = By.xpath("//div[@class='cdk-overlay-pane']//mat-option");
+	
+	private By itemsFoundTotal = By.xpath("//h4[contains(.,'items found')]");
+	
+	private By itemsFoundInPaginatorRange = By.xpath("//div[@class='mat-paginator-range-label']");
+	
+	private By categoryFilterLabel = By.xpath("//div[@id='collapseOne']//mat-checkbox/label/span");
+	
+	private By categoryFilterCheckbox = By.xpath("//div[@id='collapseOne']//input[@type='checkbox']");
+	
+	private By groupFilterLabel = By.xpath("//div[@id='collapseTwo']//mat-checkbox/label/span");
+	
+	private By groupFilterCheckbox = By.xpath("//div[@id='collapseTwo']//input[@type='checkbox']");
 			
 	
 	public CustomerHomePage(WebDriver driver) {
@@ -188,5 +202,33 @@ public class CustomerHomePage {
 	
 	public List<WebElement> getAllAddToCart() {
 		return driver.findElements(allAddToCart);
+	}
+	
+	public WebElement getItemsFoundTotal() {
+		return driver.findElement(itemsFoundTotal);
+	}
+	
+	public WebElement getItemsFoundInPaginatorRange() {
+		return driver.findElement(itemsFoundInPaginatorRange);
+	}
+	
+	public List<WebElement> getCategoryFilterLabel() {
+		return driver.findElements(categoryFilterLabel);
+	}
+	
+	public List<WebElement> getCategoryFilterCheckbox() {
+		return driver.findElements(categoryFilterCheckbox);
+	}
+	
+	public List<WebElement> getGroupFilterLabel() {
+		return driver.findElements(groupFilterLabel);
+	}
+	
+	public List<WebElement> getGroupFilterCheckbox() {
+		return driver.findElements(groupFilterCheckbox);
+	}
+	
+	public List<WebElement> getAllProductQuantityDropdowns() {
+		return driver.findElements(allProductQuantityDropdowns);
 	}
 }

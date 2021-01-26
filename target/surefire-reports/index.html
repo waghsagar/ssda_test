@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -53,7 +53,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Suite">
-                    <span class="test-stats">3 tests</span>
+                    <span class="test-stats">8 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,7 +90,31 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods,   6 passed</span>
+                    <span class="method-stats">32 methods, 3 failed,   29 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="ssda_test.customer.TC04_CustAddtoCartTest" hash-for-method="testAddToCartFeature">testAddToCartFeature</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="ssda_test.customer.TC06_CustPlaceOrderVerifyOrderDetailsTest" hash-for-method="testCustomerOrderDisplayedonOrderListPage">testCustomerOrderDisplayedonOrderListPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="ssda_test.customer.TC06_CustPlaceOrderVerifyOrderDetailsTest" hash-for-method="testSelectTimeslotForDeliveryClickSubmit">testSelectTimeslotForDeliveryClickSubmit</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,32 +125,147 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="ssda_test.ValidateHomePage" hash-for-method="basePageNavigation">basePageNavigation</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="ssda_test.admin.ValidateHomePage" hash-for-method="basePageNavigation">basePageNavigation</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="ssda_test.CustHomePageTest" hash-for-method="testAddToCart">testAddToCart</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="ssda_test.customer.TC04_CustAddtoCartTest" hash-for-method="testAddProductWithSameQuantity">testAddProductWithSameQuantity</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="ssda_test.CustHomePageTest" hash-for-method="testCartItems">testCartItems</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="ssda_test.customer.TC05_CustSelectTimeslotTest" hash-for-method="testAddToCartClickCheckoutButton">testAddToCartClickCheckoutButton</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="ssda_test.CustHomePageTest" hash-for-method="testCheckoutButtonWithEmptyCart">testCheckoutButtonWithEmptyCart</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="ssda_test.customer.TC02_CustProductListTableValidationTest" hash-for-method="testAddtoCartButtonDisplayedAsPerInventory">testAddtoCartButtonDisplayedAsPerInventory</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="ssda_test.LoginPageTest" hash-for-method="testCustomerLoginWithInvalidCredentials">testCustomerLoginWithInvalidCredentials</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="ssda_test.customer.TC03_CustProductListFiltersValidationTest" hash-for-method="testCategoryFilters">testCategoryFilters</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="ssda_test.LoginPageTest" hash-for-method="testCustomerLoginWithValidCredentials">testCustomerLoginWithValidCredentials</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="ssda_test.customer.TC02_CustProductListTableValidationTest" hash-for-method="testCheckoutButtonWithEmptyCart">testCheckoutButtonWithEmptyCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="ssda_test.customer.TC03_CustProductListFiltersValidationTest" hash-for-method="testClearAllFilters">testClearAllFilters</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="ssda_test.customer.TC01_CustLoginTest" hash-for-method="testCustomerLoginWithInvalidCredentials">testCustomerLoginWithInvalidCredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="ssda_test.customer.TC01_CustLoginTest" hash-for-method="testCustomerLoginWithValidCredentials">testCustomerLoginWithValidCredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="ssda_test.customer.TC07_CustOrderListFiltersValidationTest" hash-for-method="testCustomerOrdersDisplayedonOrderListPage">testCustomerOrdersDisplayedonOrderListPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="ssda_test.customer.TC02_CustProductListTableValidationTest" hash-for-method="testDefaultSelectedQuantityofProduct">testDefaultSelectedQuantityofProduct</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="ssda_test.customer.TC04_CustAddtoCartTest" hash-for-method="testDeleteItemFromCart">testDeleteItemFromCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="ssda_test.customer.TC05_CustSelectTimeslotTest" hash-for-method="testDontSelectTimeslotClickSubmit">testDontSelectTimeslotClickSubmit</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="ssda_test.customer.TC03_CustProductListFiltersValidationTest" hash-for-method="testGroupFilters">testGroupFilters</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="ssda_test.customer.TC02_CustProductListTableValidationTest" hash-for-method="testItemsDisplayedPerPage">testItemsDisplayedPerPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="ssda_test.customer.TC06_CustPlaceOrderVerifyOrderDetailsTest" hash-for-method="testOrderDetailsinOrderDetailsWindow">testOrderDetailsinOrderDetailsWindow</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="ssda_test.customer.TC06_CustPlaceOrderVerifyOrderDetailsTest" hash-for-method="testOrderDetailsonOrderListPage">testOrderDetailsonOrderListPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="ssda_test.customer.TC07_CustOrderListFiltersValidationTest" hash-for-method="testOrdersDisplayedPerPageFilter">testOrdersDisplayedPerPageFilter</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="ssda_test.customer.TC04_CustAddtoCartTest" hash-for-method="testProductDetailsAddedInCart">testProductDetailsAddedInCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="ssda_test.customer.TC02_CustProductListTableValidationTest" hash-for-method="testQuantityDropdownForOnlyOnePerOrderProduct">testQuantityDropdownForOnlyOnePerOrderProduct</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="ssda_test.customer.TC07_CustOrderListFiltersValidationTest" hash-for-method="testSearchByOrderNumberFilter">testSearchByOrderNumberFilter</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="ssda_test.customer.TC07_CustOrderListFiltersValidationTest" hash-for-method="testSearchByOrderStatusFilter">testSearchByOrderStatusFilter</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="ssda_test.customer.TC02_CustProductListTableValidationTest" hash-for-method="testSearchProductFunctionality">testSearchProductFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="ssda_test.customer.TC05_CustSelectTimeslotTest" hash-for-method="testSelectTimeslotForDeliveryClickCancel">testSelectTimeslotForDeliveryClickCancel</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="ssda_test.customer.TC04_CustAddtoCartTest" hash-for-method="testTotalAmountPayable">testTotalAmountPayable</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="ssda_test.customer.TC03_CustProductListFiltersValidationTest" hash-for-method="testTotalItemsFoundMatcheswithItemsInPaginationFilter">testTotalItemsFoundMatcheswithItemsInPaginationFilter</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="ssda_test.customer.TC01_CustLoginTest" hash-for-method="testWithMobileNumberContainsAlphabets">testWithMobileNumberContainsAlphabets</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="ssda_test.customer.TC01_CustLoginTest" hash-for-method="testWithMobileNumberLessThanTenDigits">testWithMobileNumberLessThanTenDigits</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="ssda_test.customer.TC01_CustLoginTest" hash-for-method="testWithMobileNumberMoreThanTenDigits">testWithMobileNumberMoreThanTenDigits</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -141,17 +280,218 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">ssda_test.ValidateHomePage</span>
+              <img src="failed.png"/>
+              <span class="class-name">ssda_test.customer.TC04_CustAddtoCartTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="basePageNavigation">
-                  </a> <!-- basePageNavigation -->
-                  <span class="method-name">basePageNavigation</span>
+                  <a name="testAddToCartFeature">
+                  </a> <!-- testAddToCartFeature -->
+                  <span class="method-name">testAddToCartFeature</span>
+                  <div class="stack-trace"><b>"java.lang.AssertionError: expected [true] but found [false]
+	at ssda_test.customer.TC04_CustAddtoCartTest.testAddToCartFeature(TC04_CustAddtoCartTest.java:59)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+... Removed 25 stack frames<br/> java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at ssda_test.customer.TC04_CustAddtoCartTest.testAddToCartFeature(TC04_CustAddtoCartTest.java:59)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+"</b><br>org.testng.Assert.fail(Assert.java:94)<br>org.testng.Assert.failNotEquals(Assert.java:494)<br>org.testng.Assert.assertTrue(Assert.java:42)<br>org.testng.Assert.assertTrue(Assert.java:52)<br>ssda_test.customer.TC04_CustAddtoCartTest.testAddToCartFeature(TC04_CustAddtoCartTest.java:59)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.lang.reflect.Method.invoke(Method.java:498)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)<br>org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)<br>org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)<br>org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)<br>org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)<br>org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)<br>
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">ssda_test.customer.TC06_CustPlaceOrderVerifyOrderDetailsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCustomerOrderDisplayedonOrderListPage">
+                  </a> <!-- testCustomerOrderDisplayedonOrderListPage -->
+                  <span class="method-name">testCustomerOrderDisplayedonOrderListPage</span>
+                  <div class="stack-trace"><b>"java.lang.AssertionError: expected [true] but found [false]
+	at ssda_test.customer.TC06_CustPlaceOrderVerifyOrderDetailsTest.testCustomerOrderDisplayedonOrderListPage(TC06_CustPlaceOrderVerifyOrderDetailsTest.java:98)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+... Removed 25 stack frames<br/> java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at ssda_test.customer.TC06_CustPlaceOrderVerifyOrderDetailsTest.testCustomerOrderDisplayedonOrderListPage(TC06_CustPlaceOrderVerifyOrderDetailsTest.java:98)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+"</b><br>org.testng.Assert.fail(Assert.java:94)<br>org.testng.Assert.failNotEquals(Assert.java:494)<br>org.testng.Assert.assertTrue(Assert.java:42)<br>org.testng.Assert.assertTrue(Assert.java:52)<br>ssda_test.customer.TC06_CustPlaceOrderVerifyOrderDetailsTest.testCustomerOrderDisplayedonOrderListPage(TC06_CustPlaceOrderVerifyOrderDetailsTest.java:98)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.lang.reflect.Method.invoke(Method.java:498)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)<br>org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)<br>org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)<br>org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)<br>org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)<br>org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)<br>
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSelectTimeslotForDeliveryClickSubmit">
+                  </a> <!-- testSelectTimeslotForDeliveryClickSubmit -->
+                  <span class="method-name">testSelectTimeslotForDeliveryClickSubmit</span>
+                  <div class="stack-trace"><b>"java.lang.AssertionError: expected [true] but found [false]
+	at ssda_test.customer.TC06_CustPlaceOrderVerifyOrderDetailsTest.testSelectTimeslotForDeliveryClickSubmit(TC06_CustPlaceOrderVerifyOrderDetailsTest.java:80)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+... Removed 25 stack frames<br/> java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at ssda_test.customer.TC06_CustPlaceOrderVerifyOrderDetailsTest.testSelectTimeslotForDeliveryClickSubmit(TC06_CustPlaceOrderVerifyOrderDetailsTest.java:80)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+"</b><br>org.testng.Assert.fail(Assert.java:94)<br>org.testng.Assert.failNotEquals(Assert.java:494)<br>org.testng.Assert.assertTrue(Assert.java:42)<br>org.testng.Assert.assertTrue(Assert.java:52)<br>ssda_test.customer.TC06_CustPlaceOrderVerifyOrderDetailsTest.testSelectTimeslotForDeliveryClickSubmit(TC06_CustPlaceOrderVerifyOrderDetailsTest.java:80)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.lang.reflect.Method.invoke(Method.java:498)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)<br>org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)<br>org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)<br>org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)<br>org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)<br>org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)<br>
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">ssda_test.customer.TC02_CustProductListTableValidationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddtoCartButtonDisplayedAsPerInventory">
+                  </a> <!-- testAddtoCartButtonDisplayedAsPerInventory -->
+                  <span class="method-name">testAddtoCartButtonDisplayedAsPerInventory</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCheckoutButtonWithEmptyCart">
+                  </a> <!-- testCheckoutButtonWithEmptyCart -->
+                  <span class="method-name">testCheckoutButtonWithEmptyCart</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDefaultSelectedQuantityofProduct">
+                  </a> <!-- testDefaultSelectedQuantityofProduct -->
+                  <span class="method-name">testDefaultSelectedQuantityofProduct</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testItemsDisplayedPerPage">
+                  </a> <!-- testItemsDisplayedPerPage -->
+                  <span class="method-name">testItemsDisplayedPerPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testQuantityDropdownForOnlyOnePerOrderProduct">
+                  </a> <!-- testQuantityDropdownForOnlyOnePerOrderProduct -->
+                  <span class="method-name">testQuantityDropdownForOnlyOnePerOrderProduct</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSearchProductFunctionality">
+                  </a> <!-- testSearchProductFunctionality -->
+                  <span class="method-name">testSearchProductFunctionality</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -159,7 +499,43 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">ssda_test.LoginPageTest</span>
+              <span class="class-name">ssda_test.customer.TC07_CustOrderListFiltersValidationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCustomerOrdersDisplayedonOrderListPage">
+                  </a> <!-- testCustomerOrdersDisplayedonOrderListPage -->
+                  <span class="method-name">testCustomerOrdersDisplayedonOrderListPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testOrdersDisplayedPerPageFilter">
+                  </a> <!-- testOrdersDisplayedPerPageFilter -->
+                  <span class="method-name">testOrdersDisplayedPerPageFilter</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSearchByOrderNumberFilter">
+                  </a> <!-- testSearchByOrderNumberFilter -->
+                  <span class="method-name">testSearchByOrderNumberFilter</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSearchByOrderStatusFilter">
+                  </a> <!-- testSearchByOrderStatusFilter -->
+                  <span class="method-name">testSearchByOrderStatusFilter</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">ssda_test.customer.TC01_CustLoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -176,33 +552,163 @@
                   <span class="method-name">testCustomerLoginWithValidCredentials</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testWithMobileNumberContainsAlphabets">
+                  </a> <!-- testWithMobileNumberContainsAlphabets -->
+                  <span class="method-name">testWithMobileNumberContainsAlphabets</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testWithMobileNumberLessThanTenDigits">
+                  </a> <!-- testWithMobileNumberLessThanTenDigits -->
+                  <span class="method-name">testWithMobileNumberLessThanTenDigits</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testWithMobileNumberMoreThanTenDigits">
+                  </a> <!-- testWithMobileNumberMoreThanTenDigits -->
+                  <span class="method-name">testWithMobileNumberMoreThanTenDigits</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">ssda_test.CustHomePageTest</span>
+              <span class="class-name">ssda_test.customer.TC04_CustAddtoCartTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testAddToCart">
-                  </a> <!-- testAddToCart -->
-                  <span class="method-name">testAddToCart</span>
+                  <a name="testAddProductWithSameQuantity">
+                  </a> <!-- testAddProductWithSameQuantity -->
+                  <span class="method-name">testAddProductWithSameQuantity</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="testCartItems">
-                  </a> <!-- testCartItems -->
-                  <span class="method-name">testCartItems</span>
+                  <a name="testDeleteItemFromCart">
+                  </a> <!-- testDeleteItemFromCart -->
+                  <span class="method-name">testDeleteItemFromCart</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="testCheckoutButtonWithEmptyCart">
-                  </a> <!-- testCheckoutButtonWithEmptyCart -->
-                  <span class="method-name">testCheckoutButtonWithEmptyCart</span>
+                  <a name="testProductDetailsAddedInCart">
+                  </a> <!-- testProductDetailsAddedInCart -->
+                  <span class="method-name">testProductDetailsAddedInCart</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testTotalAmountPayable">
+                  </a> <!-- testTotalAmountPayable -->
+                  <span class="method-name">testTotalAmountPayable</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">ssda_test.customer.TC03_CustProductListFiltersValidationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCategoryFilters">
+                  </a> <!-- testCategoryFilters -->
+                  <span class="method-name">testCategoryFilters</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testClearAllFilters">
+                  </a> <!-- testClearAllFilters -->
+                  <span class="method-name">testClearAllFilters</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGroupFilters">
+                  </a> <!-- testGroupFilters -->
+                  <span class="method-name">testGroupFilters</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testTotalItemsFoundMatcheswithItemsInPaginationFilter">
+                  </a> <!-- testTotalItemsFoundMatcheswithItemsInPaginationFilter -->
+                  <span class="method-name">testTotalItemsFoundMatcheswithItemsInPaginationFilter</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">ssda_test.customer.TC06_CustPlaceOrderVerifyOrderDetailsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testOrderDetailsinOrderDetailsWindow">
+                  </a> <!-- testOrderDetailsinOrderDetailsWindow -->
+                  <span class="method-name">testOrderDetailsinOrderDetailsWindow</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testOrderDetailsonOrderListPage">
+                  </a> <!-- testOrderDetailsonOrderListPage -->
+                  <span class="method-name">testOrderDetailsonOrderListPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">ssda_test.admin.ValidateHomePage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="basePageNavigation">
+                  </a> <!-- basePageNavigation -->
+                  <span class="method-name">basePageNavigation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">ssda_test.customer.TC05_CustSelectTimeslotTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddToCartClickCheckoutButton">
+                  </a> <!-- testAddToCartClickCheckoutButton -->
+                  <span class="method-name">testAddToCartClickCheckoutButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDontSelectTimeslotClickSubmit">
+                  </a> <!-- testDontSelectTimeslotClickSubmit -->
+                  <span class="method-name">testDontSelectTimeslotClickSubmit</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSelectTimeslotForDeliveryClickCancel">
+                  </a> <!-- testSelectTimeslotForDeliveryClickCancel -->
+                  <span class="method-name">testSelectTimeslotForDeliveryClickCancel</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -220,21 +726,46 @@
   &lt;listeners&gt;
     &lt;listener class-name=&quot;ssda_test.Listeners&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test name=&quot;Validating Login Test&quot;&gt;
+  &lt;test name=&quot;Validating Login page test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;ssda_test.LoginPageTest&quot;/&gt;
+      &lt;class name=&quot;ssda_test.customer.TC01_CustLoginTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Validating Login Test --&gt;
-  &lt;test name=&quot;Validating Customer Home page Test&quot;&gt;
+  &lt;/test&gt; &lt;!-- Validating Login page test --&gt;
+  &lt;test name=&quot;Validating Product inventory list in table test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;ssda_test.CustHomePageTest&quot;/&gt;
+      &lt;class name=&quot;ssda_test.customer.TC02_CustProductListTableValidationTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Validating Customer Home page Test --&gt;
-  &lt;test name=&quot;Validating Home page Test&quot;&gt;
+  &lt;/test&gt; &lt;!-- Validating Product inventory list in table test --&gt;
+  &lt;test name=&quot;Validating Product inventory list filters test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;ssda_test.ValidateHomePage&quot;/&gt;
+      &lt;class name=&quot;ssda_test.customer.TC03_CustProductListFiltersValidationTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Validating Home page Test --&gt;
+  &lt;/test&gt; &lt;!-- Validating Product inventory list filters test --&gt;
+  &lt;test name=&quot;Validating Add Product to cart test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;ssda_test.customer.TC04_CustAddtoCartTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Validating Add Product to cart test --&gt;
+  &lt;test name=&quot;Validating select timeslot test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;ssda_test.customer.TC05_CustSelectTimeslotTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Validating select timeslot test --&gt;
+  &lt;test name=&quot;Validating place order and verify order details test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;ssda_test.customer.TC06_CustPlaceOrderVerifyOrderDetailsTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Validating place order and verify order details test --&gt;
+  &lt;test name=&quot;Validating Customer order list search filters test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;ssda_test.customer.TC07_CustOrderListFiltersValidationTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Validating Customer order list search filters test --&gt;
+  &lt;test name=&quot;Validating admin Home page test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;ssda_test.admin.ValidateHomePage&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Validating admin Home page test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -246,13 +777,28 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Validating Login Test (1 class)</span>
+                <span class="test-name">Validating Login page test (1 class)</span>
               </li>
               <li>
-                <span class="test-name">Validating Customer Home page Test (1 class)</span>
+                <span class="test-name">Validating Product inventory list in table test (1 class)</span>
               </li>
               <li>
-                <span class="test-name">Validating Home page Test (1 class)</span>
+                <span class="test-name">Validating Product inventory list filters test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Validating Add Product to cart test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Validating select timeslot test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Validating place order and verify order details test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Validating Customer order list search filters test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Validating admin Home page test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -278,36 +824,140 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(32);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'basePageNavigation')
-data.setCell(0, 2, 'ssda_test.ValidateHomePage')
-data.setCell(0, 3, 20911);
+data.setCell(0, 1, 'testCustomerOrdersDisplayedonOrderListPage')
+data.setCell(0, 2, 'ssda_test.customer.TC07_CustOrderListFiltersValidationTest')
+data.setCell(0, 3, 27130);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testCustomerLoginWithInvalidCredentials')
-data.setCell(1, 2, 'ssda_test.LoginPageTest')
-data.setCell(1, 3, 16918);
+data.setCell(1, 1, 'testWithMobileNumberLessThanTenDigits')
+data.setCell(1, 2, 'ssda_test.customer.TC01_CustLoginTest')
+data.setCell(1, 3, 23543);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testAddToCart')
-data.setCell(2, 2, 'ssda_test.CustHomePageTest')
-data.setCell(2, 3, 15929);
+data.setCell(2, 1, 'testWithMobileNumberMoreThanTenDigits')
+data.setCell(2, 2, 'ssda_test.customer.TC01_CustLoginTest')
+data.setCell(2, 3, 19284);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testCheckoutButtonWithEmptyCart')
-data.setCell(3, 2, 'ssda_test.CustHomePageTest')
-data.setCell(3, 3, 8348);
+data.setCell(3, 1, 'testCustomerLoginWithValidCredentials')
+data.setCell(3, 2, 'ssda_test.customer.TC01_CustLoginTest')
+data.setCell(3, 3, 18385);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testCustomerLoginWithValidCredentials')
-data.setCell(4, 2, 'ssda_test.LoginPageTest')
-data.setCell(4, 3, 8293);
+data.setCell(4, 1, 'basePageNavigation')
+data.setCell(4, 2, 'ssda_test.admin.ValidateHomePage')
+data.setCell(4, 3, 17940);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'testCartItems')
-data.setCell(5, 2, 'ssda_test.CustHomePageTest')
-data.setCell(5, 3, 176);
+data.setCell(5, 1, 'testSelectTimeslotForDeliveryClickSubmit')
+data.setCell(5, 2, 'ssda_test.customer.TC06_CustPlaceOrderVerifyOrderDetailsTest')
+data.setCell(5, 3, 17911);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testCheckoutButtonWithEmptyCart')
+data.setCell(6, 2, 'ssda_test.customer.TC02_CustProductListTableValidationTest')
+data.setCell(6, 3, 14645);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testAddToCartClickCheckoutButton')
+data.setCell(7, 2, 'ssda_test.customer.TC05_CustSelectTimeslotTest')
+data.setCell(7, 3, 13289);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testTotalItemsFoundMatcheswithItemsInPaginationFilter')
+data.setCell(8, 2, 'ssda_test.customer.TC03_CustProductListFiltersValidationTest')
+data.setCell(8, 3, 12115);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testAddToCartFeature')
+data.setCell(9, 2, 'ssda_test.customer.TC04_CustAddtoCartTest')
+data.setCell(9, 3, 11698);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testDontSelectTimeslotClickSubmit')
+data.setCell(10, 2, 'ssda_test.customer.TC05_CustSelectTimeslotTest')
+data.setCell(10, 3, 11200);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'testCategoryFilters')
+data.setCell(11, 2, 'ssda_test.customer.TC03_CustProductListFiltersValidationTest')
+data.setCell(11, 3, 10065);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'testCustomerLoginWithInvalidCredentials')
+data.setCell(12, 2, 'ssda_test.customer.TC01_CustLoginTest')
+data.setCell(12, 3, 10020);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'testCustomerOrderDisplayedonOrderListPage')
+data.setCell(13, 2, 'ssda_test.customer.TC06_CustPlaceOrderVerifyOrderDetailsTest')
+data.setCell(13, 3, 9825);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'testSearchByOrderStatusFilter')
+data.setCell(14, 2, 'ssda_test.customer.TC07_CustOrderListFiltersValidationTest')
+data.setCell(14, 3, 8450);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'testAddProductWithSameQuantity')
+data.setCell(15, 2, 'ssda_test.customer.TC04_CustAddtoCartTest')
+data.setCell(15, 3, 6005);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'testSelectTimeslotForDeliveryClickCancel')
+data.setCell(16, 2, 'ssda_test.customer.TC05_CustSelectTimeslotTest')
+data.setCell(16, 3, 5964);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'testItemsDisplayedPerPage')
+data.setCell(17, 2, 'ssda_test.customer.TC02_CustProductListTableValidationTest')
+data.setCell(17, 3, 5958);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'testDeleteItemFromCart')
+data.setCell(18, 2, 'ssda_test.customer.TC04_CustAddtoCartTest')
+data.setCell(18, 3, 5652);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'testSearchProductFunctionality')
+data.setCell(19, 2, 'ssda_test.customer.TC02_CustProductListTableValidationTest')
+data.setCell(19, 3, 5535);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'testWithMobileNumberContainsAlphabets')
+data.setCell(20, 2, 'ssda_test.customer.TC01_CustLoginTest')
+data.setCell(20, 3, 3292);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'testAddtoCartButtonDisplayedAsPerInventory')
+data.setCell(21, 2, 'ssda_test.customer.TC02_CustProductListTableValidationTest')
+data.setCell(21, 3, 2743);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'testClearAllFilters')
+data.setCell(22, 2, 'ssda_test.customer.TC03_CustProductListFiltersValidationTest')
+data.setCell(22, 3, 2433);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'testGroupFilters')
+data.setCell(23, 2, 'ssda_test.customer.TC03_CustProductListFiltersValidationTest')
+data.setCell(23, 3, 1794);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'testOrderDetailsinOrderDetailsWindow')
+data.setCell(24, 2, 'ssda_test.customer.TC06_CustPlaceOrderVerifyOrderDetailsTest')
+data.setCell(24, 3, 1745);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'testQuantityDropdownForOnlyOnePerOrderProduct')
+data.setCell(25, 2, 'ssda_test.customer.TC02_CustProductListTableValidationTest')
+data.setCell(25, 3, 925);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'testOrdersDisplayedPerPageFilter')
+data.setCell(26, 2, 'ssda_test.customer.TC07_CustOrderListFiltersValidationTest')
+data.setCell(26, 3, 740);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'testSearchByOrderNumberFilter')
+data.setCell(27, 2, 'ssda_test.customer.TC07_CustOrderListFiltersValidationTest')
+data.setCell(27, 3, 671);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'testDefaultSelectedQuantityofProduct')
+data.setCell(28, 2, 'ssda_test.customer.TC02_CustProductListTableValidationTest')
+data.setCell(28, 3, 438);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'testProductDetailsAddedInCart')
+data.setCell(29, 2, 'ssda_test.customer.TC04_CustAddtoCartTest')
+data.setCell(29, 3, 171);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'testOrderDetailsonOrderListPage')
+data.setCell(30, 2, 'ssda_test.customer.TC06_CustPlaceOrderVerifyOrderDetailsTest')
+data.setCell(30, 3, 69);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'testTotalAmountPayable')
+data.setCell(31, 2, 'ssda_test.customer.TC04_CustAddtoCartTest')
+data.setCell(31, 3, 38);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 4 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -333,60 +983,225 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">ssda_test.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">ssda_test.customer.TC01_CustLoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">initialize</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
+                <span class="method-name">testWithMobileNumberLessThanTenDigits</span>
+                <span class="method-start">36985 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testWithMobileNumberMoreThanTenDigits</span>
+                <span class="method-start">68563 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testWithMobileNumberContainsAlphabets</span>
+                <span class="method-start">87848 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
                 <span class="method-name">testCustomerLoginWithInvalidCredentials</span>
-                <span class="method-start">33010 ms</span>
+                <span class="method-start">91140 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testCustomerLoginWithValidCredentials</span>
-                <span class="method-start">50364 ms</span>
+                <span class="method-start">101160 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">58662 ms</span>
+                <span class="method-start">119548 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">ssda_test.CustHomePageTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">ssda_test.customer.TC02_CustProductListTableValidationTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">initialize</span>
-                <span class="method-start">60493 ms</span>
+                <span class="method-start">137262 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">testCheckoutButtonWithEmptyCart</span>
-                <span class="method-start">74933 ms</span>
+                <span class="method-start">170696 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">testAddToCart</span>
-                <span class="method-start">83281 ms</span>
+                <span class="method-name">testDefaultSelectedQuantityofProduct</span>
+                <span class="method-start">185341 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">testCartItems</span>
-                <span class="method-start">99213 ms</span>
+                <span class="method-name">testItemsDisplayedPerPage</span>
+                <span class="method-start">185779 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testAddtoCartButtonDisplayedAsPerInventory</span>
+                <span class="method-start">191738 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testQuantityDropdownForOnlyOnePerOrderProduct</span>
+                <span class="method-start">194482 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testSearchProductFunctionality</span>
+                <span class="method-start">195408 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">99389 ms</span>
+                <span class="method-start">200943 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">ssda_test.ValidateHomePage</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">ssda_test.customer.TC03_CustProductListFiltersValidationTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">initialize</span>
-                <span class="method-start">99693 ms</span>
+                <span class="method-start">201915 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <span class="method-name">basePageNavigation</span>
-                <span class="method-start">104652 ms</span>
+                <span class="method-name">testTotalItemsFoundMatcheswithItemsInPaginationFilter</span>
+                <span class="method-start">224675 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testCategoryFilters</span>
+                <span class="method-start">236790 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGroupFilters</span>
+                <span class="method-start">246856 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testClearAllFilters</span>
+                <span class="method-start">248651 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">125563 ms</span>
+                <span class="method-start">251084 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">ssda_test.customer.TC04_CustAddtoCartTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initialize</span>
+                <span class="method-start">254091 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testAddToCartFeature</span>
+                <span class="method-start">272297 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testProductDetailsAddedInCart</span>
+                <span class="method-start">284978 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testTotalAmountPayable</span>
+                <span class="method-start">285149 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testAddProductWithSameQuantity</span>
+                <span class="method-start">285188 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDeleteItemFromCart</span>
+                <span class="method-start">291194 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">296846 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">ssda_test.customer.TC05_CustSelectTimeslotTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initialize</span>
+                <span class="method-start">297834 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">testAddToCartClickCheckoutButton</span>
+                <span class="method-start">319959 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDontSelectTimeslotClickSubmit</span>
+                <span class="method-start">333249 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testSelectTimeslotForDeliveryClickCancel</span>
+                <span class="method-start">344450 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">350414 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">ssda_test.customer.TC06_CustPlaceOrderVerifyOrderDetailsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initialize</span>
+                <span class="method-start">351730 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testSelectTimeslotForDeliveryClickSubmit</span>
+                <span class="method-start">381624 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testCustomerOrderDisplayedonOrderListPage</span>
+                <span class="method-start">400484 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testOrderDetailsonOrderListPage</span>
+                <span class="method-start">410805 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testOrderDetailsinOrderDetailsWindow</span>
+                <span class="method-start">410875 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">412621 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">ssda_test.customer.TC07_CustOrderListFiltersValidationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initialize</span>
+                <span class="method-start">413639 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">testCustomerOrdersDisplayedonOrderListPage</span>
+                <span class="method-start">431853 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testOrdersDisplayedPerPageFilter</span>
+                <span class="method-start">458984 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testSearchByOrderStatusFilter</span>
+                <span class="method-start">459725 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testSearchByOrderNumberFilter</span>
+                <span class="method-start">468175 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">468847 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">ssda_test.admin.ValidateHomePage</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initialize</span>
+                <span class="method-start">470121 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">basePageNavigation</span>
+                <span class="method-start">474448 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">492389 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

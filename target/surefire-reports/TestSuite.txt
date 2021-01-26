@@ -1,4 +1,16 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 130.222 s - in TestSuite
+Tests run: 32, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 501.688 s <<< FAILURE! - in TestSuite
+testAddToCartFeature(ssda_test.customer.TC04_CustAddtoCartTest)  Time elapsed: 11.716 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at ssda_test.customer.TC04_CustAddtoCartTest.testAddToCartFeature(TC04_CustAddtoCartTest.java:59)
+
+testSelectTimeslotForDeliveryClickSubmit(ssda_test.customer.TC06_CustPlaceOrderVerifyOrderDetailsTest)  Time elapsed: 17.905 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at ssda_test.customer.TC06_CustPlaceOrderVerifyOrderDetailsTest.testSelectTimeslotForDeliveryClickSubmit(TC06_CustPlaceOrderVerifyOrderDetailsTest.java:80)
+
+testCustomerOrderDisplayedonOrderListPage(ssda_test.customer.TC06_CustPlaceOrderVerifyOrderDetailsTest)  Time elapsed: 9.824 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at ssda_test.customer.TC06_CustPlaceOrderVerifyOrderDetailsTest.testCustomerOrderDisplayedonOrderListPage(TC06_CustPlaceOrderVerifyOrderDetailsTest.java:98)
+

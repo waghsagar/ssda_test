@@ -21,6 +21,7 @@ public class TC01_CustLoginTest extends TestBase{
 	CustomerHomePage chp;
 	public static Logger log = LogManager.getLogger(TestBase.class.getName());
 
+	
 	@BeforeTest
 	public void initialize() throws IOException{
 		driver = initializeDriver();
@@ -89,7 +90,6 @@ public class TC01_CustLoginTest extends TestBase{
 
 	@AfterTest
 	public void teardown(){
-		driver.close();
 		driver.quit();
 	}
 }

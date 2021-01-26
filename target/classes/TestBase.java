@@ -15,7 +15,6 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.opera.OperaDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -23,7 +22,6 @@ public class TestBase {
 
 	public WebDriver driver;
 	public Properties prop;
-	public WebDriverWait wait;
 	
 	public WebDriver initializeDriver() throws IOException {
 		prop = new Properties();
@@ -61,7 +59,7 @@ public class TestBase {
 			driver = new InternetExplorerDriver();
 		}
 		
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		
 		return driver;	
@@ -71,7 +69,7 @@ public class TestBase {
 	{
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File source = ts.getScreenshotAs(OutputType.FILE);
-		String destinationFile = System.getProperty("user.dir")+"\\reports\\"+testCaseName+".png";
+		String destinationFile = System.getProperty("user.dir")+"\\screenshots\\"+testCaseName+".png";
 		FileUtils.copyFile(source,new File(destinationFile));
 		return destinationFile;
 	}
