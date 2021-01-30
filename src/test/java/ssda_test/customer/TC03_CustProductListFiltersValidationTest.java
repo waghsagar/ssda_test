@@ -25,8 +25,6 @@ public class TC03_CustProductListFiltersValidationTest extends TestBase{
 	Utilities util;
 	
 	public static Logger log = LogManager.getLogger(TestBase.class.getName());
-	public int quantity = 2;
-	public String searchProduct = "JOHNSON";
 	public double pricePerItemDouble = 0;
 	public double totalAmountDouble = 0;
 	public String totalAmountString = "";
@@ -45,12 +43,12 @@ public class TC03_CustProductListFiltersValidationTest extends TestBase{
 	}
 
 	@Test(priority=1)
-	public void testTotalItemsFoundMatcheswithItemsInPaginationFilter() {
+	public void testTotalItemsFoundWithItemsInPaginationFilter() {
 		log.info("Validate if total number of items found matches with items number displayed in Pagination filter");
 		lp.getMobile().sendKeys(prop.getProperty("cust_mobile"));
 		lp.getPassword().sendKeys(prop.getProperty("cust_password"));
 		lp.getLogin().click();
-		util.waitForElementToBeInvisible(driver, chp.getNoRecordsFound(), 20);
+		util.waitForElementToBeInvisible(driver, chp.getNoRecordsFound(), 30);
 		Assert.assertFalse(chp.getCheckoutButton().isEnabled());
 		totalItems = chp.getItemsFoundTotal().getText();
 		totalItems = totalItems.replaceAll("[^0-9]", "");
@@ -71,7 +69,7 @@ public class TC03_CustProductListFiltersValidationTest extends TestBase{
 				Assert.assertFalse(categoryCheckbox_list.get(j).isSelected());
 				log.info("Click on checkbox infront of selected category");
 				categoryLabel_list.get(j).click();
-				util.waitForElementToBeInvisible(driver, chp.getNoRecordsFound(), 20);
+				util.waitForElementToBeInvisible(driver, chp.getPageLoading(), 30);
 				Assert.assertTrue(categoryCheckbox_list.get(j).isSelected());
 				log.info("Checkbox infront of selected category is displayed as selected");
 				break;
@@ -80,7 +78,7 @@ public class TC03_CustProductListFiltersValidationTest extends TestBase{
 		Assert.assertTrue(chp.getItemsFoundInPaginatorRange().getText().contains(chp.getItemsFoundTotal().getText().replaceAll("[^0-9]", "")));
 		log.info("Total number of items found after selecting category filter checkbox matches with number of items displayed in Pagination filter");
 		chp.getClearFiltersButton().click();
-		util.waitForElementToBeInvisible(driver, chp.getNoRecordsFound(), 20);
+		util.waitForElementToBeInvisible(driver, chp.getPageLoading(), 30);
 		Assert.assertTrue(chp.getItemsFoundInPaginatorRange().getText().contains(totalItems));
 	}
 
@@ -96,7 +94,7 @@ public class TC03_CustProductListFiltersValidationTest extends TestBase{
 				Assert.assertFalse(groupCheckbox_list.get(j).isSelected());
 				log.info("Click on checkbox infront of selected group");
 				groupLabel_list.get(j).click();
-				util.waitForElementToBeInvisible(driver, chp.getNoRecordsFound(), 20);
+				util.waitForElementToBeInvisible(driver, chp.getPageLoading(), 30);
 				Assert.assertTrue(groupCheckbox_list.get(j).isSelected());
 				log.info("Checkbox infront of selected group is displayed as selected");
 				break;
@@ -112,7 +110,7 @@ public class TC03_CustProductListFiltersValidationTest extends TestBase{
 		log.info("Validate after clearing all filters total items present in inventory are displayed on product list page");
 		chp.getClearFiltersButton().click();
 		log.info("Click on 'Clear All Filters' button");
-		util.waitForElementToBeInvisible(driver, chp.getNoRecordsFound(), 20);
+		util.waitForElementToBeInvisible(driver, chp.getPageLoading(), 30);
 		Assert.assertTrue(chp.getItemsFoundInPaginatorRange().getText().contains(totalItems));
 		log.info("Total items displayed in pagination filter matches with number of items present in inventory");
 		List<WebElement> categoryCheckbox_list = chp.getCategoryFilterCheckbox();

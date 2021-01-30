@@ -25,7 +25,6 @@ public class TC02_CustProductListTableValidationTest extends TestBase{
 	Utilities util;
 	
 	public static Logger log = LogManager.getLogger(TestBase.class.getName());
-	public int quantity = 2;
 	public String searchProduct = "JOHNSON";
 	public double pricePerItemDouble = 0;
 	public double totalAmountDouble = 0;
@@ -51,7 +50,7 @@ public class TC02_CustProductListTableValidationTest extends TestBase{
 		lp.getPassword().sendKeys(prop.getProperty("cust_password"));
 		log.info("Enter valid customer credentials and click on Login button");
 		lp.getLogin().click();
-		util.waitForElementToBeInvisible(driver, chp.getNoRecordsFound(), 20);
+		util.waitForElementToBeInvisible(driver, chp.getNoRecordsFound(), 30);
 		Assert.assertFalse(chp.getCheckoutButton().isEnabled());
 		log.info("On Customer home page Checkout button is in disabled state");
 	}
@@ -77,7 +76,7 @@ public class TC02_CustProductListTableValidationTest extends TestBase{
 				break;
 			}
 		}
-		util.waitForElementToBeInvisible(driver, chp.getNoRecordsFound(), 20);
+		util.waitForElementToBeInvisible(driver, chp.getNoRecordsFound(), 30);
 		Assert.assertEquals(chp.getItemsPerPage().getText(), "30");
 		List<WebElement> totalSearchResult = chp.getTotalSearchResults();
 		Assert.assertEquals(chp.getItemsPerPage().getText(), String.valueOf(totalSearchResult.size()));
@@ -120,7 +119,7 @@ public class TC02_CustProductListTableValidationTest extends TestBase{
 		log.info("Customer enters product name to search in inventory");
 		chp.getSearchProductBox().sendKeys(searchProduct);
 		chp.getSearchProductIcon().click();
-		util.waitForElementToBeInvisible(driver, chp.getNoRecordsFound(), 20);
+		util.waitForElementToBeInvisible(driver, chp.getPageLoading(), 30);
 		List<WebElement> allProductsName = chp.getAllProductsName();
 		System.out.println("Total products found after search : "+ allProductsName.size());
 		log.info("Total products found after search : "+ allProductsName.size());

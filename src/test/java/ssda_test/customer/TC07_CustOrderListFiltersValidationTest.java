@@ -52,13 +52,13 @@ public class TC07_CustOrderListFiltersValidationTest extends TestBase{
 		lp.getMobile().sendKeys(prop.getProperty("cust_mobile"));
 		lp.getPassword().sendKeys(prop.getProperty("cust_password"));
 		lp.getLogin().click();
-		util.waitForElementToBeInvisible(driver, chp.getNoRecordsFound(), 20);
+		util.waitForElementToBeInvisible(driver, chp.getNoRecordsFound(), 30);
 		Assert.assertFalse(chp.getCheckoutButton().isEnabled());
 		log.info("Customer clicks on UserMenu and then clicks on Orders link");
 		chp.getUserMenu().click();
 		chp.getOrdersLink().click();
 		log.info("Order list page opens");
-		util.waitForElementToBeVisible(driver, colp.getOrderListTable(), 20);
+		util.waitForElementToBeVisible(driver, colp.getOrderListTable(), 30);
 		Assert.assertTrue(colp.getOrderListTable().isDisplayed());
 		log.info("Customer orders displayed on Order list page");
 		deliveryDate = colp.getDeliveryDateDetails().getText();
@@ -101,7 +101,7 @@ public class TC07_CustOrderListFiltersValidationTest extends TestBase{
 				if( dropdown_list.get(j).getText().contains(status)){
 					log.info("Select "+ status +" from dropdown");
 					dropdown_list.get(j).click();
-					util.waitForAllElementsToBeInvisible(driver, colp.getDropdownOptions(), 20);
+					util.waitForAllElementsToBeInvisible(driver, colp.getDropdownOptions(), 30);
 					break;
 				}
 			}

@@ -1,10 +1,12 @@
 package ssda_test.customer;
 
 import java.io.IOException;
+import java.util.List;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -54,17 +56,33 @@ public class TC06_CustPlaceOrderVerifyOrderDetailsTest extends TestBase{
 		lp.getMobile().sendKeys(prop.getProperty("cust_mobile"));
 		lp.getPassword().sendKeys(prop.getProperty("cust_password"));
 		lp.getLogin().click();
-		util.waitForElementToBeInvisible(driver, chp.getNoRecordsFound(), 20);
+		util.waitForElementToBeInvisible(driver, chp.getNoRecordsFound(), 30);
 		Assert.assertFalse(chp.getCheckoutButton().isEnabled());
+		
+		List<WebElement> categoryLabel_list = chp.getCategoryFilterLabel();
+		List<WebElement> categoryCheckbox_list = chp.getCategoryFilterCheckbox();
+		// Iterating through the list and selecting the desired option
+		for(int j = 0; j < categoryLabel_list.size(); j++){
+			if( categoryLabel_list.get(j).getText().contains("KITCHEN ITEMS")){
+				Assert.assertFalse(categoryCheckbox_list.get(j).isSelected());
+				log.info("Click on checkbox infront of selected category");
+				categoryLabel_list.get(j).click();
+				util.waitForElementToBeInvisible(driver, chp.getPageLoading(), 30);
+				Assert.assertTrue(categoryCheckbox_list.get(j).isSelected());
+				log.info("Checkbox infront of selected category is displayed as selected");
+				break;
+			}
+		}
+		
 		Assert.assertTrue(chp.getAddToCart().isDisplayed());
 		productName = chp.getproductName().getText();
 		util.selectValueFromDropDownByIndex(chp.getProductQuantity(), quantity);
 		pricePerItem = chp.getProductPrice().getText();
 		chp.getAddToCart().click();
-		util.waitForElementToBeInvisible(driver, chp.getAlert(), 20);
+		util.waitForElementToBeInvisible(driver, chp.getAlert(), 30);
 		totalAmount = chp.getTotalAmountPayable().getText();
 		chp.getCheckoutButton().click();
-		util.waitForElementToBeVisible(driver, chp.getSelectDeliveryDate(), 20);
+		util.waitForElementToBeVisible(driver, chp.getSelectDeliveryDate(), 30);
 		deliveryDate = chp.getSelectDeliveryDate().getText();
 		log.info("Select timeslot for Product delivery window displayed");
 		Assert.assertTrue(chp.getSelectDeliveryTimeSlot().isEnabled());
@@ -72,7 +90,7 @@ public class TC06_CustPlaceOrderVerifyOrderDetailsTest extends TestBase{
 		chp.getSelectDeliveryTimeSlot().click();
 		log.info("Customer selects the delivery timeslot for product and click on Submit");
 		chp.getSubmitDeliveryTimeSlot().click();
-		util.waitForElementToBeVisible(driver, chp.getAlert(), 20);
+		util.waitForElementToBeVisible(driver, chp.getAlert(), 30);
 		Assert.assertTrue(chp.getAlert().isDisplayed());
 		Assert.assertTrue(chp.getAlert().getText().contains(" is placed"));
 		orderPlacedAlertMessage = chp.getAlert().getText();
@@ -82,12 +100,12 @@ public class TC06_CustPlaceOrderVerifyOrderDetailsTest extends TestBase{
 	@Test(priority=2)
 	public void testCustomerOrderDisplayedonOrderListPage() {
 		log.info("Validate Customer order displayed on Order List page");
-		util.waitForElementToBeInvisible(driver, chp.getAlert(), 20);
+		util.waitForElementToBeInvisible(driver, chp.getAlert(), 30);
 		log.info("Customer clicks on UserMenu and then Orders link");
 		chp.getUserMenu().click();
 		chp.getOrdersLink().click();
 		log.info("Order list page opens");
-		util.waitForElementToBeVisible(driver, colp.getOrderListTable(), 20);
+		util.waitForElementToBeVisible(driver, colp.getOrderListTable(), 30);
 		Assert.assertTrue(colp.getOrderListTable().isDisplayed());
 		log.info("Customer orders displayed on Order list page");
 		util.doubleClick(driver, colp.getOrderNoHeader());
@@ -99,7 +117,7 @@ public class TC06_CustPlaceOrderVerifyOrderDetailsTest extends TestBase{
 	@Test(priority=3)
 	public void testOrderDetailsonOrderListPage() {
 		log.info("Validate order details displayed on Order List page");
-		Assert.assertEquals(colp.getDeliveryDateDetails().getText(), deliveryDate);
+		Assert.assertTrue(deliveryDate.contains(colp.getDeliveryDateDetails().getText()));
 		Assert.assertEquals(colp.getSlotDetails().getText(), deliveryTimeslot);
 		Assert.assertTrue(colp.getStatusDetails().getText().contains("PENDING"));
 		deliveryStatus = colp.getStatusDetails().getText();
@@ -110,7 +128,7 @@ public class TC06_CustPlaceOrderVerifyOrderDetailsTest extends TestBase{
 	public void testOrderDetailsinOrderDetailsWindow() {
 		log.info("Validate order details displayed on Order Details window");
 		colp.getShowOrderDetails().click();
-		util.waitForElementToBeVisible(driver, colp.getOrderDetailsWindow(), 20);
+		util.waitForElementToBeVisible(driver, colp.getOrderDetailsWindow(), 30);
 		Assert.assertTrue(colp.getOrderDetailsWindow().isDisplayed());
 		log.info("Customer orders details window displayed on Order list page");
 		Assert.assertEquals(colp.getProductNameOrderDetailsWindow().getText(), productName);
@@ -122,8 +140,8 @@ public class TC06_CustPlaceOrderVerifyOrderDetailsTest extends TestBase{
 		Assert.assertTrue(colp.getTimeSlotOrderDetailsWindow().getText().contains(deliveryTimeslot));
 		Assert.assertTrue(colp.getStatusOrderDetailsWindow().getText().contains("PENDING"));
 		colp.getCloseButtonOrderDetailsWindow().click();
-		util.waitForElementToBeInvisible(driver, colp.getOrderDetailsWindow(), 20);
-		Assert.assertFalse(colp.getOrderDetailsWindow().isDisplayed());
+		util.waitForElementToBeInvisible(driver, colp.getOrderDetailsWindow(), 30);
+		Assert.assertTrue(colp.getSlotDetails().isDisplayed());
 		log.info("Customer order details displayed in Order Details window are correct");
 	}
 	

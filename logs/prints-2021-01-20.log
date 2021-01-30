@@ -1,5 +1,0 @@
-20:35:24.389 [main] INFO  resources.TestBase - Select Lapsed from dropdown
-20:35:25.771 [main] INFO  resources.TestBase - On Order list page all statuses displayed as per LAPSED option selected from dropdown
-20:35:26.124 [main] INFO  resources.TestBase - Select Cancelled from dropdown
-20:35:27.422 [main] INFO  resources.TestBase - On Order list page all statuses displayed as per CANCELLED option selected from dropdown
-20:35:27.425 [main] INFO  resources.TestBase - Validate search by order number feature on Order list page

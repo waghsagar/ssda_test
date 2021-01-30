@@ -1,233 +1,245 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="32" passed="32">
+<testng-results skipped="0" failed="0" total="33" passed="33">
   <reporter-output>
   </reporter-output>
-  <suite name="SSDA Test Automation Smoke Suite" duration-ms="855126" started-at="2021-01-26T13:58:08Z" finished-at="2021-01-26T14:12:23Z">
+  <suite name="SSDA Automation Customer Tests" duration-ms="525333" started-at="2021-01-30T14:20:50Z" finished-at="2021-01-30T14:29:36Z">
     <groups>
     </groups>
-    <test name="Validating Login page test" duration-ms="121466" started-at="2021-01-26T13:58:08Z" finished-at="2021-01-26T14:00:10Z">
+    <test name="Validating Login page test" duration-ms="86745" started-at="2021-01-30T14:20:50Z" finished-at="2021-01-30T14:22:17Z">
       <class name="ssda_test.customer.TC01_CustLoginTest">
-        <test-method status="PASS" signature="initialize()[pri:0, instance:ssda_test.customer.TC01_CustLoginTest@55de24cc]" name="initialize" is-config="true" duration-ms="18563" started-at="2021-01-26T19:28:08Z" finished-at="2021-01-26T19:28:27Z">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:ssda_test.customer.TC01_CustLoginTest@821330f]" name="initialize" is-config="true" duration-ms="3715" started-at="2021-01-30T19:50:50Z" finished-at="2021-01-30T19:50:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="testWithMobileNumberLessThanTenDigits()[pri:0, instance:ssda_test.customer.TC01_CustLoginTest@55de24cc]" name="testWithMobileNumberLessThanTenDigits" duration-ms="77271" started-at="2021-01-26T19:28:27Z" finished-at="2021-01-26T19:29:44Z">
+        <test-method status="PASS" signature="testWithMobileNumberLessThanTenDigits()[pri:0, instance:ssda_test.customer.TC01_CustLoginTest@821330f]" name="testWithMobileNumberLessThanTenDigits" duration-ms="61090" started-at="2021-01-30T19:50:54Z" finished-at="2021-01-30T19:51:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testWithMobileNumberLessThanTenDigits -->
-        <test-method status="PASS" signature="testWithMobileNumberMoreThanTenDigits()[pri:0, instance:ssda_test.customer.TC01_CustLoginTest@55de24cc]" name="testWithMobileNumberMoreThanTenDigits" duration-ms="2511" started-at="2021-01-26T19:29:44Z" finished-at="2021-01-26T19:29:47Z">
+        <test-method status="PASS" signature="testWithMobileNumberMoreThanTenDigits()[pri:0, instance:ssda_test.customer.TC01_CustLoginTest@821330f]" name="testWithMobileNumberMoreThanTenDigits" duration-ms="2480" started-at="2021-01-30T19:51:55Z" finished-at="2021-01-30T19:51:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testWithMobileNumberMoreThanTenDigits -->
-        <test-method status="PASS" signature="testWithMobileNumberContainsAlphabets()[pri:0, instance:ssda_test.customer.TC01_CustLoginTest@55de24cc]" name="testWithMobileNumberContainsAlphabets" duration-ms="2299" started-at="2021-01-26T19:29:47Z" finished-at="2021-01-26T19:29:49Z">
+        <test-method status="PASS" signature="testWithMobileNumberContainsAlphabets()[pri:0, instance:ssda_test.customer.TC01_CustLoginTest@821330f]" name="testWithMobileNumberContainsAlphabets" duration-ms="2010" started-at="2021-01-30T19:51:57Z" finished-at="2021-01-30T19:52:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testWithMobileNumberContainsAlphabets -->
-        <test-method status="PASS" signature="testCustomerLoginWithInvalidCredentials()[pri:0, instance:ssda_test.customer.TC01_CustLoginTest@55de24cc]" name="testCustomerLoginWithInvalidCredentials" duration-ms="5840" started-at="2021-01-26T19:29:49Z" finished-at="2021-01-26T19:29:55Z">
+        <test-method status="PASS" signature="testCustomerLoginWithInvalidCredentials()[pri:0, instance:ssda_test.customer.TC01_CustLoginTest@821330f]" name="testCustomerLoginWithInvalidCredentials" duration-ms="8996" started-at="2021-01-30T19:52:00Z" finished-at="2021-01-30T19:52:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCustomerLoginWithInvalidCredentials -->
-        <test-method status="PASS" signature="testCustomerLoginWithValidCredentials()[pri:0, instance:ssda_test.customer.TC01_CustLoginTest@55de24cc]" name="testCustomerLoginWithValidCredentials" duration-ms="13907" started-at="2021-01-26T19:29:55Z" finished-at="2021-01-26T19:30:09Z">
+        <test-method status="PASS" signature="testCustomerLoginWithValidCredentials()[pri:0, instance:ssda_test.customer.TC01_CustLoginTest@821330f]" name="testCustomerLoginWithValidCredentials" duration-ms="7480" started-at="2021-01-30T19:52:09Z" finished-at="2021-01-30T19:52:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCustomerLoginWithValidCredentials -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:ssda_test.customer.TC01_CustLoginTest@55de24cc]" name="teardown" is-config="true" duration-ms="1035" started-at="2021-01-26T19:30:09Z" finished-at="2021-01-26T19:30:10Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:ssda_test.customer.TC01_CustLoginTest@821330f]" name="teardown" is-config="true" duration-ms="927" started-at="2021-01-30T19:52:16Z" finished-at="2021-01-30T19:52:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- ssda_test.customer.TC01_CustLoginTest -->
     </test> <!-- Validating Login page test -->
-    <test name="Validating Product inventory list in table test" duration-ms="118919" started-at="2021-01-26T14:00:11Z" finished-at="2021-01-26T14:02:09Z">
+    <test name="Validating Product inventory list in table test" duration-ms="88252" started-at="2021-01-30T14:22:18Z" finished-at="2021-01-30T14:23:46Z">
       <class name="ssda_test.customer.TC02_CustProductListTableValidationTest">
-        <test-method status="PASS" signature="initialize()[pri:0, instance:ssda_test.customer.TC02_CustProductListTableValidationTest@475c9c31]" name="initialize" is-config="true" duration-ms="61355" started-at="2021-01-26T19:30:11Z" finished-at="2021-01-26T19:31:12Z">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:ssda_test.customer.TC02_CustProductListTableValidationTest@2f953efd]" name="initialize" is-config="true" duration-ms="49224" started-at="2021-01-30T19:52:18Z" finished-at="2021-01-30T19:53:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="testCheckoutButtonWithEmptyCart()[pri:0, instance:ssda_test.customer.TC02_CustProductListTableValidationTest@475c9c31]" name="testCheckoutButtonWithEmptyCart" duration-ms="21110" started-at="2021-01-26T19:31:12Z" finished-at="2021-01-26T19:31:33Z">
+        <test-method status="PASS" signature="testCheckoutButtonWithEmptyCart()[pri:0, instance:ssda_test.customer.TC02_CustProductListTableValidationTest@2f953efd]" name="testCheckoutButtonWithEmptyCart" duration-ms="12678" started-at="2021-01-30T19:53:07Z" finished-at="2021-01-30T19:53:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCheckoutButtonWithEmptyCart -->
-        <test-method status="PASS" signature="testDefaultSelectedQuantityofProduct()[pri:0, instance:ssda_test.customer.TC02_CustProductListTableValidationTest@475c9c31]" name="testDefaultSelectedQuantityofProduct" duration-ms="328" started-at="2021-01-26T19:31:33Z" finished-at="2021-01-26T19:31:33Z">
+        <test-method status="PASS" signature="testDefaultSelectedQuantityofProduct()[pri:0, instance:ssda_test.customer.TC02_CustProductListTableValidationTest@2f953efd]" name="testDefaultSelectedQuantityofProduct" duration-ms="285" started-at="2021-01-30T19:53:19Z" finished-at="2021-01-30T19:53:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDefaultSelectedQuantityofProduct -->
-        <test-method status="PASS" signature="testItemsDisplayedPerPage()[pri:0, instance:ssda_test.customer.TC02_CustProductListTableValidationTest@475c9c31]" name="testItemsDisplayedPerPage" duration-ms="18946" started-at="2021-01-26T19:31:33Z" finished-at="2021-01-26T19:31:52Z">
+        <test-method status="PASS" signature="testItemsDisplayedPerPage()[pri:0, instance:ssda_test.customer.TC02_CustProductListTableValidationTest@2f953efd]" name="testItemsDisplayedPerPage" duration-ms="10809" started-at="2021-01-30T19:53:20Z" finished-at="2021-01-30T19:53:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testItemsDisplayedPerPage -->
-        <test-method status="PASS" signature="testAddtoCartButtonDisplayedAsPerInventory()[pri:0, instance:ssda_test.customer.TC02_CustProductListTableValidationTest@475c9c31]" name="testAddtoCartButtonDisplayedAsPerInventory" duration-ms="2844" started-at="2021-01-26T19:31:52Z" finished-at="2021-01-26T19:31:55Z">
+        <test-method status="PASS" signature="testAddtoCartButtonDisplayedAsPerInventory()[pri:0, instance:ssda_test.customer.TC02_CustProductListTableValidationTest@2f953efd]" name="testAddtoCartButtonDisplayedAsPerInventory" duration-ms="3149" started-at="2021-01-30T19:53:31Z" finished-at="2021-01-30T19:53:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAddtoCartButtonDisplayedAsPerInventory -->
-        <test-method status="PASS" signature="testQuantityDropdownForOnlyOnePerOrderProduct()[pri:0, instance:ssda_test.customer.TC02_CustProductListTableValidationTest@475c9c31]" name="testQuantityDropdownForOnlyOnePerOrderProduct" duration-ms="1118" started-at="2021-01-26T19:31:55Z" finished-at="2021-01-26T19:31:56Z">
+        <test-method status="PASS" signature="testQuantityDropdownForOnlyOnePerOrderProduct()[pri:0, instance:ssda_test.customer.TC02_CustProductListTableValidationTest@2f953efd]" name="testQuantityDropdownForOnlyOnePerOrderProduct" duration-ms="1004" started-at="2021-01-30T19:53:34Z" finished-at="2021-01-30T19:53:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testQuantityDropdownForOnlyOnePerOrderProduct -->
-        <test-method status="PASS" signature="testSearchProductFunctionality()[pri:0, instance:ssda_test.customer.TC02_CustProductListTableValidationTest@475c9c31]" name="testSearchProductFunctionality" duration-ms="12081" started-at="2021-01-26T19:31:56Z" finished-at="2021-01-26T19:32:08Z">
+        <test-method status="PASS" signature="testSearchProductFunctionality()[pri:0, instance:ssda_test.customer.TC02_CustProductListTableValidationTest@2f953efd]" name="testSearchProductFunctionality" duration-ms="9996" started-at="2021-01-30T19:53:35Z" finished-at="2021-01-30T19:53:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSearchProductFunctionality -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:ssda_test.customer.TC02_CustProductListTableValidationTest@475c9c31]" name="teardown" is-config="true" duration-ms="1123" started-at="2021-01-26T19:32:08Z" finished-at="2021-01-26T19:32:09Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:ssda_test.customer.TC02_CustProductListTableValidationTest@2f953efd]" name="teardown" is-config="true" duration-ms="1091" started-at="2021-01-30T19:53:45Z" finished-at="2021-01-30T19:53:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- ssda_test.customer.TC02_CustProductListTableValidationTest -->
     </test> <!-- Validating Product inventory list in table test -->
-    <test name="Validating Product inventory list filters test" duration-ms="95750" started-at="2021-01-26T14:02:10Z" finished-at="2021-01-26T14:03:45Z">
+    <test name="Validating Product inventory list filters test" duration-ms="103506" started-at="2021-01-30T14:23:46Z" finished-at="2021-01-30T14:25:29Z">
       <class name="ssda_test.customer.TC03_CustProductListFiltersValidationTest">
-        <test-method status="PASS" signature="initialize()[pri:0, instance:ssda_test.customer.TC03_CustProductListFiltersValidationTest@4dc27487]" name="initialize" is-config="true" duration-ms="62524" started-at="2021-01-26T19:32:10Z" finished-at="2021-01-26T19:33:12Z">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:ssda_test.customer.TC03_CustProductListFiltersValidationTest@1b66c0fb]" name="initialize" is-config="true" duration-ms="96226" started-at="2021-01-30T19:53:46Z" finished-at="2021-01-30T19:55:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="testTotalItemsFoundMatcheswithItemsInPaginationFilter()[pri:0, instance:ssda_test.customer.TC03_CustProductListFiltersValidationTest@4dc27487]" name="testTotalItemsFoundMatcheswithItemsInPaginationFilter" duration-ms="14179" started-at="2021-01-26T19:33:12Z" finished-at="2021-01-26T19:33:26Z">
+        <test-method status="PASS" signature="testTotalItemsFoundWithItemsInPaginationFilter()[pri:0, instance:ssda_test.customer.TC03_CustProductListFiltersValidationTest@1b66c0fb]" name="testTotalItemsFoundWithItemsInPaginationFilter" duration-ms="1905" started-at="2021-01-30T19:55:22Z" finished-at="2021-01-30T19:55:24Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testTotalItemsFoundMatcheswithItemsInPaginationFilter -->
-        <test-method status="PASS" signature="testCategoryFilters()[pri:0, instance:ssda_test.customer.TC03_CustProductListFiltersValidationTest@4dc27487]" name="testCategoryFilters" duration-ms="4896" started-at="2021-01-26T19:33:26Z" finished-at="2021-01-26T19:33:31Z">
+        </test-method> <!-- testTotalItemsFoundWithItemsInPaginationFilter -->
+        <test-method status="PASS" signature="testCategoryFilters()[pri:0, instance:ssda_test.customer.TC03_CustProductListFiltersValidationTest@1b66c0fb]" name="testCategoryFilters" duration-ms="1964" started-at="2021-01-30T19:55:24Z" finished-at="2021-01-30T19:55:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCategoryFilters -->
-        <test-method status="PASS" signature="testGroupFilters()[pri:0, instance:ssda_test.customer.TC03_CustProductListFiltersValidationTest@4dc27487]" name="testGroupFilters" duration-ms="5874" started-at="2021-01-26T19:33:31Z" finished-at="2021-01-26T19:33:37Z">
+        <test-method status="PASS" signature="testGroupFilters()[pri:0, instance:ssda_test.customer.TC03_CustProductListFiltersValidationTest@1b66c0fb]" name="testGroupFilters" duration-ms="994" started-at="2021-01-30T19:55:26Z" finished-at="2021-01-30T19:55:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGroupFilters -->
-        <test-method status="PASS" signature="testClearAllFilters()[pri:0, instance:ssda_test.customer.TC03_CustProductListFiltersValidationTest@4dc27487]" name="testClearAllFilters" duration-ms="3869" started-at="2021-01-26T19:33:37Z" finished-at="2021-01-26T19:33:41Z">
+        <test-method status="PASS" signature="testClearAllFilters()[pri:0, instance:ssda_test.customer.TC03_CustProductListFiltersValidationTest@1b66c0fb]" name="testClearAllFilters" duration-ms="1567" started-at="2021-01-30T19:55:27Z" finished-at="2021-01-30T19:55:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testClearAllFilters -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:ssda_test.customer.TC03_CustProductListFiltersValidationTest@4dc27487]" name="teardown" is-config="true" duration-ms="4402" started-at="2021-01-26T19:33:41Z" finished-at="2021-01-26T19:33:45Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:ssda_test.customer.TC03_CustProductListFiltersValidationTest@1b66c0fb]" name="teardown" is-config="true" duration-ms="841" started-at="2021-01-30T19:55:29Z" finished-at="2021-01-30T19:55:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- ssda_test.customer.TC03_CustProductListFiltersValidationTest -->
     </test> <!-- Validating Product inventory list filters test -->
-    <test name="Validating Add Product to cart test" duration-ms="102518" started-at="2021-01-26T14:03:45Z" finished-at="2021-01-26T14:05:28Z">
+    <test name="Validating Add Product to cart test" duration-ms="56720" started-at="2021-01-30T14:25:29Z" finished-at="2021-01-30T14:26:26Z">
       <class name="ssda_test.customer.TC04_CustAddtoCartTest">
-        <test-method status="PASS" signature="initialize()[pri:0, instance:ssda_test.customer.TC04_CustAddtoCartTest@626abbd0]" name="initialize" is-config="true" duration-ms="78738" started-at="2021-01-26T19:33:45Z" finished-at="2021-01-26T19:35:04Z">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:ssda_test.customer.TC04_CustAddtoCartTest@798162bc]" name="initialize" is-config="true" duration-ms="16438" started-at="2021-01-30T19:55:29Z" finished-at="2021-01-30T19:55:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="testAddToCartFeature()[pri:0, instance:ssda_test.customer.TC04_CustAddtoCartTest@626abbd0]" name="testAddToCartFeature" duration-ms="11151" started-at="2021-01-26T19:35:04Z" finished-at="2021-01-26T19:35:15Z">
+        <test-method status="PASS" signature="testAddToCartFeature()[pri:0, instance:ssda_test.customer.TC04_CustAddtoCartTest@798162bc]" name="testAddToCartFeature" duration-ms="27596" started-at="2021-01-30T19:55:46Z" finished-at="2021-01-30T19:56:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAddToCartFeature -->
-        <test-method status="PASS" signature="testProductDetailsAddedInCart()[pri:0, instance:ssda_test.customer.TC04_CustAddtoCartTest@626abbd0]" name="testProductDetailsAddedInCart" duration-ms="132" started-at="2021-01-26T19:35:15Z" finished-at="2021-01-26T19:35:15Z">
+        <test-method status="PASS" signature="testProductDetailsAddedInCart()[pri:0, instance:ssda_test.customer.TC04_CustAddtoCartTest@798162bc]" name="testProductDetailsAddedInCart" duration-ms="134" started-at="2021-01-30T19:56:13Z" finished-at="2021-01-30T19:56:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testProductDetailsAddedInCart -->
-        <test-method status="PASS" signature="testTotalAmountPayable()[pri:0, instance:ssda_test.customer.TC04_CustAddtoCartTest@626abbd0]" name="testTotalAmountPayable" duration-ms="46" started-at="2021-01-26T19:35:15Z" finished-at="2021-01-26T19:35:15Z">
+        <test-method status="PASS" signature="testTotalAmountPayable()[pri:0, instance:ssda_test.customer.TC04_CustAddtoCartTest@798162bc]" name="testTotalAmountPayable" duration-ms="41" started-at="2021-01-30T19:56:14Z" finished-at="2021-01-30T19:56:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTotalAmountPayable -->
-        <test-method status="PASS" signature="testAddProductWithSameQuantity()[pri:0, instance:ssda_test.customer.TC04_CustAddtoCartTest@626abbd0]" name="testAddProductWithSameQuantity" duration-ms="5832" started-at="2021-01-26T19:35:15Z" finished-at="2021-01-26T19:35:21Z">
+        <test-method status="PASS" signature="testAddProductWithSameQuantity()[pri:0, instance:ssda_test.customer.TC04_CustAddtoCartTest@798162bc]" name="testAddProductWithSameQuantity" duration-ms="5837" started-at="2021-01-30T19:56:14Z" finished-at="2021-01-30T19:56:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAddProductWithSameQuantity -->
-        <test-method status="PASS" signature="testDeleteItemFromCart()[pri:0, instance:ssda_test.customer.TC04_CustAddtoCartTest@626abbd0]" name="testDeleteItemFromCart" duration-ms="5687" started-at="2021-01-26T19:35:21Z" finished-at="2021-01-26T19:35:27Z">
+        <test-method status="PASS" signature="testDeleteItemFromCart()[pri:0, instance:ssda_test.customer.TC04_CustAddtoCartTest@798162bc]" name="testDeleteItemFromCart" duration-ms="5891" started-at="2021-01-30T19:56:19Z" finished-at="2021-01-30T19:56:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDeleteItemFromCart -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:ssda_test.customer.TC04_CustAddtoCartTest@626abbd0]" name="teardown" is-config="true" duration-ms="923" started-at="2021-01-26T19:35:27Z" finished-at="2021-01-26T19:35:28Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:ssda_test.customer.TC04_CustAddtoCartTest@798162bc]" name="teardown" is-config="true" duration-ms="776" started-at="2021-01-30T19:56:25Z" finished-at="2021-01-30T19:56:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- ssda_test.customer.TC04_CustAddtoCartTest -->
     </test> <!-- Validating Add Product to cart test -->
-    <test name="Validating select timeslot test" duration-ms="78725" started-at="2021-01-26T14:05:28Z" finished-at="2021-01-26T14:06:47Z">
+    <test name="Validating select timeslot test" duration-ms="43623" started-at="2021-01-30T14:26:26Z" finished-at="2021-01-30T14:27:10Z">
       <class name="ssda_test.customer.TC05_CustSelectTimeslotTest">
-        <test-method status="PASS" signature="initialize()[pri:0, instance:ssda_test.customer.TC05_CustSelectTimeslotTest@66ea810]" name="initialize" is-config="true" duration-ms="49173" started-at="2021-01-26T19:35:28Z" finished-at="2021-01-26T19:36:17Z">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:ssda_test.customer.TC05_CustSelectTimeslotTest@1c9b0314]" name="initialize" is-config="true" duration-ms="13300" started-at="2021-01-30T19:56:26Z" finished-at="2021-01-30T19:56:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="testAddToCartClickCheckoutButton()[pri:0, instance:ssda_test.customer.TC05_CustSelectTimeslotTest@66ea810]" name="testAddToCartClickCheckoutButton" duration-ms="18933" started-at="2021-01-26T19:36:17Z" finished-at="2021-01-26T19:36:36Z">
+        <test-method status="PASS" signature="testAddToCartClickCheckoutButton()[pri:0, instance:ssda_test.customer.TC05_CustSelectTimeslotTest@1c9b0314]" name="testAddToCartClickCheckoutButton" duration-ms="18599" started-at="2021-01-30T19:56:40Z" finished-at="2021-01-30T19:56:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAddToCartClickCheckoutButton -->
-        <test-method status="PASS" signature="testDontSelectTimeslotClickSubmit()[pri:0, instance:ssda_test.customer.TC05_CustSelectTimeslotTest@66ea810]" name="testDontSelectTimeslotClickSubmit" duration-ms="3997" started-at="2021-01-26T19:36:36Z" finished-at="2021-01-26T19:36:40Z">
+        <test-method status="PASS" signature="testDontSelectTimeslotClickSubmit()[pri:0, instance:ssda_test.customer.TC05_CustSelectTimeslotTest@1c9b0314]" name="testDontSelectTimeslotClickSubmit" duration-ms="4767" started-at="2021-01-30T19:56:58Z" finished-at="2021-01-30T19:57:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDontSelectTimeslotClickSubmit -->
-        <test-method status="PASS" signature="testSelectTimeslotForDeliveryClickCancel()[pri:0, instance:ssda_test.customer.TC05_CustSelectTimeslotTest@66ea810]" name="testSelectTimeslotForDeliveryClickCancel" duration-ms="5776" started-at="2021-01-26T19:36:40Z" finished-at="2021-01-26T19:36:46Z">
+        <test-method status="PASS" signature="testSelectTimeslotForDeliveryClickCancel()[pri:0, instance:ssda_test.customer.TC05_CustSelectTimeslotTest@1c9b0314]" name="testSelectTimeslotForDeliveryClickCancel" duration-ms="5909" started-at="2021-01-30T19:57:03Z" finished-at="2021-01-30T19:57:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSelectTimeslotForDeliveryClickCancel -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:ssda_test.customer.TC05_CustSelectTimeslotTest@66ea810]" name="teardown" is-config="true" duration-ms="839" started-at="2021-01-26T19:36:46Z" finished-at="2021-01-26T19:36:47Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:ssda_test.customer.TC05_CustSelectTimeslotTest@1c9b0314]" name="teardown" is-config="true" duration-ms="1042" started-at="2021-01-30T19:57:09Z" finished-at="2021-01-30T19:57:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- ssda_test.customer.TC05_CustSelectTimeslotTest -->
     </test> <!-- Validating select timeslot test -->
-    <test name="Validating place order and verify order details test" duration-ms="134560" started-at="2021-01-26T14:06:47Z" finished-at="2021-01-26T14:09:01Z">
+    <test name="Validating place order and verify order details test" duration-ms="86464" started-at="2021-01-30T14:27:10Z" finished-at="2021-01-30T14:28:36Z">
       <class name="ssda_test.customer.TC06_CustPlaceOrderVerifyOrderDetailsTest">
-        <test-method status="PASS" signature="initialize()[pri:0, instance:ssda_test.customer.TC06_CustPlaceOrderVerifyOrderDetailsTest@14bdbc74]" name="initialize" is-config="true" duration-ms="68335" started-at="2021-01-26T19:36:47Z" finished-at="2021-01-26T19:37:55Z">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:ssda_test.customer.TC06_CustPlaceOrderVerifyOrderDetailsTest@1224144a]" name="initialize" is-config="true" duration-ms="14133" started-at="2021-01-30T19:57:10Z" finished-at="2021-01-30T19:57:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="testSelectTimeslotForDeliveryClickSubmit()[pri:0, instance:ssda_test.customer.TC06_CustPlaceOrderVerifyOrderDetailsTest@14bdbc74]" name="testSelectTimeslotForDeliveryClickSubmit" duration-ms="41177" started-at="2021-01-26T19:37:55Z" finished-at="2021-01-26T19:38:36Z">
+        <test-method status="PASS" signature="testSelectTimeslotForDeliveryClickSubmit()[pri:0, instance:ssda_test.customer.TC06_CustPlaceOrderVerifyOrderDetailsTest@1224144a]" name="testSelectTimeslotForDeliveryClickSubmit" duration-ms="54396" started-at="2021-01-30T19:57:24Z" finished-at="2021-01-30T19:58:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSelectTimeslotForDeliveryClickSubmit -->
-        <test-method status="PASS" signature="testCustomerOrderDisplayedonOrderListPage()[pri:0, instance:ssda_test.customer.TC06_CustPlaceOrderVerifyOrderDetailsTest@14bdbc74]" name="testCustomerOrderDisplayedonOrderListPage" duration-ms="19428" started-at="2021-01-26T19:38:36Z" finished-at="2021-01-26T19:38:56Z">
+        <test-method status="PASS" signature="testCustomerOrderDisplayedonOrderListPage()[pri:0, instance:ssda_test.customer.TC06_CustPlaceOrderVerifyOrderDetailsTest@1224144a]" name="testCustomerOrderDisplayedonOrderListPage" duration-ms="13687" started-at="2021-01-30T19:58:18Z" finished-at="2021-01-30T19:58:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCustomerOrderDisplayedonOrderListPage -->
-        <test-method status="PASS" signature="testOrderDetailsonOrderListPage()[pri:0, instance:ssda_test.customer.TC06_CustPlaceOrderVerifyOrderDetailsTest@14bdbc74]" name="testOrderDetailsonOrderListPage" duration-ms="64" started-at="2021-01-26T19:38:56Z" finished-at="2021-01-26T19:38:56Z">
+        <test-method status="PASS" signature="testOrderDetailsonOrderListPage()[pri:0, instance:ssda_test.customer.TC06_CustPlaceOrderVerifyOrderDetailsTest@1224144a]" name="testOrderDetailsonOrderListPage" duration-ms="138" started-at="2021-01-30T19:58:32Z" finished-at="2021-01-30T19:58:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testOrderDetailsonOrderListPage -->
-        <test-method status="PASS" signature="testOrderDetailsinOrderDetailsWindow()[pri:0, instance:ssda_test.customer.TC06_CustPlaceOrderVerifyOrderDetailsTest@14bdbc74]" name="testOrderDetailsinOrderDetailsWindow" duration-ms="4435" started-at="2021-01-26T19:38:56Z" finished-at="2021-01-26T19:39:00Z">
+        <test-method status="PASS" signature="testOrderDetailsinOrderDetailsWindow()[pri:0, instance:ssda_test.customer.TC06_CustPlaceOrderVerifyOrderDetailsTest@1224144a]" name="testOrderDetailsinOrderDetailsWindow" duration-ms="2982" started-at="2021-01-30T19:58:32Z" finished-at="2021-01-30T19:58:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testOrderDetailsinOrderDetailsWindow -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:ssda_test.customer.TC06_CustPlaceOrderVerifyOrderDetailsTest@14bdbc74]" name="teardown" is-config="true" duration-ms="1109" started-at="2021-01-26T19:39:00Z" finished-at="2021-01-26T19:39:01Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:ssda_test.customer.TC06_CustPlaceOrderVerifyOrderDetailsTest@1224144a]" name="teardown" is-config="true" duration-ms="1121" started-at="2021-01-30T19:58:35Z" finished-at="2021-01-30T19:58:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- ssda_test.customer.TC06_CustPlaceOrderVerifyOrderDetailsTest -->
     </test> <!-- Validating place order and verify order details test -->
-    <test name="Validating Customer order list search filters test" duration-ms="131630" started-at="2021-01-26T14:09:01Z" finished-at="2021-01-26T14:11:13Z">
+    <test name="Validating Customer order list search filters test" duration-ms="59016" started-at="2021-01-30T14:28:36Z" finished-at="2021-01-30T14:29:36Z">
       <class name="ssda_test.customer.TC07_CustOrderListFiltersValidationTest">
-        <test-method status="PASS" signature="initialize()[pri:0, instance:ssda_test.customer.TC07_CustOrderListFiltersValidationTest@7dc19a70]" name="initialize" is-config="true" duration-ms="89107" started-at="2021-01-26T19:39:01Z" finished-at="2021-01-26T19:40:31Z">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:ssda_test.customer.TC07_CustOrderListFiltersValidationTest@7dc3712]" name="initialize" is-config="true" duration-ms="18971" started-at="2021-01-30T19:58:36Z" finished-at="2021-01-30T19:58:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="testCustomerOrdersDisplayedonOrderListPage()[pri:0, instance:ssda_test.customer.TC07_CustOrderListFiltersValidationTest@7dc19a70]" name="testCustomerOrdersDisplayedonOrderListPage" duration-ms="32540" started-at="2021-01-26T19:40:31Z" finished-at="2021-01-26T19:41:03Z">
+        <test-method status="PASS" signature="testCustomerOrdersDisplayedonOrderListPage()[pri:0, instance:ssda_test.customer.TC07_CustOrderListFiltersValidationTest@7dc3712]" name="testCustomerOrdersDisplayedonOrderListPage" duration-ms="28168" started-at="2021-01-30T19:58:55Z" finished-at="2021-01-30T19:59:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCustomerOrdersDisplayedonOrderListPage -->
-        <test-method status="PASS" signature="testOrdersDisplayedPerPageFilter()[pri:0, instance:ssda_test.customer.TC07_CustOrderListFiltersValidationTest@7dc19a70]" name="testOrdersDisplayedPerPageFilter" duration-ms="666" started-at="2021-01-26T19:41:03Z" finished-at="2021-01-26T19:41:04Z">
+        <test-method status="PASS" signature="testOrdersDisplayedPerPageFilter()[pri:0, instance:ssda_test.customer.TC07_CustOrderListFiltersValidationTest@7dc3712]" name="testOrdersDisplayedPerPageFilter" duration-ms="851" started-at="2021-01-30T19:59:24Z" finished-at="2021-01-30T19:59:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testOrdersDisplayedPerPageFilter -->
-        <test-method status="PASS" signature="testSearchByOrderStatusFilter()[pri:0, instance:ssda_test.customer.TC07_CustOrderListFiltersValidationTest@7dc19a70]" name="testSearchByOrderStatusFilter" duration-ms="7492" started-at="2021-01-26T19:41:04Z" finished-at="2021-01-26T19:41:11Z">
+        <test-method status="PASS" signature="testSearchByOrderStatusFilter()[pri:0, instance:ssda_test.customer.TC07_CustOrderListFiltersValidationTest@7dc3712]" name="testSearchByOrderStatusFilter" duration-ms="8705" started-at="2021-01-30T19:59:24Z" finished-at="2021-01-30T19:59:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSearchByOrderStatusFilter -->
-        <test-method status="PASS" signature="testSearchByOrderNumberFilter()[pri:0, instance:ssda_test.customer.TC07_CustOrderListFiltersValidationTest@7dc19a70]" name="testSearchByOrderNumberFilter" duration-ms="500" started-at="2021-01-26T19:41:11Z" finished-at="2021-01-26T19:41:12Z">
+        <test-method status="PASS" signature="testSearchByOrderNumberFilter()[pri:0, instance:ssda_test.customer.TC07_CustOrderListFiltersValidationTest@7dc3712]" name="testSearchByOrderNumberFilter" duration-ms="800" started-at="2021-01-30T19:59:33Z" finished-at="2021-01-30T19:59:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSearchByOrderNumberFilter -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:ssda_test.customer.TC07_CustOrderListFiltersValidationTest@7dc19a70]" name="teardown" is-config="true" duration-ms="1320" started-at="2021-01-26T19:41:12Z" finished-at="2021-01-26T19:41:13Z">
+        <test-method status="PASS" signature="testSearchByDeliveryDateFilter()[pri:0, instance:ssda_test.customer.TC07_CustOrderListFiltersValidationTest@7dc3712]" name="testSearchByDeliveryDateFilter" duration-ms="650" started-at="2021-01-30T19:59:34Z" finished-at="2021-01-30T19:59:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchByDeliveryDateFilter -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:ssda_test.customer.TC07_CustOrderListFiltersValidationTest@7dc3712]" name="teardown" is-config="true" duration-ms="862" started-at="2021-01-30T19:59:35Z" finished-at="2021-01-30T19:59:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- ssda_test.customer.TC07_CustOrderListFiltersValidationTest -->
     </test> <!-- Validating Customer order list search filters test -->
-    <test name="Validating admin Home page test" duration-ms="70216" started-at="2021-01-26T14:11:13Z" finished-at="2021-01-26T14:12:23Z">
+  </suite> <!-- SSDA Automation Customer Tests -->
+  <suite name="SSDA Automation AllTests Suite" duration-ms="0" started-at="2021-01-30T14:30:09Z" finished-at="2021-01-30T14:30:09Z">
+    <groups>
+    </groups>
+  </suite> <!-- SSDA Automation AllTests Suite -->
+  <suite name="SSDA Automation Admin Tests" duration-ms="33388" started-at="2021-01-30T14:29:36Z" finished-at="2021-01-30T14:30:09Z">
+    <groups>
+    </groups>
+    <test name="Validating admin Home page test" duration-ms="33388" started-at="2021-01-30T14:29:36Z" finished-at="2021-01-30T14:30:09Z">
       <class name="ssda_test.admin.ValidateHomePage">
-        <test-method status="PASS" signature="initialize()[pri:0, instance:ssda_test.admin.ValidateHomePage@5d908d47]" name="initialize" is-config="true" duration-ms="2376" started-at="2021-01-26T19:41:13Z" finished-at="2021-01-26T19:41:16Z">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:ssda_test.admin.ValidateHomePage@7d322cad]" name="initialize" is-config="true" duration-ms="3056" started-at="2021-01-30T19:59:36Z" finished-at="2021-01-30T19:59:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="basePageNavigation()[pri:0, instance:ssda_test.admin.ValidateHomePage@5d908d47]" name="basePageNavigation" duration-ms="67031" started-at="2021-01-26T19:41:16Z" finished-at="2021-01-26T19:42:23Z">
+        <test-method status="PASS" signature="basePageNavigation()[pri:0, instance:ssda_test.admin.ValidateHomePage@7d322cad]" name="basePageNavigation" duration-ms="29482" started-at="2021-01-30T19:59:39Z" finished-at="2021-01-30T20:00:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- basePageNavigation -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:ssda_test.admin.ValidateHomePage@5d908d47]" name="teardown" is-config="true" duration-ms="806" started-at="2021-01-26T19:42:23Z" finished-at="2021-01-26T19:42:23Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:ssda_test.admin.ValidateHomePage@7d322cad]" name="teardown" is-config="true" duration-ms="847" started-at="2021-01-30T20:00:08Z" finished-at="2021-01-30T20:00:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- ssda_test.admin.ValidateHomePage -->
     </test> <!-- Validating admin Home page test -->
-  </suite> <!-- SSDA Test Automation Smoke Suite -->
+  </suite> <!-- SSDA Automation Admin Tests -->
 </testng-results>

@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" parallel="none">
   <test name="Default test(failed)" parallel="none">
     <classes>
-      <class name="ssda_test.customer.TC03_CustProductListFiltersValidationTest">
+      <class name="ssda_test.customer.TC06_CustPlaceOrderVerifyOrderDetailsTest">
         <methods>
           <include name="initialize"/>
-          <include name="testCategoryFilters"/>
           <include name="teardown"/>
+          <include name="testOrderDetailsinOrderDetailsWindow"/>
         </methods>
-      </class> <!-- ssda_test.customer.TC03_CustProductListFiltersValidationTest -->
+      </class> <!-- ssda_test.customer.TC06_CustPlaceOrderVerifyOrderDetailsTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

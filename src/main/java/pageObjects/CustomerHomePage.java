@@ -22,7 +22,7 @@ public class CustomerHomePage {
 	
 	private By productPrice = By.xpath("//tbody/tr[1] //div[@class='fontweight17 fontbold']");
 	
-	private By productQuantity = By.xpath("//select[@id='mat-input-3']");
+	private By productQuantity = By.xpath("//table[@role='grid']/tbody/tr[1] //select");
 	
 	private By allProductQuantityDropdowns = By.xpath("//table[@role='grid']/tbody/tr//select");
 	
@@ -65,6 +65,8 @@ public class CustomerHomePage {
 	private By alert = By.xpath("//div[@role='alertdialog']");
 	
 	private By noRecordsFound = By.xpath("//div[@class='text-center']//parent::div[contains(.,'No Records Found!')]");
+	
+	private By pageLoading = By.xpath("//p[contains(.,'Please Wait...')]");
 	
 	private By itemsPerPage = By.xpath("//mat-select[@aria-label='Items per page:']");
 	
@@ -182,6 +184,10 @@ public class CustomerHomePage {
 	
 	public WebElement getNoRecordsFound() {
 		return driver.findElement(noRecordsFound);
+	}
+	
+	public WebElement getPageLoading() {
+		return driver.findElement(pageLoading);
 	}
 	
 	public WebElement getItemsPerPage() {
