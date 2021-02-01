@@ -9,6 +9,13 @@
 2. Configure url, login credentials, etc in data.properties file
 
 
+**How to maintain and execute testcases using testng.xml **
+1. To easily maintain testcases for each usertype (Admin, Aggragator, Customer) created separate testsuite xml files.
+i.e. testng\_admin.xml, testng\_aggr.xml and testng\_customer.xml 
+2. In these xml files tests related to particular usertype can be maintained
+3. Final testng.xml file is a suite of suites. In this file we can configure name of the above created individual suite files.
+4. Once test execution starts all suites configured in testng.xml file will get executed in sequence.
+
 ###Project is ready to run. Execute following commands and monitor the automatic web-driver test execution
 *	Open Command prompt. Go to project path. For example: C:\Users\User-Name\ssda_test>
 *	Run mvn clean

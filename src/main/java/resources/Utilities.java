@@ -90,4 +90,5 @@ public class Utilities {
 		new WebDriverWait(driver, timeout).
 		until(ExpectedConditions.visibilityOf(element));
 	}
+	
 }

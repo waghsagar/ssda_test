@@ -1,10 +1,12 @@
 package ssda_test.customer;
 
 import java.io.IOException;
+import java.util.List;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -46,16 +48,33 @@ public class TC04_CustAddtoCartTest extends TestBase{
 		lp.getMobile().sendKeys(prop.getProperty("cust_mobile"));
 		lp.getPassword().sendKeys(prop.getProperty("cust_password"));
 		lp.getLogin().click();
-		util.waitForElementToBeInvisible(driver, chp.getNoRecordsFound(), 20);
+		util.waitForElementToBeInvisible(driver, chp.getNoRecordsFound(), 30);
 		Assert.assertFalse(chp.getCheckoutButton().isEnabled());
+		
+		List<WebElement> categoryLabel_list = chp.getCategoryFilterLabel();
+		List<WebElement> categoryCheckbox_list = chp.getCategoryFilterCheckbox();
+		// Iterating through the list and selecting the desired option
+		for(int j = 0; j < categoryLabel_list.size(); j++){
+			if( categoryLabel_list.get(j).getText().contains("FOOD ITEMS")){
+				Assert.assertFalse(categoryCheckbox_list.get(j).isSelected());
+				log.info("Click on checkbox infront of selected category");
+				categoryLabel_list.get(j).click();
+				util.waitForElementToBeInvisible(driver, chp.getPageLoading(), 30);
+				Assert.assertTrue(categoryCheckbox_list.get(j).isSelected());
+				log.info("Checkbox infront of selected category is displayed as selected");
+				break;
+			}
+		}
+		
 		Assert.assertTrue(chp.getAddToCart().isDisplayed());
 		log.info("Select quantity of product as : " + quantity);
 		util.selectValueFromDropDownByIndex(chp.getProductQuantity(), quantity);
 		log.info("Click on Add to cart button for product");
 		chp.getAddToCart().click();
+		util.waitForElementToBeVisible(driver, chp.getAlert(), 30);
 		Assert.assertTrue(chp.getAlert().isDisplayed());
 		Assert.assertTrue(chp.getAlert().getText().contains("added in the cart"));
-		util.waitForElementToBeInvisible(driver, chp.getAlert(), 20);
+		util.waitForElementToBeInvisible(driver, chp.getAlert(), 30);
 		Assert.assertTrue(chp.getCheckoutButton().isEnabled());
 		log.info("Product Added to cart and Checkout button is Enabled");
 	}
@@ -91,11 +110,11 @@ public class TC04_CustAddtoCartTest extends TestBase{
 		util.selectValueFromDropDownByIndex(chp.getProductQuantity(), quantity);
 		log.info("Click on Add to cart button for product");
 		chp.getAddToCart().click();
-		util.waitForElementToBeVisible(driver, chp.getAlert(), 20);
+		util.waitForElementToBeVisible(driver, chp.getAlert(), 30);
 		Assert.assertTrue(chp.getAlert().isDisplayed());
 		Assert.assertTrue(chp.getAlert().getText().contains("added in the cart already with same quantity"));
 		log.info("Alert message displayed as Product added in the cart already with same quantity");
-		util.waitForElementToBeInvisible(driver, chp.getAlert(), 20);
+		util.waitForElementToBeInvisible(driver, chp.getAlert(), 30);
 		Assert.assertTrue(chp.getCheckoutButton().isEnabled());
 	}
 			
@@ -108,9 +127,11 @@ public class TC04_CustAddtoCartTest extends TestBase{
 		double expectedTotalAmountAfterDeleteItem = (totalAmountDouble - (pricePerItemDouble*quantity));
 		chp.getDeleteItemButton().click();
 		log.info("Click on Delete Item button");
+		util.waitForElementToBeVisible(driver, chp.getAlert(), 30);
 		Assert.assertTrue(chp.getAlert().isDisplayed());
 		Assert.assertTrue(chp.getAlert().getText().contains("removed from Cart"));
-		util.waitForElementToBeInvisible(driver, chp.getAlert(), 20);
+		log.info("Alert message displayed as Product removed from Cart");
+		util.waitForElementToBeInvisible(driver, chp.getAlert(), 30);
 		Assert.assertFalse(chp.getCheckoutButton().isEnabled());
 		Assert.assertTrue(chp.getTotalAmountPayable().getText().contains(String.valueOf(expectedTotalAmountAfterDeleteItem)));
 		log.info("Product removed from cart. Updated value of Total amount payable displayed");

@@ -1,6 +1,0 @@
-17:44:06.494 [main] INFO  resources.TestBase - Customer enters Order number to search from all orders
-17:44:06.804 [main] INFO  resources.TestBase - Total Orders found after search : 1
-17:44:06.833 [main] INFO  resources.TestBase - Orders found matches with order number searched by customer
-17:44:11.576 [main] INFO  resources.TestBase - Driver is initialized
-17:44:26.699 [main] INFO  resources.TestBase - Navigated to Login page
-17:44:29.692 [main] INFO  resources.TestBase - Successfully validated text message at dashboard

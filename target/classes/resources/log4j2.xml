@@ -5,16 +5,21 @@
 	</Properties>
 
 	<Appenders>
-		<RollingFile name="File"
+		<RollingFile 
+			name="roll-by-size"
 			fileName="${basePath}/SSDAloggerFile.log"
-			filePattern="${basePath}/SSDAloggerFile-%d{MM-dd-yyyy HH:mm:ss}.log.gz">
+			filePattern="${basePath}/SSDAloggerFile-%d{MM-dd-yyyy HH:mm:ss}.log.gz"
+			ignoreExceptions="false">
 			<PatternLayout
-				pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
-			<TimeBasedTriggeringPolicy />
+				pattern="%d{MM-dd-yyyy HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+			<Policies>
+				<OnStartupTriggeringPolicy />
+				<SizeBasedTriggeringPolicy size="500 KB" />
+			</Policies>
 		</RollingFile>
 		<Console name="Console" target="SYSTEM_OUT">
 			<PatternLayout
-				pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+				pattern="%d{MM-dd-yyyy HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
 		</Console>
 	</Appenders>
 	<Loggers>
